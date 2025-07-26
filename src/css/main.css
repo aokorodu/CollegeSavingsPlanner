@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --transitionDuration: 200ms;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #eaeaea;
+}
+.mainHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+#dataHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.summaryHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.summary {
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+}
+
+#collegeSelect {
+  font-size: 1rem;
+  padding: 0.25rem;
+}
+
+label {
+  padding: 0.25rem 0.25rem 0.25rem 0.5rem;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.summary span:nth-child(2) {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0.25rem;
+}
+
+#val {
+  width: 100%;
+  text-align: center;
+}
+
+.sliderHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.slide {
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.5fr;
+  gap: 1rem;
+}
+
+.select {
+  width: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+#savedPath {
+  fill: none;
+  transition-property: all;
+  transition-duration: var(--transitionDuration);
+}
+#overflowPath {
+  fill: none;
+  transition-property: all;
+  transition-duration: var(--transitionDuration);
+}
+
+#circleBG {
+  fill: none;
+  transition-property: stroke;
+  transition-duration: var(--transitionDuration);
+}
+
+.sliderValue {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+}
+
+#summaryText {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dollarTextInput {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.1rem;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #959595;
+  background-color: transparent;
+  width: 100%;
+  font-size: 16px;
+  padding: 0rem;
+  font-variant-numeric: tabular-nums;
+}
+input[type="text"]::placeholder {
+  color: #888;
+  font-style: italic;
+}
