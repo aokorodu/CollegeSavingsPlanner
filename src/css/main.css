@@ -2,6 +2,7 @@
 
 :root {
   --transitionDuration: 200ms;
+  --barTransitionDuration: 400ms;
 }
 
 * {
@@ -113,6 +114,11 @@ label {
   fill: none;
   transition-property: stroke;
   transition-duration: var(--transitionDuration);
+}
+
+.bar {
+  transition-property: height;
+  transition-duration: var(--barTransitionDuration);
 }
 
 .sliderValue {

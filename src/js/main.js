@@ -979,19 +979,28 @@ const projectedTotal = document.getElementById("projectedTotal");
 const projectedPercentSaved = document.getElementById("projectedPercentSaved");
 const fundingNeededText = document.getElementById("fundingNeededText");
 
-// SVG paths for progress
+// SVG paths for pie chart
 const savedPath = document.getElementById("savedPath");
 const overflowPath = document.getElementById("overflowPath");
+// SVG rects for bar graph
+const bar1 = document.getElementById("bar1");
+const bar2 = document.getElementById("bar2");
+const bar3 = document.getElementById("bar3");
+const bar4 = document.getElementById("bar4");
+const bars = [bar1, bar2, bar3, bar4];
 
 let yearsToCollege = 0;
 let yearsOfCollege = 4;
 let yearlyCost = 50000;
 let yearlyCostByYear = [];
+let maxYearlyCollegeCost = 0;
 let monthlyContribution = 500;
 let initialBalance = 2000;
 let annualRateOfReturn = 6;
 let annualCostIncrease = 5;
-let maxYearlyCollegeCost = 0;
+
+let endingBalance = 0;
+let percentageSaved = 0;
 
 function initUI() {
   yearsSlider.addEventListener("input", updateYears);
@@ -1033,9 +1042,9 @@ function updateStartingAmount(e) {
 }
 
 function selectCollege(e) {
-  console.log("e.target.value", e.target.value);
+  // console.log("e.target.value", e.target.value);
   const arr = e.target.value.split("|");
-  console.log("array", arr);
+  // console.log("array", arr);
   const collegeColors = arr[0].split(",");
   // const newColors =
   //   collegeColors.length > 0 ? collegeColors : ["#555879", "#98A1BC"]; // Fallback colors
@@ -1052,41 +1061,41 @@ function selectCollege(e) {
 }
 
 function changePathColor(colors) {
-  console.log("colors[0]", colors[0]);
+  // console.log("colors[0]", colors[0]);
   const circleBG = document.getElementById("circleBG");
-  console.log("Changing path colors to:", colors);
+  // console.log("Changing path colors to:", colors);
   savedPath.setAttribute("stroke", colors[0] || "red");
   overflowPath.setAttribute("stroke", colors[0]);
   circleBG.setAttribute("stroke", colors[1]);
 }
 
 function updateYearlyCost(e) {
-  console.log(e.target.value);
+  // console.log(e.target.value);
   yearlyCost = parseFloat(e.target.value);
   annualCollegeCostText.innerText = convertToDollarString(yearlyCost);
   update();
 }
 
 function updateYears(e) {
-  console.log(e.target.value);
+  // console.log(e.target.value);
   yearsUntilText.innerText = Math.round(e.target.value);
   update();
 }
 
 function updatePlannedContribution(e) {
-  console.log(e.target.value);
+  // console.log(e.target.value);
   plannedContributionText.innerText = convertToDollarString(e.target.value);
   update();
 }
 
 function updateROfR(e) {
-  console.log(e.target.value);
+  // console.log(e.target.value);
   ROfRText.innerText = e.target.value + "%";
   update();
 }
 
 function updateCostIncrease(e) {
-  console.log(e.target.value);
+  // console.log(e.target.value);
   costIncreaseText.innerText = e.target.value + "%";
   update();
 }
@@ -1094,6 +1103,7 @@ function updateCostIncrease(e) {
 function update() {
   updateValues();
   updateSummary();
+  updatePaths();
 }
 
 const FV = (PMT, r, n) => {
@@ -1124,18 +1134,14 @@ function calculateEndingBalance(
   const monthlyRateOfReturn = annualRateOfReturn / 100 / 12;
   console.log("monthly rate of return:", monthlyRateOfReturn);
   const totalMonths = years * 12;
-  let endingBalance = initialBalance;
+  let balance = initialBalance;
 
   for (let month = 0; month < totalMonths; month++) {
-    endingBalance += monthlyContribution;
-    endingBalance += endingBalance * monthlyRateOfReturn;
+    balance += monthlyContribution;
+    balance += balance * monthlyRateOfReturn;
   }
 
-  console.log("Ending Balance:", endingBalance);
-  console.log("FV:", FV);
-  console.log("--------------------------");
-
-  return endingBalance;
+  return balance;
 }
 
 function totalFutureCost(currentCost, yearsUntil, totalYears) {
@@ -1159,7 +1165,7 @@ function totalFutureCost(currentCost, yearsUntil, totalYears) {
 function maxYearlyCost(currentCost, yearsUntil, totalYears) {
   const annualCollegeCostIncrease = 1 + annualCostIncrease / 100; // 5% increase per year
   let futureYearlyCost = currentCost;
-  for (let i = 0; i < yearsUntil + totalYears; i++) {
+  for (let i = 1; i < yearsUntil + totalYears; i++) {
     futureYearlyCost *= annualCollegeCostIncrease;
   }
   return Math.round(futureYearlyCost);
@@ -1198,7 +1204,7 @@ function updateValues() {
 }
 
 function updateSummary() {
-  let endingBalance = calculateEndingBalance(
+  endingBalance = calculateEndingBalance(
     initialBalance,
     monthlyContribution,
     annualRateOfReturn,
@@ -1206,7 +1212,7 @@ function updateSummary() {
   );
 
   let futureCost = totalFutureCost(yearlyCost, yearsToCollege, yearsOfCollege);
-  let percentageSaved = (endingBalance / futureCost) * 100;
+  percentageSaved = (endingBalance / futureCost) * 100;
   if (percentageSaved > 200) percentageSaved = 200;
 
   projectedSavings.innerText = convertToDollarString(endingBalance);
@@ -1217,13 +1223,33 @@ function updateSummary() {
     futureCost - endingBalance
   );
 
+  // let savedPathValue = percentageSaved > 100 ? 100 : percentageSaved;
+  // let overflowPathValue = percentageSaved > 100 ? 100 - percentageSaved : 0;
+
+  // savedPath.setAttribute("stroke-dashoffset", 100 - savedPathValue);
+  // overflowPath.setAttribute("stroke-dashoffset", overflowPathValue - 100);
+}
+
+function updatePaths() {
   let savedPathValue = percentageSaved > 100 ? 100 : percentageSaved;
   let overflowPathValue = percentageSaved > 100 ? 100 - percentageSaved : 0;
 
   savedPath.setAttribute("stroke-dashoffset", 100 - savedPathValue);
   overflowPath.setAttribute("stroke-dashoffset", overflowPathValue - 100);
+
+  const percentages = yearlyCostByYear.map((cost) => {
+    const percentage = (cost / maxYearlyCollegeCost) * 100;
+    return percentage > 100 ? 100 : percentage;
+  });
+  console.log("percentages", percentages);
+
+  bars.forEach((bar, index) => {
+    const percentage = percentages[index] || 0; // Default to 0 if no value
+    const height = Math.max((percentage / 100) * 1000, 5); // Minimum height of 5px
+    console.log("height", height);
+    bar.setAttribute("height", height);
+  });
 }
 
 initUI();
-updateValues();
-updateSummary();
+update();

@@ -20,10 +20,11 @@
       <svg id="svg" width="500" height="500" viewBox="0 0 1000 1000">
         <g id="barGraph" transform="translate(0 1000) scale(1 -1)">
           <g id="barGraphBars">
-            <rect id="bar1" x="0" y="0" width="250" height="400" fill="#00a0df"></rect>
-            <rect id="bar2" x="250" y="0" width="250" height="430" fill="#1086d5"></rect>
-            <rect id="bar3" x="500" y="0" width="500" height="450" fill="#00539B"></rect>
-            <rect id="bar3" x="750" y="0" width="500" height="500" fill="#01437d"></rect>
+            <rect id="bar1" class="bar" x="0" y="0" width="250" height="400" fill="#00a0df"></rect>
+            <rect id="bar2" class="bar" x="250" y="0" width="250" height="430" fill="#1086d5"></rect>
+            <rect id="bar3" class="bar" x="500" y="0" width="500" height="450" fill="#00539B"></rect>
+            <rect id="bar4" class="bar" x="750" y="0" width="500" height="500" fill="#01437d"></rect>
+            <rect id="outline" x="0" y="0" width="1000" height="1000" fill="none" stroke="#000" stroke-width="2"></rect>
           </g>
         </g>
         <g id="pieChart">
@@ -70,7 +71,7 @@
 
       <div class="slide">
         <label for="yearsSlider">years until college</label>
-        <input type="range" id="yearsSlider" min="1" max="30" value="17" step=".1">
+        <input type="range" id="yearsSlider" min="0" max="30" value="17" step=".1">
         <div id="yearsUntilText" class="sliderValue">17</div>
       </div>
 
