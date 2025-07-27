@@ -1,100 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/css/main.css">
 </head>
+
 <body>
-    <div class="mainHolder">
-      <h1>College Savings Planner</h1>
-      <div id="dataHolder">
-        <div class="summaryHolder">
-          <div class="summary right"><span>projected cost:</span><span id="projectedTotal">0</span></div>
-           
+  <div class="mainHolder">
+    <h1>College Savings Planner</h1>
+    <div id="dataHolder">
+      <div class="summaryHolder">
+        <div class="summary right"><span>projected cost:</span><span id="projectedTotal">0</span></div>
+
+      </div>
+
+      <svg id="svg" width="500" height="500" viewBox="0 0 1000 1000">
+        <g id="barGraph" transform="translate(0 1000) scale(1 -1)">
+          <g id="barGraphBars">
+            <rect id="bar1" x="0" y="0" width="250" height="400" fill="#00a0df"></rect>
+            <rect id="bar2" x="250" y="0" width="250" height="430" fill="#1086d5"></rect>
+            <rect id="bar3" x="500" y="0" width="500" height="450" fill="#00539B"></rect>
+            <rect id="bar3" x="750" y="0" width="500" height="500" fill="#01437d"></rect>
+          </g>
+        </g>
+        <g id="pieChart">
+          <g transform="translate(500 500) rotate(-90) scale(1.5)">
+            <circle id="overflowPath" cx="0" cy="0" r="300" fill="none" stroke="#00a0df" stroke-opacity="1"
+              stroke-width="50" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75"></circle>
+          </g>
+          <g transform="translate(500 500) rotate(-90)">
+            <circle id="circleOutline" cx="0" cy="0" r="340" fill="none" stroke="#fff" stroke-opacity="1"
+              stroke-width="210"></circle>
+
+            <circle id="circleBG" cx="0" cy="0" r="300" fill="none" stroke="#00539B" stroke-opacity="1"
+              stroke-width="250"></circle>
+
+            <circle id="savedPath" cx="0" cy="0" r="300" fill="none" stroke="#1086d5" stroke-width="250"
+              stroke-linecap="none" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75">
+            </circle>
+          </g>
+        </g>
+        
+      </svg>
+      <div class="summaryHolder">
+        <div class="summary left"><span>projected 529 savings:</span><span id="projectedSavings">0</span></div>
+        <div class="summary left">
+          <span>alternative funding needed:</span>
+          <span id="fundingNeededText">0</span>
         </div>
-       
-        <svg id="svg" width="500" height="500" viewBox="0 0 1000 1000">
-          <g>
-            <g transform="translate(500 500) rotate(-90) scale(1.5)">
-              <circle id="overflowPath" cx="0" cy="0" r="300" fill="none" stroke="#00a0df" stroke-opacity="1" stroke-width="50" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75"></circle>
-            </g>
-
-            <g transform="translate(500 500) rotate(-90)">
-              <circle id="circleOutline" cx="0" cy="0" r="340" fill="none" stroke="#fff" stroke-opacity="1" stroke-width="210"></circle>
-
-              <circle id="circleBG" cx="0" cy="0" r="300" fill="none" stroke="#00539B" stroke-opacity="1" stroke-width="250"></circle>
-
-              <circle id="savedPath" cx="0" cy="0" r="300" fill="none" stroke="#1086d5" stroke-width="250" stroke-linecap="none" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75">
-              </circle>
-            </g>
-        </svg>
-        <div class="summaryHolder">
-            <div class="summary left"><span>projected 529 savings:</span><span id="projectedSavings">0</span></div>
-            <div class="summary left">
-              <span>alternative funding needed:</span>
-              <span id="fundingNeededText">0</span>
-            </div>
-            <div class="summary left"><span>projected savings percentage:</span><span id="projectedPercentSaved">0</span></div>
+        <div class="summary left"><span>projected savings percentage:</span><span id="projectedPercentSaved">0</span>
         </div>
-  </div>
-  <!-- <div id="summaryText">0</div> -->
-  <div id="summaryText">
-   
-   
+      </div>
+    </div>
+    <!-- <div id="summaryText">0</div> -->
+    <div id="summaryText">
 
-    
-  </div>
-  <div class="sliderHolder">
-    <div class="select">
+
+
+
+    </div>
+    <div class="sliderHolder">
+      <div class="select">
         <select id="collegeSelect">
         </select>
-    </div>
+      </div>
 
-    <div class="slide">
-      <label for="yearsSlider">years until college</label>
-      <input type="range" id="yearsSlider" min="1" max="30" value="17" step=".1">
-      <div id="yearsUntilText" class="sliderValue">17</div>
-    </div>
+      <div class="slide">
+        <label for="yearsSlider">years until college</label>
+        <input type="range" id="yearsSlider" min="1" max="30" value="17" step=".1">
+        <div id="yearsUntilText" class="sliderValue">17</div>
+      </div>
 
-    <div class="slide">
-      <label for="annualCollegeCostSlider">current yearly cost</label>
-      <input type="range" id="annualCollegeCostSlider" min="1000" max="100000" value="42000" step="100">
-      <div id="annualCollegeCostText" class="sliderValue">$42,000</div>
-    </div>
+      <div class="slide">
+        <label for="annualCollegeCostSlider">current yearly cost</label>
+        <input type="range" id="annualCollegeCostSlider" min="1000" max="100000" value="42000" step="100">
+        <div id="annualCollegeCostText" class="sliderValue">$42,000</div>
+      </div>
 
-    <div class="slide">
-      <label for="annualCostIncreaseSlider">annual cost increase</label>
-      <input type="range" id="annualCostIncreaseSlider" min="0" max="10" value="5" step=".1">
-      <div id="costIncreaseText" class="sliderValue">5.00%</div>
-    </div>
+      <div class="slide">
+        <label for="annualCostIncreaseSlider">annual cost increase</label>
+        <input type="range" id="annualCostIncreaseSlider" min="0" max="10" value="5" step=".1">
+        <div id="costIncreaseText" class="sliderValue">5.00%</div>
+      </div>
 
-    <div class="slide">
-      <label for="startingAmountInput">amount saved</label>
-      <div class="dollarTextInput"><input type="text" id="startingAmountInput" value="$5000"></div>
-    </div>
+      <div class="slide">
+        <label for="startingAmountInput">amount saved</label>
+        <div class="dollarTextInput"><input type="text" id="startingAmountInput" value="$5000"></div>
+      </div>
 
-    <div class="slide">
-      <label for="ROfRSlider">rate of return</label>
-      <input type="range" id="ROfRSlider" min="0" max="10" value="6" step=".1">
-      <div id="ROfRText" class="sliderValue">6%</div>
-    </div>
+      <div class="slide">
+        <label for="ROfRSlider">rate of return</label>
+        <input type="range" id="ROfRSlider" min="0" max="10" value="6" step=".1">
+        <div id="ROfRText" class="sliderValue">6%</div>
+      </div>
 
-    
-    <!-- <div class="slide">
+
+      <!-- <div class="slide">
       <label for="annualCollegeCostInput">current yearly cost</label>
       <input type="text" id="annualCollegeCostInput" value="42000">
     </div> -->
 
-    <div class="slide">
-      <label for="plannedContributionSlider">monthly contribution</label>
-      <input type="range" id="plannedContributionSlider" min="0" max="3000" value="100" step="1">
-      <div id="plannedContributionText" class="sliderValue">$100</div>
+      <div class="slide">
+        <label for="plannedContributionSlider">monthly contribution</label>
+        <input type="range" id="plannedContributionSlider" min="0" max="3000" value="100" step="1">
+        <div id="plannedContributionText" class="sliderValue">$100</div>
+      </div>
     </div>
   </div>
-</div>
-</div>
+  </div>
 </body>
 <script src="./src/js/main.js"></script>
+
 </html>
