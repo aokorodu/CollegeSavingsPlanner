@@ -988,6 +988,7 @@ const bar2 = document.getElementById("bar2");
 const bar3 = document.getElementById("bar3");
 const bar4 = document.getElementById("bar4");
 const bars = [bar1, bar2, bar3, bar4];
+const savingsLine = document.getElementById("savingsLine");
 
 let yearsToCollege = 0;
 let yearsOfCollege = 4;
@@ -1200,17 +1201,15 @@ function updateValues() {
     yearsOfCollege
   );
 
-  console.log("maxYearlyCollegeCost", maxYearlyCollegeCost);
-}
-
-function updateSummary() {
   endingBalance = calculateEndingBalance(
     initialBalance,
     monthlyContribution,
     annualRateOfReturn,
     yearsToCollege
   );
+}
 
+function updateSummary() {
   let futureCost = totalFutureCost(yearlyCost, yearsToCollege, yearsOfCollege);
   percentageSaved = (endingBalance / futureCost) * 100;
   if (percentageSaved > 200) percentageSaved = 200;
@@ -1234,6 +1233,7 @@ function updatePaths() {
   let savedPathValue = percentageSaved > 100 ? 100 : percentageSaved;
   let overflowPathValue = percentageSaved > 100 ? 100 - percentageSaved : 0;
 
+  console.log("savedPathValue", savedPathValue);
   savedPath.setAttribute("stroke-dashoffset", 100 - savedPathValue);
   overflowPath.setAttribute("stroke-dashoffset", overflowPathValue - 100);
 
@@ -1245,10 +1245,15 @@ function updatePaths() {
 
   bars.forEach((bar, index) => {
     const percentage = percentages[index] || 0; // Default to 0 if no value
-    const height = Math.max((percentage / 100) * 1000, 5); // Minimum height of 5px
+    const height = Math.max((percentage / 100) * 1000, 0); // Minimum height of 5px
     console.log("height", height);
     bar.setAttribute("height", height);
   });
+
+  const h = (endingBalance / 4 / maxYearlyCollegeCost) * 1000;
+  console.log("h: ", h);
+
+  savingsLine.setAttribute("transform", `translate(0, ${h})`);
 }
 
 initUI();
