@@ -988,7 +988,18 @@ const bar2 = document.getElementById("bar2");
 const bar3 = document.getElementById("bar3");
 const bar4 = document.getElementById("bar4");
 const bars = [bar1, bar2, bar3, bar4];
+
+const savingsBar1 = document.getElementById("savingsBar1");
+const savingsBar2 = document.getElementById("savingsBar2");
+const savingsBar3 = document.getElementById("savingsBar3");
+const savingsBar4 = document.getElementById("savingsBar4");
+const savingsBars = [savingsBar1, savingsBar2, savingsBar3, savingsBar4];
 const savingsLine = document.getElementById("savingsLine");
+
+// nav bar
+
+const pieIcon = document.getElementById("pieIcon");
+const barIcon = document.getElementById("barIcon");
 
 let yearsToCollege = 0;
 let yearsOfCollege = 4;
@@ -1028,6 +1039,13 @@ function initUI() {
   collegeSelect.addEventListener("change", selectCollege);
 
   selectCollege({ target: { value: collegeSelect.value } });
+
+  initNavBar();
+}
+
+function initNavBar() {
+  pieIcon.addEventListener("click", showPieChart);
+  barIcon.addEventListener("click", showBarGraph);
 }
 
 function updateStartingAmount(e) {
@@ -1068,6 +1086,12 @@ function changePathColor(colors) {
   savedPath.setAttribute("stroke", colors[0] || "red");
   overflowPath.setAttribute("stroke", colors[0]);
   circleBG.setAttribute("stroke", colors[1]);
+  // bars.forEach((bar) => {
+  //   bar.setAttribute("fill", colors[1]);
+  // });
+  // savingsBars.forEach((savingsBar) => {
+  //   savingsBar.setAttribute("fill", colors[0]);
+  // });
 }
 
 function updateYearlyCost(e) {
@@ -1201,6 +1225,8 @@ function updateValues() {
     yearsOfCollege
   );
 
+  console.log("maxYearlyCollegeCost", maxYearlyCollegeCost);
+
   endingBalance = calculateEndingBalance(
     initialBalance,
     monthlyContribution,
@@ -1248,12 +1274,36 @@ function updatePaths() {
     const height = Math.max((percentage / 100) * 1000, 0); // Minimum height of 5px
     console.log("height", height);
     bar.setAttribute("height", height);
+    let savingsHeight = (height * percentageSaved) / 100;
+    //if (savingsHeight > height) savingsHeight = height;
+    savingsBars[index].setAttribute("height", savingsHeight);
   });
+
+  // savingsBars.forEach((savingsBar, index) => {
+  //   const percentage = percentages[index] / 2 || 0; // Default to 0 if no value
+  //   const height = Math.max((percentage / 100) * 1000, 0); // Minimum height of 5px
+  //   console.log("height", height);
+  //   savingsBar.setAttribute("height", height);
+  // });
 
   const h = (endingBalance / 4 / maxYearlyCollegeCost) * 1000;
   console.log("h: ", h);
 
-  savingsLine.setAttribute("transform", `translate(0, ${h})`);
+  //savingsLine.setAttribute("transform", `translate(0, ${h})`);
+}
+
+function showBarGraph() {
+  const barGraph = document.getElementById("barGraph");
+  const pieChart = document.getElementById("pieChart");
+  barGraph.classList.remove("hidden");
+  pieChart.classList.add("hidden");
+}
+
+function showPieChart() {
+  const barGraph = document.getElementById("barGraph");
+  const pieChart = document.getElementById("pieChart");
+  barGraph.classList.add("hidden");
+  pieChart.classList.remove("hidden");
 }
 
 initUI();

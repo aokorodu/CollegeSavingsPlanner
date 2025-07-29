@@ -15,6 +15,26 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #eaeaea;
 }
+
+.svgHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  width: fit-content;
+}
+
+#svg {
+  border: 1px solid #d4d2d2;
+  border-radius: 6px;
+}
+
+#background {
+  fill: #efeeee;
+}
+
 .mainHolder {
   display: flex;
   flex-direction: column;
@@ -121,6 +141,13 @@ label {
   transition-duration: var(--barTransitionDuration);
 }
 
+.savingsBar {
+  transition-property: height;
+  transition-duration: var(--barTransitionDuration);
+  fill-opacity: 1;
+  fill: #555879;
+}
+
 .sliderValue {
   font-weight: 600;
   font-size: 14px;
@@ -157,4 +184,38 @@ input[type="text"] {
 input[type="text"]::placeholder {
   color: #888;
   font-style: italic;
+}
+
+#iconHolder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+#pieIcon {
+  background-image: url("../assets/pieChartIcon.svg");
+}
+
+#barIcon {
+  background-image: url("../assets/barGraphIcon.svg");
+}
+
+.graph {
+  transition-property: opacity;
+  transition-duration: var(--transitionDuration);
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
 }
