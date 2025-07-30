@@ -1087,12 +1087,12 @@ function changePathColor(colors) {
   savedPath.setAttribute("stroke", colors[0] || "red");
   overflowPath.setAttribute("stroke", colors[0]);
   circleBG.setAttribute("stroke", colors[1]);
-  // bars.forEach((bar) => {
-  //   bar.setAttribute("fill", colors[1]);
-  // });
-  // savingsBars.forEach((savingsBar) => {
-  //   savingsBar.setAttribute("fill", colors[0]);
-  // });
+  bars.forEach((bar) => {
+    bar.setAttribute("fill", colors[1]);
+  });
+  savingsBars.forEach((savingsBar) => {
+    savingsBar.setAttribute("fill", colors[0]);
+  });
 }
 
 function updateYearlyCost(e) {
@@ -1259,12 +1259,14 @@ function updateSummary() {
 function updatePaths() {
   let savedPathValue = percentageSaved > 100 ? 100 : percentageSaved;
   let overflowPathValue = percentageSaved > 100 ? 100 - percentageSaved : 0;
-  let dividerPathValue = percentageSaved > 110 ? 110 : percentageSaved;
 
   console.log("savedPathValue", savedPathValue);
   savedPath.setAttribute("stroke-dashoffset", 100 - savedPathValue);
   overflowPath.setAttribute("stroke-dashoffset", overflowPathValue - 100);
-  dividerPath.setAttribute("stroke-dashoffset", 100 - dividerPathValue + 51);
+  dividerPath.setAttribute(
+    "transform",
+    `rotate(${(savedPathValue / 100) * 360})`
+  );
 
   const percentages = yearlyCostByYear.map((cost) => {
     const percentage = (cost / maxYearlyCollegeCost) * 100;

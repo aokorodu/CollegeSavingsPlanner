@@ -22,8 +22,8 @@
           <g id="barGraph" class="graph hidden" transform="translate(0 1000) scale(1 -1)">
             <g id="barGraphBars">
 
-              <rect id="bar1" class="bar" x="0" y="0" width="245" height="400" ></rect>
-              <rect id="bar2" class="bar" x="250" y="0" width="245" height="430" >
+              <rect id="bar1" class="bar" x="0" y="0" width="245" height="400"></rect>
+              <rect id="bar2" class="bar" x="250" y="0" width="245" height="430">
               </rect>
               <rect id="bar3" class="bar" x="500" y="0" width="245" height="450">
               </rect>
@@ -48,7 +48,7 @@
               </circle>
             </g>
             <g transform="translate(500 500) rotate(-90)">
-              <circle id="circleOutline" cx="0" cy="0" r="300" fill="none" stroke="#fff" stroke-opacity="1"
+              <circle id="circleOutline" cx="0" cy="0" r="300" fill="none" stroke="#f0f0f0" stroke-opacity="1"
                 stroke-width="270"></circle>
 
               <circle id="circleBG" cx="0" cy="0" r="300" fill="none" stroke="#00539B" stroke-opacity="1"
@@ -58,9 +58,9 @@
                 stroke-linecap="none" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75">
               </circle>
 
-              <circle id="dividerPath" cx="0" cy="0" r="300" fill="none" stroke="#ffffff" stroke-width="250"
-                stroke-linecap="none" pathLength="100" stroke-dasharray=".5 150" stroke-dashoffset="-11">
-              </circle>
+              <g id="dividerPath">
+                <path d="M175 0 H425" stroke="#fff" stroke-width="5" stroke-linecap="none"></path>
+              </g>
             </g>
           </g>
 
@@ -113,7 +113,7 @@
 
       <div class="slide">
         <label for="startingAmountInput">amount saved</label>
-        <div class="dollarTextInput"><input type="text" id="startingAmountInput" value="$5000"></div>
+        <div class="dollarTextInput"><input type="text" id="startingAmountInput" value="$5,000"></div>
       </div>
 
       <div class="slide">
