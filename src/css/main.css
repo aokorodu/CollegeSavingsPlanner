@@ -140,13 +140,13 @@ label {
 .bar {
   transition-property: height;
   transition-duration: var(--barTransitionDuration);
+  fill: #555879;
 }
 
 .savingsBar {
   transition-property: height;
   transition-duration: var(--barTransitionDuration);
-  fill-opacity: 1;
-  fill: #555879;
+  fill: #98a1bc;
 }
 
 .sliderValue {
