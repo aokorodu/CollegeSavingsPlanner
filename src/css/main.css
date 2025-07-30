@@ -26,13 +26,8 @@ body {
   width: fit-content;
 }
 
-#svg {
-  border: 1px solid #d4d2d2;
-  border-radius: 6px;
-}
-
 #background {
-  fill: #efeeee;
+  fill: none;
 }
 
 .mainHolder {
@@ -125,6 +120,12 @@ label {
   transition-duration: var(--transitionDuration);
 }
 #overflowPath {
+  fill: none;
+  transition-property: all;
+  transition-duration: var(--transitionDuration);
+}
+
+#dividerPath {
   fill: none;
   transition-property: all;
   transition-duration: var(--transitionDuration);

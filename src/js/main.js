@@ -982,6 +982,7 @@ const fundingNeededText = document.getElementById("fundingNeededText");
 // SVG paths for pie chart
 const savedPath = document.getElementById("savedPath");
 const overflowPath = document.getElementById("overflowPath");
+const dividerPath = document.getElementById("dividerPath");
 // SVG rects for bar graph
 const bar1 = document.getElementById("bar1");
 const bar2 = document.getElementById("bar2");
@@ -1258,10 +1259,12 @@ function updateSummary() {
 function updatePaths() {
   let savedPathValue = percentageSaved > 100 ? 100 : percentageSaved;
   let overflowPathValue = percentageSaved > 100 ? 100 - percentageSaved : 0;
+  let dividerPathValue = percentageSaved > 110 ? 110 : percentageSaved;
 
   console.log("savedPathValue", savedPathValue);
   savedPath.setAttribute("stroke-dashoffset", 100 - savedPathValue);
   overflowPath.setAttribute("stroke-dashoffset", overflowPathValue - 100);
+  dividerPath.setAttribute("stroke-dashoffset", 100 - dividerPathValue + 51);
 
   const percentages = yearlyCostByYear.map((cost) => {
     const percentage = (cost / maxYearlyCollegeCost) * 100;
