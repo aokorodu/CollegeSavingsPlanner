@@ -18,21 +18,27 @@
       </div>
       <div class="svgHolder">
         <svg id="svg" width="450" height="450" viewBox="0 0 1000 1000">
+          <defs>
+            <g id="barGraphic">
+              <rect x="5" y="0" width="245" height="1000" />
+              <path d="M0 1000 H250" stroke="#ffffff" fill="none" stroke-width="1" vector-effect="non-scaling-stroke"/>
+            </g>
+          </defs>
           <rect id="background" x="0" y="0" width="1000" height="1000"></rect>
           <g id="barGraph" class="graph hidden" transform="translate(0 1000) scale(1 -1)">
             <g id="barGraphBars">
 
-              <rect id="bar1" class="bar" x="0" y="0" width="245" height="400"></rect>
-              <rect id="bar2" class="bar" x="250" y="0" width="245" height="430">
-              </rect>
-              <rect id="bar3" class="bar" x="500" y="0" width="245" height="450">
-              </rect>
-              <rect id="bar4" class="bar" x="750" y="0" width="250" height="500"></rect>
+                <use id="bar1" class="bar" href="#barGraphic" x="0" y="0" transform="scale(1)"></use>
+                <use id="bar2" class="bar" href="#barGraphic" x="250" y="0" transform="scale(1)"></use>
+                <use id="bar3" class="bar" href="#barGraphic" x="500" y="0" transform="scale(1)"></use>
+                <use id="bar4" class="bar" href="#barGraphic" x="750" y="0" transform="scale(1)"></use>
 
-              <rect id="savingsBar1" class="savingsBar" x="0" y="0" width="245" height="400"></rect>
-              <rect id="savingsBar2" class="savingsBar" x="250" y="0" width="245" height="430"></rect>
-              <rect id="savingsBar3" class="savingsBar" x="500" y="0" width="245" height="450"></rect>
-              <rect id="savingsBar4" class="savingsBar" x="750" y="0" width="250" height="500"></rect>
+                <use id="savingsBar1" class="savingsBar" href="#barGraphic" x="0" y="0" transform="scale(1 .5)"></use>
+                <use id="savingsBar2" class="savingsBar" href="#barGraphic" x="250" y="0" transform="scale(1)"></use>
+                <use id="savingsBar3" class="savingsBar" href="#barGraphic" x="500" y="0" transform="scale(1)"></use>
+                <use id="savingsBar4" class="savingsBar" href="#barGraphic" x="750" y="0" transform="scale(1)"></use>
+
+             
 
               <!-- <g id="savingsLine" transform="translate(0 100)">
               <path stroke='#fff' stroke-width="1" d="M0 0 H1000" stroke-opacity="1" />

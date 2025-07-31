@@ -1277,11 +1277,14 @@ function updatePaths() {
   bars.forEach((bar, index) => {
     const percentage = percentages[index] || 0; // Default to 0 if no value
     const height = Math.max((percentage / 100) * 1000, 0); // Minimum height of 5px
-    console.log("height", height);
-    bar.setAttribute("height", height);
+    console.log("height", height / 1000);
+    bar.setAttribute("transform", `scale(1, ${height / 1000})`);
     let savingsHeight = (height * percentageSaved) / 100;
     //if (savingsHeight > height) savingsHeight = height;
-    savingsBars[index].setAttribute("height", savingsHeight);
+    savingsBars[index].setAttribute(
+      "transform",
+      `scale(1, ${savingsHeight / 1000})`
+    );
   });
 
   // savingsBars.forEach((savingsBar, index) => {
