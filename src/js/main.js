@@ -1002,6 +1002,9 @@ const savingsLine = document.getElementById("savingsLine");
 const pieIcon = document.getElementById("pieIcon");
 const barIcon = document.getElementById("barIcon");
 
+// bar chart text
+const yaxisText = document.querySelectorAll("#yaxis > text");
+
 let yearsToCollege = 0;
 let yearsOfCollege = 4;
 let yearlyCost = 50000;
@@ -1277,14 +1280,29 @@ function updatePaths() {
   bars.forEach((bar, index) => {
     const percentage = percentages[index] || 0; // Default to 0 if no value
     const height = Math.max((percentage / 100) * 1000, 0); // Minimum height of 5px
-    console.log("height", height / 1000);
-    bar.setAttribute("transform", `scale(1, ${height / 1000})`);
+    console.log(
+      "yearly cost",
+      Math.round((percentage / 100) * maxYearlyCollegeCost)
+    );
+    bar.setAttribute("transform", `translate(0 ${height})`);
+    const barText = bar.querySelector("text");
+    barText.textContent = convertToDollarString(
+      (maxYearlyCollegeCost * percentage) / 100
+    ); // Reset text content
     let savingsHeight = (height * percentageSaved) / 100;
     //if (savingsHeight > height) savingsHeight = height;
+    console.log("savingsHeight", savingsHeight);
     savingsBars[index].setAttribute(
       "transform",
-      `scale(1, ${savingsHeight / 1000})`
+      `translate(0 ${savingsHeight})`
     );
+    const savingsAmount = convertToDollarString(
+      maxYearlyCollegeCost * (percentage / 100) * (percentageSaved / 100)
+    );
+    console.log("savingsAmount", savingsAmount);
+    // Update the text inside the savings bar
+    const savingsBarText = savingsBars[index].querySelector("text");
+    savingsBarText.textContent = savingsAmount;
   });
 
   // savingsBars.forEach((savingsBar, index) => {
@@ -1298,6 +1316,12 @@ function updatePaths() {
   console.log("h: ", h);
 
   //savingsLine.setAttribute("transform", `translate(0, ${h})`);
+
+  yaxisText.forEach((text, index) => {
+    const percentage = ((index + 1) * 50000) / maxYearlyCollegeCost; // Calculate percentage based on index
+    const ypos = -percentage * 1000;
+    text.setAttribute("y", ypos);
+  });
 }
 
 function showBarGraph() {

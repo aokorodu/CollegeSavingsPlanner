@@ -17,58 +17,105 @@
 
       </div>
       <div class="svgHolder">
-        <svg id="svg" width="450" height="450" viewBox="0 0 1000 1000">
+        <svg id="svg" width="550" height="550" viewBox="-100 -100 1200 1200">
           <defs>
             <g id="barGraphic">
-              <rect x="5" y="0" width="245" height="1000" />
-              <path d="M0 1000 H250" stroke="#ffffff" fill="none" stroke-width="1" vector-effect="non-scaling-stroke"/>
+              <rect x="5" y="-1000" width="245" height="1000" />
+              <path d="M5 -20 H250" stroke="#000" fill="none" stroke-width="40" stroke-opacity=".4" />
+              <!-- <text x="125" y="29" text-anchor="middle" font-size="24" fill="#ffffff" transform="scale(1 -1)">$2,345</text> -->
             </g>
+            <clipPath id="rectClip">
+              <rect x="0" y="0" width="1000" height="1000" />
+            </clipPath>
+            <clipPath id="axisClip">
+              <rect x="-100" y="0" width="1000" height="1000" />
+            </clipPath>
           </defs>
-          <rect id="background" x="0" y="0" width="1000" height="1000"></rect>
-          <g id="barGraph" class="graph hidden" transform="translate(0 1000) scale(1 -1)">
-            <g id="barGraphBars">
+          <g id="graphs" class="graphs">
+            <g id="barGraph" class="graph hidden" transform="translate(0 1000) scale(1 -1)">
+              <g id="barGraphBars" clip-path="url(#rectClip)">
 
-                <use id="bar1" class="bar" href="#barGraphic" x="0" y="0" transform="scale(1)"></use>
-                <use id="bar2" class="bar" href="#barGraphic" x="250" y="0" transform="scale(1)"></use>
-                <use id="bar3" class="bar" href="#barGraphic" x="500" y="0" transform="scale(1)"></use>
-                <use id="bar4" class="bar" href="#barGraphic" x="750" y="0" transform="scale(1)"></use>
+                <g id="bar1" class="bar">
+                  <use href="#barGraphic" x="0" y="0" transform="scale(1)"></use>
+                  <text x="125" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                </g>
+                <g id="bar2" class="bar">
+                  <use href="#barGraphic" x="250" y="0" transform="scale(1)"></use>
+                  <text x="375" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                </g>
+                <g id="bar3" class="bar">
+                  <use href="#barGraphic" x="500" y="0" transform="scale(1)"></use>
+                  <text x="625" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                </g>
+                <g id="bar4" class="bar">
+                  <use href="#barGraphic" x="750" y="0" transform="scale(1)"></use>
+                  <text x="875" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                </g>
 
-                <use id="savingsBar1" class="savingsBar" href="#barGraphic" x="0" y="0" transform="scale(1 .5)"></use>
-                <use id="savingsBar2" class="savingsBar" href="#barGraphic" x="250" y="0" transform="scale(1)"></use>
-                <use id="savingsBar3" class="savingsBar" href="#barGraphic" x="500" y="0" transform="scale(1)"></use>
-                <use id="savingsBar4" class="savingsBar" href="#barGraphic" x="750" y="0" transform="scale(1)"></use>
+                <g id="savingsBar1" class="savingsBar">
+                  <use href="#barGraphic" x="0" y="0" transform="scale(1)"></use>
+                  <text x="125" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                </g>
+                <g id="savingsBar2" class="savingsBar">
+                  <use href="#barGraphic" x="250" y="0" transform="scale(1)"></use>
+                  <text x="375" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                </g>
+                <g id="savingsBar3" class="savingsBar">
+                  <use href="#barGraphic" x="500" y="0" transform="scale(1)"></use>
+                  <text x="625" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                </g>
+                <g id="savingsBar4" class="savingsBar">
+                  <use href="#barGraphic" x="750" y="0" transform="scale(1)"></use>
+                  <text x="875" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                </g>
 
-             
 
-              <!-- <g id="savingsLine" transform="translate(0 100)">
+
+                <!-- <g id="savingsLine" transform="translate(0 100)">
               <path stroke='#fff' stroke-width="1" d="M0 0 H1000" stroke-opacity="1" />
             </g> -->
-              <rect id="outline" x="0" y="0" width="1000" height="1000" fill="none" stroke="#000" stroke-width="2">
-              </rect>
+                <rect id="outline" x="0" y="0" width="1000" height="1000" fill="none" stroke="#000" stroke-width="2">
+                </rect>
+              </g>
+              <g id="yaxis" class="yaxis" clip-path="url(#axisClip)">
+                <text x="-10" y="-100" text-anchor="end" font-size="24" class="yaxisText">50k</text>
+                <text x="-10" y="-200" text-anchor="end" font-size="24" class="yaxisText">100k</text>
+                <text x="-10" y="-300" text-anchor="end" font-size="24" class="yaxisText">150k</text>
+                <text x="-10" y="-400" text-anchor="end" font-size="24" class="yaxisText">200k</text>
+                <text x="-10" y="-500" text-anchor="end" font-size="24" class="yaxisText">250k</text>
+                <text x="-10" y="-600" text-anchor="end" font-size="24" class="yaxisText">300k</text>
+                <text x="-10" y="-100" text-anchor="end" font-size="24" class="yaxisText">350k</text>
+                <text x="-10" y="-200" text-anchor="end" font-size="24" class="yaxisText">400k</text>
+                <text x="-10" y="-300" text-anchor="end" font-size="24" class="yaxisText">450k</text>
+                <text x="-10" y="-400" text-anchor="end" font-size="24" class="yaxisText">500k</text>
+                <text x="-10" y="-500" text-anchor="end" font-size="24" class="yaxisText">550k</text>
+                <text x="-10" y="-600" text-anchor="end" font-size="24" class="yaxisText">600k</text>
+              </g>
             </g>
-          </g>
-          <g id="pieChart" class="graph">
-            <g transform="translate(500 500) rotate(-90) scale(1.5)">
-              <circle id="overflowPath" cx="0" cy="0" r="300" fill="none" stroke="#00a0df" stroke-opacity="1"
-                stroke-width="50" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75">
-              </circle>
-            </g>
-            <g transform="translate(500 500) rotate(-90)">
-              <circle id="circleOutline" cx="0" cy="0" r="300" fill="none" stroke="#f0f0f0" stroke-opacity="1"
-                stroke-width="270"></circle>
+            <g id="pieChart" class="graph">
+              <g transform="translate(500 500) rotate(-90) scale(1.5)">
+                <circle id="overflowPath" cx="0" cy="0" r="300" fill="none" stroke="#00a0df" stroke-opacity="1"
+                  stroke-width="50" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75">
+                </circle>
+              </g>
+              <g transform="translate(500 500) rotate(-90)">
+                <circle id="circleOutline" cx="0" cy="0" r="300" fill="none" stroke="#f0f0f0" stroke-opacity="1"
+                  stroke-width="270"></circle>
 
-              <circle id="circleBG" cx="0" cy="0" r="300" fill="none" stroke="#00539B" stroke-opacity="1"
-                stroke-width="250"></circle>
+                <circle id="circleBG" cx="0" cy="0" r="300" fill="none" stroke="#00539B" stroke-opacity="1"
+                  stroke-width="250"></circle>
 
-              <circle id="savedPath" cx="0" cy="0" r="300" fill="none" stroke="#1086d5" stroke-width="250"
-                stroke-linecap="none" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75">
-              </circle>
+                <circle id="savedPath" cx="0" cy="0" r="300" fill="none" stroke="#1086d5" stroke-width="250"
+                  stroke-linecap="none" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75">
+                </circle>
 
-              <g id="dividerPath">
-                <path d="M175 0 H425" stroke="#fff" stroke-width="5" stroke-linecap="none"></path>
+                <g id="dividerPath">
+                  <path d="M175 0 H425" stroke="#fff" stroke-width="5" stroke-linecap="none"></path>
+                </g>
               </g>
             </g>
           </g>
+
 
         </svg>
         <div id="iconHolder">
@@ -79,20 +126,14 @@
       <div class="summaryHolder">
         <div class="summary left"><span>projected 529 savings:</span><span id="projectedSavings">0</span></div>
         <div class="summary left">
-          <span>alternative funding needed:</span>
+          <span>total alt funding needed:</span>
           <span id="fundingNeededText">0</span>
         </div>
         <div class="summary left"><span>projected savings percentage:</span><span id="projectedPercentSaved">0</span>
         </div>
       </div>
     </div>
-    <!-- <div id="summaryText">0</div> -->
-    <div id="summaryText">
 
-
-
-
-    </div>
     <div class="sliderHolder">
       <div class="select">
         <select id="collegeSelect">
