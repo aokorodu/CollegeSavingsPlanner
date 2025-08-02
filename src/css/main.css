@@ -222,7 +222,7 @@ input[type="text"]::placeholder {
 }
 
 .barText {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 600;
   fill: #ffffff;
   text-anchor: middle;
