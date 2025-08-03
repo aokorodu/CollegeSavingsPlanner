@@ -19,9 +19,14 @@
       <div class="svgHolder">
         <svg id="svg" width="550" height="550" viewBox="-100 -100 1200 1200">
           <defs>
+            <linearGradient id="numberBackgroundGradient" gradientUnits="userSpaceOnUse" x1="0" y1="-80" x2="0" y2="0">
+              <stop offset="0%" stop-color="#000" stop-opacity="0%" />
+              <stop offset="100%" stop-color="#000" stop-opacity="25%"/>
+            </linearGradient>
             <g id="barGraphic">
               <rect x="5" y="-2000" width="245" height="2000" rx="10" ry="10"/>
-              <path d="M5 -20 H250" stroke="#000" fill="none" stroke-width="40" stroke-opacity=".4" />
+              <rect x="5" y="-80" width="245" height="80" rx="10" ry="10" fill="url(#numberBackgroundGradient)" stroke="none"/>
+              <!-- <path d="M5 -20 H250" stroke="url(#numberBackgroundGradient)" fill="none" stroke-width="40" stroke-opacity=".4" /> -->
               <!-- <text x="125" y="29" text-anchor="middle" font-size="24" fill="#ffffff" transform="scale(1 -1)">$2,345</text> -->
             </g>
             <clipPath id="rectClip">
@@ -30,6 +35,7 @@
             <clipPath id="axisClip">
               <rect x="-100" y="0" width="1100" height="1000" />
             </clipPath>
+            
           </defs>
           <g id="graphs" class="graphs">
             <g id="barGraph" class="graph hidden" transform="translate(0 1000) scale(1 -1)">
@@ -87,36 +93,36 @@
 
                 <g id="bar1" class="bar">
                   <use href="#barGraphic" x="0" y="0" transform="scale(1)"></use>
-                  <text x="125" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                  <text x="125" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
                 </g>
                 <g id="bar2" class="bar">
                   <use href="#barGraphic" x="250" y="0" transform="scale(1)"></use>
-                  <text x="375" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                  <text x="375" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
                 </g>
                 <g id="bar3" class="bar">
                   <use href="#barGraphic" x="500" y="0" transform="scale(1)"></use>
-                  <text x="625" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                  <text x="625" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
                 </g>
                 <g id="bar4" class="bar">
                   <use href="#barGraphic" x="750" y="0" transform="scale(1)"></use>
-                  <text x="875" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                  <text x="875" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
                 </g>
 
                 <g id="savingsBar1" class="savingsBar">
                   <use href="#barGraphic" x="0" y="0" transform="scale(1)"></use>
-                  <text x="125" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                  <text x="125" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
                 </g>
                 <g id="savingsBar2" class="savingsBar">
                   <use href="#barGraphic" x="250" y="0" transform="scale(1)"></use>
-                  <text x="375" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                  <text x="375" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
                 </g>
                 <g id="savingsBar3" class="savingsBar">
                   <use href="#barGraphic" x="500" y="0" transform="scale(1)"></use>
-                  <text x="625" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                  <text x="625" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
                 </g>
                 <g id="savingsBar4" class="savingsBar">
                   <use href="#barGraphic" x="750" y="0" transform="scale(1)"></use>
-                  <text x="875" y="30" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                  <text x="875" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
                 </g>
 
 

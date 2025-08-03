@@ -227,6 +227,8 @@ input[type="text"]::placeholder {
   fill: #ffffff;
   text-anchor: middle;
   transform: scale(1, -1);
+  stroke: none;
+  letter-spacing: 2px;
 }
 
 .graphs {
