@@ -1003,7 +1003,7 @@ const pieIcon = document.getElementById("pieIcon");
 const barIcon = document.getElementById("barIcon");
 
 // bar chart text
-const yaxisText = document.querySelectorAll("#yaxis > text");
+const yaxisText = document.querySelectorAll(".yaxisText");
 
 let yearsToCollege = 0;
 let yearsOfCollege = 4;
@@ -1321,7 +1321,7 @@ function updatePaths() {
   yaxisText.forEach((text, index) => {
     const percentage = ((index + 1) * 50000) / maxYearlyCollegeCost; // Calculate percentage based on index
     const ypos = -percentage * 1000;
-    text.setAttribute("y", ypos);
+    text.setAttribute("transform", `scale(1 -1) translate(0 ${ypos})`);
   });
 }
 

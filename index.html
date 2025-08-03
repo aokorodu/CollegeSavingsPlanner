@@ -20,7 +20,7 @@
         <svg id="svg" width="550" height="550" viewBox="-100 -100 1200 1200">
           <defs>
             <g id="barGraphic">
-              <rect x="5" y="-1000" width="245" height="1000" />
+              <rect x="5" y="-2000" width="245" height="2000" rx="10" ry="10"/>
               <path d="M5 -20 H250" stroke="#000" fill="none" stroke-width="40" stroke-opacity=".4" />
               <!-- <text x="125" y="29" text-anchor="middle" font-size="24" fill="#ffffff" transform="scale(1 -1)">$2,345</text> -->
             </g>
@@ -28,11 +28,61 @@
               <rect x="0" y="0" width="1000" height="1000" />
             </clipPath>
             <clipPath id="axisClip">
-              <rect x="-100" y="0" width="1000" height="1000" />
+              <rect x="-100" y="0" width="1100" height="1000" />
             </clipPath>
           </defs>
           <g id="graphs" class="graphs">
             <g id="barGraph" class="graph hidden" transform="translate(0 1000) scale(1 -1)">
+              <g id="yaxis" class="yaxis" clip-path="url(#axisClip)">
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">50k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">100k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">150k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">200k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">250k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">300k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">350k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">400k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">450k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">500k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">550k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+                <g class="yaxisText">
+                  <text x="-10" y="0" text-anchor="end" font-size="24">600k</text>
+                  <path d="M0 0 H1000" stroke="#000" />
+                </g>
+              </g>
               <g id="barGraphBars" clip-path="url(#rectClip)">
 
                 <g id="bar1" class="bar">
@@ -77,20 +127,7 @@
                 <rect id="outline" x="0" y="0" width="1000" height="1000" fill="none" stroke="#000" stroke-width="2">
                 </rect>
               </g>
-              <g id="yaxis" class="yaxis" clip-path="url(#axisClip)">
-                <text x="-10" y="-100" text-anchor="end" font-size="24" class="yaxisText">50k</text>
-                <text x="-10" y="-200" text-anchor="end" font-size="24" class="yaxisText">100k</text>
-                <text x="-10" y="-300" text-anchor="end" font-size="24" class="yaxisText">150k</text>
-                <text x="-10" y="-400" text-anchor="end" font-size="24" class="yaxisText">200k</text>
-                <text x="-10" y="-500" text-anchor="end" font-size="24" class="yaxisText">250k</text>
-                <text x="-10" y="-600" text-anchor="end" font-size="24" class="yaxisText">300k</text>
-                <text x="-10" y="-100" text-anchor="end" font-size="24" class="yaxisText">350k</text>
-                <text x="-10" y="-200" text-anchor="end" font-size="24" class="yaxisText">400k</text>
-                <text x="-10" y="-300" text-anchor="end" font-size="24" class="yaxisText">450k</text>
-                <text x="-10" y="-400" text-anchor="end" font-size="24" class="yaxisText">500k</text>
-                <text x="-10" y="-500" text-anchor="end" font-size="24" class="yaxisText">550k</text>
-                <text x="-10" y="-600" text-anchor="end" font-size="24" class="yaxisText">600k</text>
-              </g>
+              
             </g>
             <g id="pieChart" class="graph">
               <g transform="translate(500 500) rotate(-90) scale(1.5)">
