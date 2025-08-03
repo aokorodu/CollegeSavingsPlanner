@@ -937,7 +937,7 @@ const collegeListFinal = [
 const mostExpensiveCollege = collegeListFinal.reduce((max, college) =>
   college.cost > max.cost ? college : max
 );
-console.log("Most expensive college:", mostExpensiveCollege);
+// console.log("Most expensive college:", mostExpensiveCollege);
 
 // UI
 const summaryText = document.querySelector("#summaryText");
@@ -1014,9 +1014,11 @@ let monthlyContribution = 500;
 let initialBalance = 2000;
 let annualRateOfReturn = 6;
 let annualCostIncrease = 5;
+let futureCost = 0;
 
-let endingBalance = 0;
+let amountSaved = 0;
 let percentageSaved = 0;
+let percentages = [];
 
 function initUI() {
   yearsSlider.addEventListener("input", updateYears);
@@ -1079,7 +1081,7 @@ function selectCollege(e) {
     annualCollegeCostText.innerText = convertToDollarString(yearlyCost);
     update();
   } else {
-    console.log("No college selected");
+    // console.log("No college selected");
   }
 }
 
@@ -1140,18 +1142,18 @@ const FV = (PMT, r, n) => {
   return PMT * (((1 + r) ** n - 1) / r);
 };
 
-function calculateEndingBalance(
+function calculateAmountSaved(
   initialBalance,
   monthlyContribution,
   annualRateOfReturn,
   years
 ) {
-  console.log("--------------------------");
-  console.log("Calculating ending balance with the following parameters:");
-  console.log("Initial Balance:", initialBalance);
-  console.log("Monthly Contribution:", monthlyContribution);
-  console.log("Annual Rate of Return:", annualRateOfReturn);
-  console.log("Years until college:", years);
+  // console.log("--------------------------");
+  // console.log("Calculating ending balance with the following parameters:");
+  // console.log("Initial Balance:", initialBalance);
+  // console.log("Monthly Contribution:", monthlyContribution);
+  // console.log("Annual Rate of Return:", annualRateOfReturn);
+  // console.log("Years until college:", years);
 
   // FV = PMT * [((1 + r)^n - 1) / r]
 
@@ -1161,7 +1163,7 @@ function calculateEndingBalance(
   const FV = initialBalance + monthlyContribution * ((mr ** num - 1) / r);
 
   const monthlyRateOfReturn = annualRateOfReturn / 100 / 12;
-  console.log("monthly rate of return:", monthlyRateOfReturn);
+  // console.log("monthly rate of return:", monthlyRateOfReturn);
   const totalMonths = years * 12;
   let balance = initialBalance;
 
@@ -1187,7 +1189,7 @@ function totalFutureCost(currentCost, yearsUntil, totalYears) {
     yearlyCostByYear.push(Math.round(futureYearlyCost));
     futureYearlyCost *= annualCollegeCostIncrease;
   }
-  console.log("yearlyCostByYear", yearlyCostByYear);
+  // console.log("fix this  yearlyCostByYear", yearlyCostByYear);
   return Math.round(futureCost);
 }
 
@@ -1212,7 +1214,9 @@ function convertToDollarString(amount) {
 function updateValues() {
   yearsToCollege = parseFloat(Math.round(yearsSlider.value));
   yearsOfCollege = 4;
-  //   yearlyCost = parseFloat(annualCollegeCostSlider.value);
+
+  futureCost = totalFutureCost(yearlyCost, yearsToCollege, yearsOfCollege);
+
   monthlyContribution = parseFloat(plannedContributionSlider.value);
   let startingAmount = startingAmountInput.value;
   if (startingAmount === "") {
@@ -1229,28 +1233,33 @@ function updateValues() {
     yearsOfCollege
   );
 
-  console.log("maxYearlyCollegeCost", maxYearlyCollegeCost);
+  // console.log("fix this  maxYearlyCollegeCost", maxYearlyCollegeCost);
 
-  endingBalance = calculateEndingBalance(
+  amountSaved = calculateAmountSaved(
     initialBalance,
     monthlyContribution,
     annualRateOfReturn,
     yearsToCollege
   );
+
+  console.log("amountSaved", amountSaved);
+
+  percentageSaved = (amountSaved / futureCost) * 100;
+
+  percentages = yearlyCostByYear.map((cost) => {
+    const percentage = (cost / maxYearlyCollegeCost) * 100;
+    return percentage > 100 ? 100 : percentage;
+  });
 }
 
 function updateSummary() {
-  let futureCost = totalFutureCost(yearlyCost, yearsToCollege, yearsOfCollege);
-  percentageSaved = (endingBalance / futureCost) * 100;
   if (percentageSaved > 200) percentageSaved = 200;
 
-  projectedSavings.innerText = convertToDollarString(endingBalance);
+  projectedSavings.innerText = convertToDollarString(amountSaved);
   projectedTotal.innerText = convertToDollarString(futureCost);
   projectedPercentSaved.innerText =
-    ((endingBalance / futureCost) * 100).toFixed(0) + "%";
-  fundingNeededText.innerText = convertToDollarString(
-    futureCost - endingBalance
-  );
+    ((amountSaved / futureCost) * 100).toFixed(0) + "%";
+  fundingNeededText.innerText = convertToDollarString(futureCost - amountSaved);
 
   // let savedPathValue = percentageSaved > 100 ? 100 : percentageSaved;
   // let overflowPathValue = percentageSaved > 100 ? 100 - percentageSaved : 0;
@@ -1263,7 +1272,7 @@ function updatePaths() {
   let savedPathValue = percentageSaved > 100 ? 100 : percentageSaved;
   let overflowPathValue = percentageSaved > 100 ? 100 - percentageSaved : 0;
 
-  console.log("savedPathValue", savedPathValue);
+  // console.log("savedPathValue", savedPathValue);
   savedPath.setAttribute("stroke-dashoffset", 100 - savedPathValue);
   overflowPath.setAttribute("stroke-dashoffset", overflowPathValue - 100);
   dividerPath.setAttribute(
@@ -1271,39 +1280,31 @@ function updatePaths() {
     `rotate(${(savedPathValue / 100) * 360})`
   );
 
-  const percentages = yearlyCostByYear.map((cost) => {
-    const percentage = (cost / maxYearlyCollegeCost) * 100;
-    return percentage > 100 ? 100 : percentage;
-  });
   console.log("percentages", percentages);
-
+  let totalSaved = 0;
   bars.forEach((bar, index) => {
     const percentage = percentages[index] || 0; // Default to 0 if no value
+
     const height = Math.max((percentage / 100) * 1000, 0); // Minimum height of 5px
-    console.log(
-      "yearly cost",
-      Math.round((percentage / 100) * maxYearlyCollegeCost)
-    );
+
     bar.setAttribute("transform", `translate(0 ${height})`);
     const barText = bar.querySelector("text");
-    barText.textContent = convertToDollarString(
-      (maxYearlyCollegeCost * percentage) / 100
-    ); // Reset text content
+    const cost = (maxYearlyCollegeCost * percentage) / 100;
+    barText.textContent = convertToDollarString(cost); // Reset text content
     let savingsHeight = (height * percentageSaved) / 100;
-    //if (savingsHeight > height) savingsHeight = height;
-    console.log("savingsHeight", savingsHeight);
     savingsBars[index].setAttribute(
       "transform",
       `translate(0 ${savingsHeight})`
     );
-    const savingsAmount = convertToDollarString(
-      maxYearlyCollegeCost * (percentage / 100) * (percentageSaved / 100)
-    );
-    console.log("savingsAmount", savingsAmount);
-    // Update the text inside the savings bar
+    const newPercentage = (percentage / 100) * (percentageSaved / 100);
+    console.log("newPercentage", newPercentage);
+    totalSaved += maxYearlyCollegeCost * newPercentage;
+    const savingsAmount = convertToDollarString(cost * (percentageSaved / 100));
     const savingsBarText = savingsBars[index].querySelector("text");
     savingsBarText.textContent = savingsAmount;
   });
+
+  console.log("totalSaved", totalSaved);
 
   // savingsBars.forEach((savingsBar, index) => {
   //   const percentage = percentages[index] / 2 || 0; // Default to 0 if no value
@@ -1312,8 +1313,8 @@ function updatePaths() {
   //   savingsBar.setAttribute("height", height);
   // });
 
-  const h = (endingBalance / 4 / maxYearlyCollegeCost) * 1000;
-  console.log("h: ", h);
+  const h = (amountSaved / 4 / maxYearlyCollegeCost) * 1000;
+  // console.log("h: ", h);
 
   //savingsLine.setAttribute("transform", `translate(0, ${h})`);
 
