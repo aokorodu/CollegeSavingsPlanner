@@ -279,3 +279,14 @@ input[type="text"]::placeholder {
   stroke: black;
   stroke-width: 1;
 }
+
+.xaxisText {
+  font-size: 26px;
+  fill: #000000;
+  transform: scale(1, -1);
+}
+
+.xaxisText > text {
+  dominant-baseline: hanging;
+  text-anchor: middle;
+}

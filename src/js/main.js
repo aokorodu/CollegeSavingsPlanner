@@ -940,7 +940,6 @@ const mostExpensiveCollege = collegeListFinal.reduce((max, college) =>
 // console.log("Most expensive college:", mostExpensiveCollege);
 
 // UI
-const summaryText = document.querySelector("#summaryText");
 
 // SLIDERS AND INPUTS
 // years until college
