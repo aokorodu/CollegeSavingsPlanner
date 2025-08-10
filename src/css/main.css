@@ -216,6 +216,15 @@ input[type="text"]::placeholder {
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  filter: none;
+  transition-property: filter, transform;
+  transition-duration: var(--transitionDuration);
+  transform: scale(1.2);
+}
+
+.icondeselected {
+  filter: grayscale(100%);
+  transform: scale(1);
 }
 
 #pieIcon {

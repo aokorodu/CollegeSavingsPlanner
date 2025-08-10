@@ -2,16 +2,16 @@
 
 // List of colleges with their average costs and colors
 const collegeListFinal = [
-  {
-    name: "Average in-state Community College",
-    cost: 11723,
-    colors: ["#555879", "#98A1BC"],
-  },
-  {
-    name: "Average out-of-state Community College",
-    cost: 15818,
-    colors: ["#555879", "#98A1BC"],
-  },
+  // {
+  //   name: "Average in-state Community College",
+  //   cost: 11723,
+  //   colors: ["#555879", "#98A1BC"],
+  // },
+  // {
+  //   name: "Average out-of-state Community College",
+  //   cost: 15818,
+  //   colors: ["#555879", "#98A1BC"],
+  // },
   {
     name: "Average in-state Public College",
     cost: 24920,
@@ -23,13 +23,13 @@ const collegeListFinal = [
     colors: ["#555879", "#98A1BC"],
   },
   {
-    name: "Average Private College - Expensive",
-    cost: 70731,
+    name: "Average Private College - Average",
+    cost: 58600,
     colors: ["#555879", "#98A1BC"],
   },
   {
-    name: "Average Private College - Average",
-    cost: 58600,
+    name: "Average Private College - Expensive",
+    cost: 70731,
     colors: ["#555879", "#98A1BC"],
   },
   {
@@ -1005,6 +1005,7 @@ const savingsLine = document.getElementById("savingsLine");
 
 const pieIcon = document.getElementById("pieIcon");
 const barIcon = document.getElementById("barIcon");
+const icons = document.querySelectorAll(".icon");
 
 // bar chart text
 const yaxisText = document.querySelectorAll(".yaxisText");
@@ -1057,8 +1058,16 @@ function initUI() {
 }
 
 function initNavBar() {
-  pieIcon.addEventListener("click", showPieChart);
-  barIcon.addEventListener("click", showBarGraph);
+  pieIcon.addEventListener("click", () => {
+    pieIcon.classList.remove("icondeselected");
+    barIcon.classList.add("icondeselected");
+    showPieChart();
+  });
+  barIcon.addEventListener("click", () => {
+    pieIcon.classList.add("icondeselected");
+    barIcon.classList.remove("icondeselected");
+    showBarGraph();
+  });
 }
 
 function updateStartingAmount(e) {
@@ -1273,7 +1282,7 @@ function updateSummary() {
 
   if (percentageSaved > 100) {
     if (!excessMessageShowing) {
-      fundingNeededTitle.innerText = "potential extra savings";
+      fundingNeededTitle.innerText = "potential excess savings";
       extraFundingInstructions.classList.remove("hiddenMessage");
       excessMessageShowing = true;
     }
@@ -1299,6 +1308,38 @@ function updatePaths() {
   );
 
   console.log("percentages", percentages);
+  updateBarGraph();
+  // let totalSaved = 0;
+  // bars.forEach((bar, index) => {
+  //   const percentage = percentages[index] || 0; // Default to 0 if no value
+
+  //   const height = Math.max((percentage / 100) * 1000, 0); // Minimum height of 5px
+
+  //   bar.setAttribute("transform", `translate(0 ${height})`);
+  //   const barText = bar.querySelector("text");
+  //   const cost = (maxYearlyCollegeCost * percentage) / 100;
+  //   barText.textContent = convertToDollarString(cost); // Reset text content
+  //   let savingsHeight = (height * percentageSaved) / 100;
+  //   savingsBars[index].setAttribute(
+  //     "transform",
+  //     `translate(0 ${savingsHeight})`
+  //   );
+  //   const newPercentage = (percentage / 100) * (percentageSaved / 100);
+  //   console.log("newPercentage", newPercentage);
+  //   totalSaved += maxYearlyCollegeCost * newPercentage;
+  //   const savingsAmount = convertToDollarString(cost * (percentageSaved / 100));
+  //   const savingsBarText = savingsBars[index].querySelector("text");
+  //   savingsBarText.textContent = savingsAmount;
+  // });
+
+  yaxisText.forEach((text, index) => {
+    const percentage = ((index + 1) * 50000) / maxYearlyCollegeCost; // Calculate percentage based on index
+    const ypos = -percentage * 1000;
+    text.setAttribute("transform", `scale(1 -1) translate(0 ${ypos})`);
+  });
+}
+
+function updateBarGraph() {
   let totalSaved = 0;
   bars.forEach((bar, index) => {
     const percentage = percentages[index] || 0; // Default to 0 if no value
@@ -1320,26 +1361,6 @@ function updatePaths() {
     const savingsAmount = convertToDollarString(cost * (percentageSaved / 100));
     const savingsBarText = savingsBars[index].querySelector("text");
     savingsBarText.textContent = savingsAmount;
-  });
-
-  console.log("totalSaved", totalSaved);
-
-  // savingsBars.forEach((savingsBar, index) => {
-  //   const percentage = percentages[index] / 2 || 0; // Default to 0 if no value
-  //   const height = Math.max((percentage / 100) * 1000, 0); // Minimum height of 5px
-  //   console.log("height", height);
-  //   savingsBar.setAttribute("height", height);
-  // });
-
-  const h = (amountSaved / 4 / maxYearlyCollegeCost) * 1000;
-  // console.log("h: ", h);
-
-  //savingsLine.setAttribute("transform", `translate(0, ${h})`);
-
-  yaxisText.forEach((text, index) => {
-    const percentage = ((index + 1) * 50000) / maxYearlyCollegeCost; // Calculate percentage based on index
-    const ypos = -percentage * 1000;
-    text.setAttribute("transform", `scale(1 -1) translate(0 ${ypos})`);
   });
 }
 
