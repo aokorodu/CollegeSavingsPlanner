@@ -981,7 +981,7 @@ const fundingNeededTitle = document.getElementById("fundingNeededTitle");
 const extraFundingInstructions = document.getElementById(
   "extraFundingInstructions"
 );
-
+const fundsNeeded = document.querySelectorAll(".fundsNeeded");
 // SVG paths for pie chart
 const savedPath = document.getElementById("savedPath");
 const overflowPath = document.getElementById("overflowPath");
@@ -1013,6 +1013,7 @@ let yearsToCollege = 0;
 let yearsOfCollege = 4;
 let yearlyCost = 50000;
 let yearlyCostByYear = [];
+let yearlySavedByYear = [];
 let maxYearlyCollegeCost = 0;
 let monthlyContribution = 500;
 let initialBalance = 2000;
@@ -1261,6 +1262,12 @@ function updateValues() {
 
   percentageSaved = (amountSaved / futureCost) * 100;
 
+  yearlySavedByYear = [];
+  for (let i = 0; i < yearlyCostByYear.length; i++) {
+    const savedThisYear = (yearlyCostByYear[i] * percentageSaved) / 100;
+    yearlySavedByYear.push(Math.round(savedThisYear));
+  }
+
   percentages = yearlyCostByYear.map((cost) => {
     const percentage = (cost / maxYearlyCollegeCost) * 100;
     return percentage > 100 ? 100 : percentage;
@@ -1292,6 +1299,12 @@ function updateSummary() {
       excessMessageShowing = false;
     }
   }
+
+  fundsNeeded.forEach((fund, index) => {
+    const amt = yearlyCostByYear[index] - yearlySavedByYear[index];
+    console.log("amt", amt);
+    fund.innerText = convertToDollarString(amt);
+  });
 }
 
 function updatePaths() {
@@ -1357,7 +1370,7 @@ function updateBarGraph() {
     const newPercentage = (percentage / 100) * (percentageSaved / 100);
     console.log("newPercentage", newPercentage);
     totalSaved += maxYearlyCollegeCost * newPercentage;
-    const savingsAmount = convertToDollarString(cost * (percentageSaved / 100));
+    const savingsAmount = convertToDollarString(yearlySavedByYear[index]);
     const savingsBarText = savingsBars[index].querySelector("text");
     savingsBarText.textContent = savingsAmount;
   });

@@ -21,11 +21,12 @@
           <defs>
             <linearGradient id="numberBackgroundGradient" gradientUnits="userSpaceOnUse" x1="0" y1="-80" x2="0" y2="0">
               <stop offset="0%" stop-color="#000" stop-opacity="0%" />
-              <stop offset="100%" stop-color="#000" stop-opacity="25%"/>
+              <stop offset="100%" stop-color="#000" stop-opacity="25%" />
             </linearGradient>
             <g id="barGraphic">
-              <rect x="5" y="-2000" width="245" height="2000" rx="10" ry="10"/>
-              <rect x="5" y="-80" width="245" height="80" rx="10" ry="10" fill="url(#numberBackgroundGradient)" stroke="none"/>
+              <rect x="5" y="-2000" width="245" height="2000" rx="10" ry="10" />
+              <rect x="5" y="-80" width="245" height="80" rx="10" ry="10" fill="url(#numberBackgroundGradient)"
+                stroke="none" />
               <!-- <path d="M5 -20 H250" stroke="url(#numberBackgroundGradient)" fill="none" stroke-width="40" stroke-opacity=".4" /> -->
               <!-- <text x="125" y="29" text-anchor="middle" font-size="24" fill="#ffffff" transform="scale(1 -1)">$2,345</text> -->
             </g>
@@ -35,7 +36,7 @@
             <clipPath id="axisClip">
               <rect x="-100" y="0" width="1100" height="1000" />
             </clipPath>
-            
+
           </defs>
           <g id="graphs" class="graphs">
             <g id="barGraph" class="graph hidden" transform="translate(0 1000) scale(1 -1)">
@@ -150,7 +151,7 @@
                 <rect id="outline" x="0" y="0" width="1000" height="1000" fill="none" stroke="#000" stroke-width="2">
                 </rect>
               </g>
-              
+
             </g>
             <g id="pieChart" class="graph">
               <g transform="translate(500 500) rotate(-90) scale(1.5)">
@@ -190,10 +191,32 @@
           <span id="fundingNeededTitle">total alt funding needed:</span>
           <span id="fundingNeededText">0</span>
         </div>
-        <div id="extraFundingInstructions" class="extraFundingInstructions summary left hiddenMessage">
-          <span style="font-weight: bold;">Note: </span>You may have excess funds available with the selected contribution. <a target="_blank" href="https://investor.vanguard.com/investor-resources-education/article/things-that-may-surprise-you-about-529s">See what you can do with them.</a>
+        <div id="classBreakdown">
+          <div class="breakdownSummary left">
+            <span id="">freshman</span>
+            <span class="fundsNeeded" id="frosh_fundsNeeded">0</span>
+          </div>
+          <div class="breakdownSummary left">
+            <span id="">sophmore</span>
+            <span class="fundsNeeded" id="soph_fundsNeeded">0</span>
+          </div>
+          <div class="breakdownSummary left">
+            <span id="">junior</span>
+            <span class="fundsNeeded" id="jun_fundsNeeded">0</span>
+          </div>
+          <div class="breakdownSummary left">
+            <span id="">senior</span>
+            <span class="fundsNeeded" id="sen_fundsNeeded">0</span>
+          </div>
         </div>
-        
+
+        <div id="extraFundingInstructions" class="extraFundingInstructions summary left hiddenMessage">
+          <span style="font-weight: bold;">Note: </span>You may have excess funds available with the selected
+          contribution. <a target="_blank"
+            href="https://investor.vanguard.com/investor-resources-education/article/things-that-may-surprise-you-about-529s">See
+            what you can do with them.</a>
+        </div>
+
       </div>
     </div>
 
