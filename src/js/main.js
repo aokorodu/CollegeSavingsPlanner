@@ -978,6 +978,10 @@ const projectedSavings = document.getElementById("projectedSavings");
 const projectedTotal = document.getElementById("projectedTotal");
 const projectedPercentSaved = document.getElementById("projectedPercentSaved");
 const fundingNeededText = document.getElementById("fundingNeededText");
+const fundingNeededTitle = document.getElementById("fundingNeededTitle");
+const extraFundingInstructions = document.getElementById(
+  "extraFundingInstructions"
+);
 
 // SVG paths for pie chart
 const savedPath = document.getElementById("savedPath");
@@ -1019,6 +1023,9 @@ let futureCost = 0;
 let amountSaved = 0;
 let percentageSaved = 0;
 let percentages = [];
+
+// messaging variables
+let excessMessageShowing = false;
 
 function initUI() {
   yearsSlider.addEventListener("input", updateYears);
@@ -1259,13 +1266,24 @@ function updateSummary() {
   projectedTotal.innerText = convertToDollarString(futureCost);
   projectedPercentSaved.innerText =
     ((amountSaved / futureCost) * 100).toFixed(0) + "%";
-  fundingNeededText.innerText = convertToDollarString(futureCost - amountSaved);
+  let amt = futureCost - amountSaved;
+  let prefix = amt < 0 ? "+" : "";
+  if (amt < 0) amt *= -1;
+  fundingNeededText.innerText = `${prefix}${convertToDollarString(amt)}`;
 
-  // let savedPathValue = percentageSaved > 100 ? 100 : percentageSaved;
-  // let overflowPathValue = percentageSaved > 100 ? 100 - percentageSaved : 0;
-
-  // savedPath.setAttribute("stroke-dashoffset", 100 - savedPathValue);
-  // overflowPath.setAttribute("stroke-dashoffset", overflowPathValue - 100);
+  if (percentageSaved > 100) {
+    if (!excessMessageShowing) {
+      fundingNeededTitle.innerText = "potential extra savings";
+      extraFundingInstructions.classList.remove("hiddenMessage");
+      excessMessageShowing = true;
+    }
+  } else {
+    if (excessMessageShowing) {
+      fundingNeededTitle.innerText = "total alt funding needed";
+      extraFundingInstructions.classList.add("hiddenMessage");
+      excessMessageShowing = false;
+    }
+  }
 }
 
 function updatePaths() {
