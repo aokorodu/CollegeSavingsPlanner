@@ -971,6 +971,7 @@ const annualCollegeCostSlider = document.getElementById(
 const annualCollegeCostText = document.getElementById("annualCollegeCostText");
 // college select
 const collegeSelect = document.getElementById("collegeSelect");
+const periodSelect = document.getElementById("periodSelect");
 
 // summary text
 const projectedSavings = document.getElementById("projectedSavings");
@@ -1025,10 +1026,16 @@ let amountSaved = 0;
 let percentageSaved = 0;
 let percentages = [];
 
+let periods = 12; // Monthly contributions
+
 // messaging variables
 let excessMessageShowing = false;
 
 function initUI() {
+  periodSelect.addEventListener("change", (e) => {
+    periods = e.target.value;
+    update();
+  });
   yearsSlider.addEventListener("input", updateYears);
   plannedContributionSlider.addEventListener(
     "input",
@@ -1164,23 +1171,14 @@ function calculateAmountSaved(
   annualRateOfReturn,
   years
 ) {
-  // console.log("--------------------------");
-  // console.log("Calculating ending balance with the following parameters:");
-  // console.log("Initial Balance:", initialBalance);
-  // console.log("Monthly Contribution:", monthlyContribution);
-  // console.log("Annual Rate of Return:", annualRateOfReturn);
-  // console.log("Years until college:", years);
-
-  // FV = PMT * [((1 + r)^n - 1) / r]
-
-  const r = annualRateOfReturn / 100 / 12; // Monthly rate of return
-  const num = years * 12; // Total number of months
+  const r = annualRateOfReturn / 100 / periods; // Monthly rate of return
+  const num = years * periods; // Total number of months
   const mr = 1 + r;
   const FV = initialBalance + monthlyContribution * ((mr ** num - 1) / r);
 
-  const monthlyRateOfReturn = annualRateOfReturn / 100 / 12;
+  const monthlyRateOfReturn = annualRateOfReturn / 100 / periods;
   // console.log("monthly rate of return:", monthlyRateOfReturn);
-  const totalMonths = years * 12;
+  const totalMonths = years * periods;
   let balance = initialBalance;
 
   for (let month = 0; month < totalMonths; month++) {
@@ -1228,6 +1226,7 @@ function convertToDollarString(amount) {
 }
 
 function updateValues() {
+  periods = periodSelect.value;
   yearsToCollege = parseFloat(Math.round(yearsSlider.value));
   yearsOfCollege = 4;
 

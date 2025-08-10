@@ -187,11 +187,9 @@
       <div class="summaryHolder">
         <div class="summary left"><span>projected total cost:</span><span id="projectedTotal">0</span></div>
         <div class="summary left"><span>projected 529 savings:</span><span id="projectedSavings">0</span></div>
-        <div class="summary left">
-          <span id="fundingNeededTitle">total alt funding needed:</span>
-          <span id="fundingNeededText">0</span>
-        </div>
+ 
         <div id="classBreakdown">
+          <span id="fundingNeededTitle">funding needed:</span>
           <div class="breakdownSummary left">
             <span id="">freshman</span>
             <span class="fundsNeeded" id="frosh_fundsNeeded">0</span>
@@ -208,6 +206,10 @@
             <span id="">senior</span>
             <span class="fundsNeeded" id="sen_fundsNeeded">0</span>
           </div>
+        </div>
+        <div class="summary left">
+          <span id="">total funding needed:</span>
+          <span id="fundingNeededText">0</span>
         </div>
 
         <div id="extraFundingInstructions" class="extraFundingInstructions summary left hiddenMessage">
@@ -266,6 +268,24 @@
         <input type="range" id="plannedContributionSlider" min="0" max="3000" value="100" step="1">
         <div id="plannedContributionText" class="sliderValue" style="font-weight: bold; font-size: 1.2rem;">$100</div>
       </div>
+
+
+      <div class="select">
+        <select id="periodSelect">
+          <option value="56" >weekly</option>
+          <option value="26">bi-weekly</option>
+          <option value="24">bi-monthly</option>
+          <option value="12" selected>monthly</option>
+          <option value="4">quarterly</option>
+          <option value="1">yearly</option>
+          
+
+
+
+        </select>
+      </div>
+
+
     </div>
   </div>
   </div>
