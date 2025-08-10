@@ -979,6 +979,9 @@ const projectedTotal = document.getElementById("projectedTotal");
 const projectedPercentSaved = document.getElementById("projectedPercentSaved");
 const fundingNeededText = document.getElementById("fundingNeededText");
 const fundingNeededTitle = document.getElementById("fundingNeededTitle");
+const totalFundingNeededTitle = document.getElementById(
+  "totalFundingNeededTitle"
+);
 const extraFundingInstructions = document.getElementById(
   "extraFundingInstructions"
 );
@@ -1288,12 +1291,14 @@ function updateSummary() {
   if (percentageSaved > 100) {
     if (!excessMessageShowing) {
       fundingNeededTitle.innerText = "potential excess savings";
+      totalFundingNeededTitle.innerText = "potential total excess funding";
       extraFundingInstructions.classList.remove("hiddenMessage");
       excessMessageShowing = true;
     }
   } else {
     if (excessMessageShowing) {
       fundingNeededTitle.innerText = "total alt funding needed";
+      totalFundingNeededTitle.innerText = "total funding needed";
       extraFundingInstructions.classList.add("hiddenMessage");
       excessMessageShowing = false;
     }

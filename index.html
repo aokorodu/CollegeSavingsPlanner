@@ -208,7 +208,7 @@
           </div>
         </div>
         <div class="summary left">
-          <span id="">total funding needed:</span>
+          <span id="totalFundingNeededTitle">total funding needed:</span>
           <span id="fundingNeededText">0</span>
         </div>
 
@@ -264,25 +264,24 @@
     </div> -->
 
       <div class="slide">
-        <label for="plannedContributionSlider" style="font-weight: bold; font-size: 1.2rem;">contribution</label>
-        <input type="range" id="plannedContributionSlider" min="0" max="3000" value="100" step="1">
-        <div id="plannedContributionText" class="sliderValue" style="font-weight: bold; font-size: 1.2rem;">$100</div>
-      </div>
-
-
-      <div class="select">
-        <select id="periodSelect">
+        <div style="display: flex; justify-content: flex-start; align-items: center;">
+          <select id="periodSelect">
           <option value="56" >weekly</option>
           <option value="26">bi-weekly</option>
           <option value="24">bi-monthly</option>
           <option value="12" selected>monthly</option>
           <option value="4">quarterly</option>
           <option value="1">yearly</option>
-          
-
-
-
         </select>
+          <label for="plannedContributionSlider">contribution</label></div>
+        
+        <input type="range" id="plannedContributionSlider" min="0" max="3000" value="100" step="1">
+        <div id="plannedContributionText" class="sliderValue" style="font-weight: bold; font-size: 1.2rem;">$100</div>
+      </div>
+
+
+      <div class="select">
+        
       </div>
 
 
