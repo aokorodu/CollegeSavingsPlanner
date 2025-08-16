@@ -1012,6 +1012,7 @@ const icons = document.querySelectorAll(".icon");
 
 // bar chart text
 const yaxisText = document.querySelectorAll(".yaxisText");
+const classBreakdown = document.getElementById("classBreakdown");
 
 let yearsToCollege = 0;
 let yearsOfCollege = 4;
@@ -1071,11 +1072,13 @@ function initNavBar() {
   pieIcon.addEventListener("click", () => {
     pieIcon.classList.remove("icondeselected");
     barIcon.classList.add("icondeselected");
+    classBreakdown.classList.add("closed");
     showPieChart();
   });
   barIcon.addEventListener("click", () => {
     pieIcon.classList.add("icondeselected");
     barIcon.classList.remove("icondeselected");
+    classBreakdown.classList.remove("closed");
     showBarGraph();
   });
 }

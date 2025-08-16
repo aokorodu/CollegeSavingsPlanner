@@ -118,11 +118,19 @@ label {
   padding: 0.25rem 0.25rem 0.25rem 0.5rem;
 }
 
-#classBreakdown {
+.classBreakdown {
   display: flex;
   flex-direction: column;
   justify-content: left;
   gap: 0.5rem;
+  height: 180px;
+  overflow: hidden;
+  transition-property: height;
+  transition-duration: var(--transitionDuration);
+}
+
+.classBreakdown.closed {
+  height: 0;
 }
 
 #val {
