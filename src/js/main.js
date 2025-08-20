@@ -977,6 +977,9 @@ const periodSelect = document.getElementById("periodSelect");
 const projectedSavings = document.getElementById("projectedSavings");
 const projectedTotal = document.getElementById("projectedTotal");
 const projectedPercentSaved = document.getElementById("projectedPercentSaved");
+const projectedExtraHolder = document.getElementById("projectedExtraHolder");
+const projectedExtra = document.getElementById("projectedExtra");
+
 const fundingNeededText = document.getElementById("fundingNeededText");
 const fundingNeededTitle = document.getElementById("fundingNeededTitle");
 const totalFundingNeededTitle = document.getElementById(
@@ -988,7 +991,6 @@ const extraFundingInstructions = document.getElementById(
 const fundsNeeded = document.querySelectorAll(".fundsNeeded");
 // SVG paths for pie chart
 const savedPath = document.getElementById("savedPath");
-const overflowPath = document.getElementById("overflowPath");
 const dividerPath = document.getElementById("dividerPath");
 // SVG rects for bar graph
 const bar1 = document.getElementById("bar1");
@@ -1119,7 +1121,6 @@ function changePathColor(colors) {
   const circleBG = document.getElementById("circleBG");
   // console.log("Changing path colors to:", colors);
   savedPath.setAttribute("stroke", colors[0] || "red");
-  overflowPath.setAttribute("stroke", colors[0]);
   circleBG.setAttribute("stroke", colors[1]);
   bars.forEach((bar) => {
     bar.setAttribute("fill", colors[1]);
@@ -1280,12 +1281,13 @@ function updateValues() {
 }
 
 function updateSummary() {
-  if (percentageSaved > 200) percentageSaved = 200;
+  //if (percentageSaved > 200) percentageSaved = 200;
 
   projectedSavings.innerText = convertToDollarString(amountSaved);
   projectedTotal.innerText = convertToDollarString(futureCost);
-  projectedPercentSaved.innerText =
-    ((amountSaved / futureCost) * 100).toFixed(0) + "%";
+  let val = amountSaved / futureCost;
+  if (val > 1) val = 1;
+  projectedPercentSaved.innerText = (val * 100).toFixed(0) + "%";
   let amt = futureCost - amountSaved;
   let prefix = amt < 0 ? "+" : "";
   if (amt < 0) amt *= -1;
@@ -1297,12 +1299,14 @@ function updateSummary() {
       totalFundingNeededTitle.innerText = "potential total excess funding";
       extraFundingInstructions.classList.remove("hiddenMessage");
       excessMessageShowing = true;
+      projectedExtraHolder.classList.remove("hiddenMessage");
     }
   } else {
     if (excessMessageShowing) {
       fundingNeededTitle.innerText = "total alt funding needed";
       totalFundingNeededTitle.innerText = "total funding needed";
       extraFundingInstructions.classList.add("hiddenMessage");
+      projectedExtraHolder.classList.add("hiddenMessage");
       excessMessageShowing = false;
     }
   }
@@ -1316,11 +1320,13 @@ function updateSummary() {
 
 function updatePaths() {
   let savedPathValue = percentageSaved > 100 ? 100 : percentageSaved;
-  let overflowPathValue = percentageSaved > 100 ? 100 - percentageSaved : 0;
+  let overflowPathValue =
+    percentageSaved < 100 ? 0 : Math.round(percentageSaved - 100);
 
   // console.log("savedPathValue", savedPathValue);
   savedPath.setAttribute("stroke-dashoffset", 100 - savedPathValue);
-  overflowPath.setAttribute("stroke-dashoffset", overflowPathValue - 100);
+  projectedExtra.innerText = `${overflowPathValue}%`;
+  //overflowPath.setAttribute("stroke-dashoffset", overflowPathValue - 100);
   dividerPath.setAttribute(
     "transform",
     `rotate(${(savedPathValue / 100) * 360})`

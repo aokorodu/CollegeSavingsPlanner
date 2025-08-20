@@ -13,11 +13,16 @@
     <h1>College Savings Planner</h1>
     <div id="dataHolder">
       <div class="summaryHolder">
-        <div class="summary right"><span>projected 529 funds/cost:</span><span id="projectedPercentSaved">0</span>
+        <div class="summary right "><span>projected 529 funds/cost:</span>
+          <span id="projectedPercentSaved">0</span>
+          <div id="projectedExtraHolder" class="hiddenMessage">
+            <span>extra:</span>
+            <span id="projectedExtra">+0</span>
+          </div>
         </div>
       </div>
       <div class="svgHolder">
-        <svg id="svg" width="450" height="550" viewBox="-100 -100 1200 1200">
+        <svg id="svg" width="500" height="500" viewBox="0 0 1000 1000">
           <defs>
             <linearGradient id="numberBackgroundGradient" gradientUnits="userSpaceOnUse" x1="0" y1="-80" x2="0" y2="0">
               <stop offset="0%" stop-color="#000" stop-opacity="0%" />
@@ -151,11 +156,11 @@
 
             </g>
             <g id="pieChart" class="graph">
-              <g transform="translate(500 500) rotate(-90) scale(1.5)">
+              <!-- <g transform="translate(500 500) rotate(-90) scale(1.5)">
                 <circle id="overflowPath" cx="0" cy="0" r="300" fill="none" stroke="#00a0df" stroke-opacity="1"
                   stroke-width="50" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75">
                 </circle>
-              </g>
+              </g> -->
               <g transform="translate(500 500) rotate(-90)">
                 <circle id="circleOutline" cx="0" cy="0" r="300" fill="none" stroke="#f0f0f0" stroke-opacity="1"
                   stroke-width="270"></circle>
@@ -220,7 +225,7 @@
 
     <div class="sliderHolder">
       <div class="select">
-        <select id="collegeSelect">
+        <select id="collegeSelect" class="collegeSelect">
         </select>
       </div>
 
@@ -265,7 +270,7 @@
 
       <div class="slide">
         <div style="display: flex; justify-content: flex-start; align-items: center;">
-          <select id="periodSelect">
+          <select class="collegeSelect" id="periodSelect">
             <option value="56">weekly</option>
             <option value="26">bi-weekly</option>
             <option value="24">bi-monthly</option>

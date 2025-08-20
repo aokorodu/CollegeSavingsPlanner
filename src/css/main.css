@@ -109,9 +109,10 @@ body {
   height: 0.1rem;
 }
 
-#collegeSelect {
+.collegeSelect {
   font-size: 1rem;
   padding: 0.25rem;
+  border-radius: 4px;
 }
 
 label {
@@ -123,7 +124,7 @@ label {
   flex-direction: column;
   justify-content: left;
   gap: 0.5rem;
-  height: 180px;
+  height: 220px;
   overflow: hidden;
   transition-property: height;
   transition-duration: var(--transitionDuration);
