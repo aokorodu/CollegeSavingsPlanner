@@ -1312,9 +1312,14 @@ function updateSummary() {
   }
 
   fundsNeeded.forEach((fund, index) => {
-    const amt = yearlyCostByYear[index] - yearlySavedByYear[index];
+    let prefix = "";
+    let amt = yearlyCostByYear[index] - yearlySavedByYear[index];
+    if (amt < 0) {
+      amt *= -1;
+      prefix = "+";
+    }
     console.log("amt", amt);
-    fund.innerText = convertToDollarString(amt);
+    fund.innerText = `${prefix}${convertToDollarString(amt)}`;
   });
 }
 
