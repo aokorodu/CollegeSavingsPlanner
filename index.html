@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="svgHolder">
-        <svg id="svg" width="550" height="550" viewBox="-100 -100 1200 1200">
+        <svg id="svg" width="450" height="550" viewBox="-100 -100 1200 1200">
           <defs>
             <linearGradient id="numberBackgroundGradient" gradientUnits="userSpaceOnUse" x1="0" y1="-80" x2="0" y2="0">
               <stop offset="0%" stop-color="#000" stop-opacity="0%" />
@@ -106,7 +106,6 @@
                 </g>
               </g>
 
-
               <g id="barGraphBars" clip-path="url(#rectClip)">
 
                 <g id="bar1" class="bar">
@@ -143,8 +142,6 @@
                   <text x="875" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
                 </g>
 
-
-
                 <!-- <g id="savingsLine" transform="translate(0 100)">
               <path stroke='#fff' stroke-width="1" d="M0 0 H1000" stroke-opacity="1" />
             </g> -->
@@ -177,7 +174,6 @@
             </g>
           </g>
 
-
         </svg>
         <div id="iconHolder">
           <div id="pieIcon" class="icon"></div>
@@ -187,7 +183,7 @@
       <div class="summaryHolder">
         <div class="summary left"><span>projected total cost:</span><span id="projectedTotal">0</span></div>
         <div class="summary left"><span>projected 529 savings:</span><span id="projectedSavings">0</span></div>
- 
+
         <div id="classBreakdown" class="classBreakdown closed">
           <span id="fundingNeededTitle">funding needed:</span>
           <div class="breakdownSummary left">
@@ -230,19 +226,23 @@
 
       <div class="slide">
         <label for="yearsSlider">years until college</label>
-        <input type="range" id="yearsSlider" min="0" max="30" value="17" step=".1">
+        <!--       <input type="range" id="yearsSlider" min="0" max="30" value="17" step=".1"> -->
+        <input id="yearsSlider" type="range" value="17" min="0" max="30" step=".1"
+          class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
         <div id="yearsUntilText" class="sliderValue">17</div>
       </div>
 
       <div class="slide">
         <label for="annualCollegeCostSlider">current yearly cost</label>
-        <input type="range" id="annualCollegeCostSlider" min="1000" max="100000" value="42000" step="100">
+        <input type="range" id="annualCollegeCostSlider" min="1000" max="100000" value="42000" step="100"
+          class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
         <div id="annualCollegeCostText" class="sliderValue">$42,000</div>
       </div>
 
       <div class="slide">
         <label for="annualCostIncreaseSlider">annual cost increase</label>
-        <input type="range" id="annualCostIncreaseSlider" min="0" max="10" value="5" step=".1">
+        <input type="range" id="annualCostIncreaseSlider" min="0" max="10" value="5" step=".1"
+          class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
         <div id="costIncreaseText" class="sliderValue">5.00%</div>
       </div>
 
@@ -253,10 +253,10 @@
 
       <div class="slide">
         <label for="ROfRSlider">rate of return</label>
-        <input type="range" id="ROfRSlider" min="0" max="10" value="6" step=".1">
+        <input type="range" id="ROfRSlider" min="0" max="10" value="6" step=".1"
+          class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
         <div id="ROfRText" class="sliderValue">6%</div>
       </div>
-
 
       <!-- <div class="slide">
       <label for="annualCollegeCostInput">current yearly cost</label>
@@ -266,29 +266,30 @@
       <div class="slide">
         <div style="display: flex; justify-content: flex-start; align-items: center;">
           <select id="periodSelect">
-          <option value="56" >weekly</option>
-          <option value="26">bi-weekly</option>
-          <option value="24">bi-monthly</option>
-          <option value="12" selected>monthly</option>
-          <option value="4">quarterly</option>
-          <option value="1">yearly</option>
-        </select>
-          <label for="plannedContributionSlider">contribution</label></div>
-        
-        <input type="range" id="plannedContributionSlider" min="0" max="3000" value="100" step="25">
+            <option value="56">weekly</option>
+            <option value="26">bi-weekly</option>
+            <option value="24">bi-monthly</option>
+            <option value="12" selected>monthly</option>
+            <option value="4">quarterly</option>
+            <option value="1">yearly</option>
+          </select>
+          <label for="plannedContributionSlider">contribution</label>
+        </div>
+
+        <input type="range" id="plannedContributionSlider" min="0" max="3000" value="100" step="25"
+          class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
         <div id="plannedContributionText" class="sliderValue" style="font-weight: bold; font-size: 1.2rem;">$100</div>
       </div>
 
-
       <div class="select">
-        
-      </div>
 
+      </div>
 
     </div>
   </div>
   </div>
 </body>
 <script src="./src/js/main.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 
 </html>
