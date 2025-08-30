@@ -1220,7 +1220,21 @@ function maxYearlyCost(currentCost, yearsUntil, totalYears) {
   for (let i = 1; i < yearsUntil + totalYears; i++) {
     futureYearlyCost *= annualCollegeCostIncrease;
   }
-  return Math.round(futureYearlyCost);
+  console.log(
+    ".. future yearly",
+    Math.round(futureYearlyCost),
+    " yearlySavedByYear",
+    Math.round(yearlySavedByYear[3])
+  );
+  console.log(
+    ".. futureYearlyCost > yearlySavedByYear[3]",
+    Math.round(futureYearlyCost) > Math.round(yearlySavedByYear[3])
+  );
+  const val =
+    Math.round(futureYearlyCost) > Math.round(yearlySavedByYear[3])
+      ? futureYearlyCost
+      : yearlySavedByYear[3];
+  return Math.round(val);
 }
 
 function convertToDollarString(amount) {
@@ -1234,6 +1248,7 @@ function convertToDollarString(amount) {
 
 function updateValues() {
   periods = periodSelect.value;
+  console.log(".. periods", periods);
   yearsToCollege = parseFloat(Math.round(yearsSlider.value));
   yearsOfCollege = 4;
 
@@ -1249,13 +1264,8 @@ function updateValues() {
   initialBalance = parseFloat(startingAmountNum);
   annualRateOfReturn = parseFloat(ROfRSlider.value);
   annualCostIncrease = parseFloat(annualCostIncreaseSlider.value);
-  maxYearlyCollegeCost = maxYearlyCost(
-    mostExpensiveCollege.cost,
-    yearsToCollege,
-    yearsOfCollege
-  );
 
-  // console.log("fix this  maxYearlyCollegeCost", maxYearlyCollegeCost);
+  console.log(".. maxYearlyCollegeCost", maxYearlyCollegeCost);
 
   amountSaved = calculateAmountSaved(
     initialBalance,
@@ -1264,7 +1274,7 @@ function updateValues() {
     yearsToCollege
   );
 
-  console.log("amountSaved", amountSaved);
+  // console.log("amountSaved", amountSaved);
 
   percentageSaved = (amountSaved / futureCost) * 100;
 
@@ -1273,6 +1283,16 @@ function updateValues() {
     const savedThisYear = (yearlyCostByYear[i] * percentageSaved) / 100;
     yearlySavedByYear.push(Math.round(savedThisYear));
   }
+
+  console.log("... yearlySavedByYear", yearlySavedByYear);
+
+  maxYearlyCollegeCost = maxYearlyCost(
+    mostExpensiveCollege.cost,
+    yearsToCollege,
+    yearsOfCollege
+  );
+
+  console.log("... maxYearlyCollegeCost", maxYearlyCollegeCost);
 
   percentages = yearlyCostByYear.map((cost) => {
     const percentage = (cost / maxYearlyCollegeCost) * 100;
@@ -1318,7 +1338,7 @@ function updateSummary() {
       amt *= -1;
       prefix = "+";
     }
-    console.log("amt", amt);
+    // console.log("amt", amt);
     fund.innerText = `${prefix}${convertToDollarString(amt)}`;
   });
 }
