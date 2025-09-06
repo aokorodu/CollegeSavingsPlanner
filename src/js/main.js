@@ -1,17 +1,5 @@
 // DATA
-
-// List of colleges with their average costs and colors
-const collegeListFinal = [
-  // {
-  //   name: "Average in-state Community College",
-  //   cost: 11723,
-  //   colors: ["#555879", "#98A1BC"],
-  // },
-  // {
-  //   name: "Average out-of-state Community College",
-  //   cost: 15818,
-  //   colors: ["#555879", "#98A1BC"],
-  // },
+const Average = [
   {
     name: "Average in-state Public College",
     cost: 24920,
@@ -32,6 +20,8 @@ const collegeListFinal = [
     cost: 70731,
     colors: ["#555879", "#98A1BC"],
   },
+];
+const Pennsylvania = [
   {
     name: "Albright College",
     cost: 42748,
@@ -934,9 +924,514 @@ const collegeListFinal = [
   },
 ];
 
-const mostExpensiveCollege = collegeListFinal.reduce((max, college) =>
-  college.cost > max.cost ? college : max
-);
+const New_Jersey = [
+  {
+    name: "Rutgers University - New Brunswick",
+    cost: 16263,
+    colors: ["#CC0033", "#000000"],
+  },
+  {
+    name: "Rutgers University - Newark",
+    cost: 15648,
+    colors: ["#CC0033", "#000000"],
+  },
+  {
+    name: "Rutgers University - Camden",
+    cost: 16112,
+    colors: ["#CC0033", "#000000"],
+  },
+  {
+    name: "Princeton University",
+    cost: 57410,
+    colors: ["#E87722", "#000000"],
+  },
+  {
+    name: "New Jersey Institute of Technology",
+    cost: 18496,
+    colors: ["#D2232A", "#FFFFFF"],
+  },
+  {
+    name: "Kean University",
+    cost: 12972,
+    colors: ["#003A63", "#FFFFFF"],
+  },
+  {
+    name: "Montclair State University",
+    cost: 14400,
+    colors: ["#CE1126", "#FFFFFF"],
+  },
+  {
+    name: "New Jersey City University",
+    cost: 14963,
+    colors: ["#006633", "#FFC72C"],
+  },
+  {
+    name: "Rowan University",
+    cost: 15952,
+    colors: ["#3C2415", "#FFC425"],
+  },
+  {
+    name: "Stockton University",
+    cost: 14948,
+    colors: ["#00AEEF", "#000000"],
+  },
+  {
+    name: "Thomas Edison State University",
+    cost: 11970,
+    colors: ["#7F1D2D", "#6E6E6E"],
+  },
+  {
+    name: "William Paterson University of New Jersey",
+    cost: 15498,
+    colors: ["#FF6A13", "#000000"],
+  },
+  {
+    name: "Monmouth University",
+    cost: 45000,
+    colors: ["#002A5C", "#FFFFFF"],
+  },
+  {
+    name: "Rider University",
+    cost: 37700,
+    colors: ["#990033", "#9FA1A3"],
+  },
+  {
+    name: "Saint Peter's University",
+    cost: 39890,
+    colors: ["#004B8D", "#FFFFFF"],
+  },
+  {
+    name: "Seton Hall University",
+    cost: 49500,
+    colors: ["#00539B", "#FFFFFF"],
+  },
+  {
+    name: "Stevens Institute of Technology",
+    cost: 58624,
+    colors: ["#C8102E", "#5C6670"],
+  },
+  {
+    name: "Drew University",
+    cost: 42652,
+    colors: ["#0C3C26", "#003A70"],
+  },
+  {
+    name: "Fairleigh Dickinson University",
+    cost: 49154,
+    colors: ["#8B2332", "#003A70"],
+  },
+  {
+    name: "Felician University",
+    cost: 35600,
+    colors: ["#006633", "#FFD100"],
+  },
+  {
+    name: "Georgian Court University",
+    cost: 35000,
+    colors: ["#0033A0", "#FFD100"],
+  },
+  {
+    name: "Caldwell University",
+    cost: 38000,
+    colors: ["#C8102E", "#FFD100"],
+  },
+  {
+    name: "Centenary University",
+    cost: 34498,
+    colors: ["#003A63", "#FFFFFF"],
+  },
+  {
+    name: "Saint Elizabeth University",
+    cost: 35500,
+    colors: ["#003A70", "#F2A900"],
+  },
+];
+
+const Delaware = [
+  {
+    name: "University of Delaware",
+    cost: 38310,
+    colors: ["#00539F", "#F1BE48"],
+  },
+  {
+    name: "Delaware State University",
+    cost: 18280,
+    colors: ["#C8102E", "#69B3E7"],
+  },
+  {
+    name: "Wilmington University",
+    cost: 11940,
+    colors: ["#006747", "#FFFFFF"],
+  },
+  {
+    name: "Goldey-Beacom College",
+    cost: 29500,
+    colors: ["#555879", "#98A1BC"],
+  },
+];
+
+const Maryland = [
+  {
+    name: "University of Maryland-College Park",
+    cost: 39266,
+    colors: ["#E03C31", "#000000"],
+  },
+  {
+    name: "Johns Hopkins University",
+    cost: 60640,
+    colors: ["#00457C", "#FFFFFF"],
+  },
+  {
+    name: "University of Maryland-Baltimore County",
+    cost: 28620,
+    colors: ["#FFB200", "#000000"],
+  },
+  {
+    name: "Towson University",
+    cost: 27200,
+    colors: ["#FFB612", "#000000"],
+  },
+  {
+    name: "Salisbury University",
+    cost: 25860,
+    colors: ["#005A9C", "#FFFFFF"],
+  },
+  {
+    name: "Frostburg State University",
+    cost: 24120,
+    colors: ["#003366", "#FFFFFF"],
+  },
+  {
+    name: "University of Maryland-Eastern Shore",
+    cost: 19730,
+    colors: ["#006747", "#FFFFFF"],
+  },
+  {
+    name: "Morgan State University",
+    cost: 25100,
+    colors: ["#FFB612", "#000000"],
+  },
+  {
+    name: "Loyola University Maryland",
+    cost: 53500,
+    colors: ["#003366", "#A67C00"],
+  },
+  {
+    name: "Mount St Mary's University",
+    cost: 45500,
+    colors: ["#0033A0", "#FFD100"],
+  },
+  {
+    name: "St. John's College",
+    cost: 59000,
+    colors: ["#8C1D40", "#231F20"],
+  },
+  {
+    name: "Stevenson University",
+    cost: 41000,
+    colors: ["#00457C", "#FFFFFF"],
+  },
+  {
+    name: "McDaniel College",
+    cost: 53500,
+    colors: ["#8C1D40", "#231F20"],
+  },
+  { name: "Goucher College", cost: 53500, colors: ["#8C1D40", "#231F20"] },
+  {
+    name: "Coppin State University",
+    cost: 19730,
+    colors: ["#006747", "#FFFFFF"],
+  },
+  {
+    name: "Notre Dame of Maryland University",
+    cost: 41000,
+    colors: ["#0033A0", "#FFD100"],
+  },
+  { name: "Washington College", cost: 53500, colors: ["#8C1D40", "#231F20"] },
+  { name: "Hood College", cost: 41000, colors: ["#0033A0", "#FFD100"] },
+  {
+    name: "Mount St. Mary's University",
+    cost: 45500,
+    colors: ["#0033A0", "#FFD100"],
+  },
+  { name: "Stevenson University", cost: 41000, colors: ["#0033A0", "#FFD100"] },
+  {
+    name: "Bowie State University",
+    cost: 19730,
+    colors: ["#006747", "#FFFFFF"],
+  },
+  { name: "Cecil College", cost: 10200, colors: ["#555879", "#98A1BC"] },
+  { name: "Chesapeake College", cost: 10200, colors: ["#555879", "#98A1BC"] },
+  {
+    name: "College of Southern Maryland",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  {
+    name: "Community College of Baltimore County",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  {
+    name: "Frederick Community College",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  { name: "Garrett College", cost: 10200, colors: ["#555879", "#98A1BC"] },
+  {
+    name: "Hagerstown Community College",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  {
+    name: "Harford Community College",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  {
+    name: "Howard Community College",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  { name: "Montgomery College", cost: 10200, colors: ["#555879", "#98A1BC"] },
+  {
+    name: "Prince George's Community College",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  { name: "Salisbury University", cost: 25860, colors: ["#005A9C", "#FFFFFF"] },
+  {
+    name: "Sojourner-Douglass College",
+    cost: 19730,
+    colors: ["#006747", "#FFFFFF"],
+  },
+  {
+    name: "Wor-Wic Community College",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+];
+
+const Virginia = [
+  {
+    name: "University of Virginia-Main Campus",
+    cost: 35848,
+    colors: ["#232D4B", "#F9B233"],
+  },
+  {
+    name: "Virginia Tech",
+    cost: 31524,
+    colors: ["#630031", "#A7A8AA"],
+  },
+  {
+    name: "George Mason University",
+    cost: 30624,
+    colors: ["#004A87", "#F2A900"],
+  },
+  {
+    name: "James Madison University",
+    cost: 28620,
+    colors: ["#003366", "#FFFFFF"],
+  },
+  {
+    name: "Old Dominion University",
+    cost: 29520,
+    colors: ["#003366", "#FFFFFF"],
+  },
+  {
+    name: "Virginia Commonwealth University",
+    cost: 30524,
+    colors: ["#003366", "#FFFFFF"],
+  },
+  { name: "Radford University", cost: 27620, colors: ["#C8102E", "#231F20"] },
+  { name: "Liberty University", cost: 29500, colors: ["#660000", "#FFFFFF"] },
+  {
+    name: "Christopher Newport University",
+    cost: 27620,
+    colors: ["#002D62", "#C8102E", "#FFFFFF"],
+  },
+  {
+    name: "Hampton University",
+    cost: 25000,
+    colors: ["#002D62", "#C8102E", "#FFFFFF"],
+  },
+  {
+    name: "Norfolk State University",
+    cost: 25000,
+    colors: ["#002D62", "#C8102E", "#FFFFFF"],
+  },
+  {
+    name: "Shenandoah University",
+    cost: 41000,
+    colors: ["#0033A0", "#FFD100"],
+  },
+  {
+    name: "Virginia State University",
+    cost: 19730,
+    colors: ["#006747", "#FFFFFF"],
+  },
+  {
+    name: "Mary Baldwin University",
+    cost: 41000,
+    colors: ["#0033A0", "#FFD100"],
+  },
+  {
+    name: "Emory & Henry College",
+    cost: 41000,
+    colors: ["#0033A0", "#FFD100"],
+  },
+  { name: "Ferrum College", cost: 41000, colors: ["#0033A0", "#FFD100"] },
+  { name: "Randolph College", cost: 41000, colors: ["#0033A0", "#FFD100"] },
+  { name: "Sweet Briar College", cost: 41000, colors: ["#0033A0", "#FFD100"] },
+  {
+    name: "Virginia Wesleyan University",
+    cost: 41000,
+    colors: ["#0033A0", "#FFD100"],
+  },
+  {
+    name: "Washington and Lee University",
+    cost: 57000,
+    colors: ["#4E2A84", "#A7A8AA"],
+  },
+  { name: "Averett University", cost: 29500, colors: ["#660000", "#FFFFFF"] },
+  { name: "Bluefield College", cost: 29500, colors: ["#660000", "#FFFFFF"] },
+  { name: "Bridgewater College", cost: 29500, colors: ["#660000", "#FFFFFF"] },
+  { name: "Bristol University", cost: 29500, colors: ["#660000", "#FFFFFF"] },
+  {
+    name: "Eastern Mennonite University",
+    cost: 29500,
+    colors: ["#660000", "#FFFFFF"],
+  },
+  { name: "Emmanuel College", cost: 29500, colors: ["#660000", "#FFFFFF"] },
+  {
+    name: "Germanna Community College",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  { name: "Goucher College", cost: 53500, colors: ["#8C1D40", "#231F20"] },
+  { name: "Hollins University", cost: 41000, colors: ["#0033A0", "#FFD100"] },
+  {
+    name: "Lord Fairfax Community College",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  { name: "Lynchburg College", cost: 41000, colors: ["#0033A0", "#FFD100"] },
+];
+
+const West_Virginia = [
+  {
+    name: "West Virginia University",
+    cost: 23420,
+    colors: ["#EAAA00", "#002855"],
+  },
+  { name: "Marshall University", cost: 21520, colors: ["#C8102E", "#231F20"] },
+  {
+    name: "West Virginia State University",
+    cost: 16220,
+    colors: ["#004B87", "#F2A900"],
+  },
+  {
+    name: "Fairmont State University",
+    cost: 17820,
+    colors: ["#0033A0", "#FFD100"],
+  },
+  {
+    name: "Shepherd University",
+    cost: 19920,
+    colors: ["#0033A0", "#FFD100"],
+  },
+  {
+    name: "West Virginia Wesleyan College",
+    cost: 34500,
+    colors: ["#555879", "#98A1BC"],
+  },
+  { name: "Wheeling University", cost: 29500, colors: ["#555879", "#98A1BC"] },
+  {
+    name: "Alderson Broaddus University",
+    cost: 29500,
+    colors: ["#555879", "#98A1BC"],
+  },
+  {
+    name: "Bluefield State College",
+    cost: 16220,
+    colors: ["#555879", "#98A1BC"],
+  },
+  { name: "Concord University", cost: 19920, colors: ["#555879", "#98A1BC"] },
+  {
+    name: "Glenville State College",
+    cost: 16220,
+    colors: ["#555879", "#98A1BC"],
+  },
+  {
+    name: "Potomac State College of West Virginia University",
+    cost: 16220,
+    colors: ["#555879", "#98A1BC"],
+  },
+  {
+    name: "West Liberty University",
+    cost: 19920,
+    colors: ["#555879", "#98A1BC"],
+  },
+  {
+    name: "West Virginia Northern Community College",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  {
+    name: "West Virginia University at Parkersburg",
+    cost: 10200,
+    colors: ["#555879", "#98A1BC"],
+  },
+  {
+    name: "West Virginia University Institute of Technology",
+    cost: 19920,
+    colors: ["#555879", "#98A1BC"],
+  },
+];
+
+const Washington_DC = [
+  {
+    name: "Georgetown University",
+    cost: 60500,
+    colors: ["#004481", "#8A8B8C"],
+  },
+  {
+    name: "George Washington University",
+    cost: 59600,
+    colors: ["#004481", "#8A8B8C"],
+  },
+  {
+    name: "American University",
+    cost: 57600,
+    colors: ["#800000", "#FFD200"],
+  },
+  { name: "Catholic University of America", cost: 52000, colors: [] },
+  { name: "Howard University", cost: 25000, colors: [] },
+];
+
+const allstates = {
+  Average: Average,
+  Pennsylvania: Pennsylvania,
+  New_Jersey: New_Jersey,
+  Delaware: Delaware,
+  Maryland: Maryland,
+  Virginia: Virginia,
+  West_Virginia: West_Virginia,
+  Washington_DC: Washington_DC,
+};
+
+function getCollegesByState(stateName) {
+  console.log("Getting colleges for state:", stateName);
+  return allstates[stateName] || [];
+}
+
+// List of colleges with their average costs and colors
+let collegeListFinal;
+let mostExpensiveCollege;
+
+// let mostExpensiveCollege = collegeListFinal.reduce((max, college) =>
+//   college.cost > max.cost ? college : max
+// );
 // console.log("Most expensive college:", mostExpensiveCollege);
 
 // UI
@@ -970,6 +1465,7 @@ const annualCollegeCostSlider = document.getElementById(
 );
 const annualCollegeCostText = document.getElementById("annualCollegeCostText");
 // college select
+const stateSelect = document.getElementById("stateSelect");
 const collegeSelect = document.getElementById("collegeSelect");
 const periodSelect = document.getElementById("periodSelect");
 
@@ -1052,6 +1548,38 @@ function initUI() {
   startingAmountInput.addEventListener("input", updateStartingAmount);
   annualCollegeCostSlider.addEventListener("input", updateYearlyCost);
 
+  populateCollegeSelect(Average);
+  // collegeListFinal.forEach((college) => {
+  //   const option = document.createElement("option");
+  //   const collegeColors =
+  //     college.colors.length > 0 ? college.colors : ["#555879", "#98A1BC"]; // Fallback colors
+  //   option.value = `${collegeColors.join(",")}|${college.cost}`;
+  //   option.textContent = college.name;
+  //   const selected =
+  //     college.name === "Average out-of-state Public College" ? true : false;
+  //   option.selected = selected;
+  //   collegeSelect.appendChild(option);
+  // });
+  stateSelect.addEventListener("change", (e) => {
+    const colleges = getCollegesByState(e.target.value);
+    populateCollegeSelect(colleges);
+
+    // console.log("colleges for state", e.target.value, colleges);
+  });
+
+  collegeSelect.addEventListener("change", selectCollege);
+
+  selectCollege({ target: { value: collegeSelect.value } });
+
+  initNavBar();
+}
+
+function populateCollegeSelect(colleges) {
+  collegeSelect.innerHTML = "";
+  collegeListFinal = colleges;
+  mostExpensiveCollege = collegeListFinal.reduce((max, college) =>
+    college.cost > max.cost ? college : max
+  );
   collegeListFinal.forEach((college) => {
     const option = document.createElement("option");
     const collegeColors =
@@ -1063,11 +1591,6 @@ function initUI() {
     option.selected = selected;
     collegeSelect.appendChild(option);
   });
-  collegeSelect.addEventListener("change", selectCollege);
-
-  selectCollege({ target: { value: collegeSelect.value } });
-
-  initNavBar();
 }
 
 function initNavBar() {
@@ -1428,5 +1951,6 @@ function showPieChart() {
   pieChart.classList.remove("hidden");
 }
 
+console.log("pen", getCollegesByState("Pennsylvania"));
 initUI();
 update();
