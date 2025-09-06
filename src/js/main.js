@@ -1323,8 +1323,8 @@ function updateSummary() {
     }
   } else {
     if (excessMessageShowing) {
-      fundingNeededTitle.innerText = "total alt funding needed";
-      totalFundingNeededTitle.innerText = "total funding needed";
+      fundingNeededTitle.innerText = "additional funding needed per year";
+      totalFundingNeededTitle.innerText = "total funding needed:";
       extraFundingInstructions.classList.add("hiddenMessage");
       projectedExtraHolder.classList.add("hiddenMessage");
       excessMessageShowing = false;

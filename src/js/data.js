@@ -930,3 +930,126 @@ export const collegeListFinal = [
     colors: [],
   },
 ];
+
+export const NJcollegeListFinal = [
+  {
+    name: "Rutgers University - New Brunswick",
+    cost: 16263,
+    colors: ["Scarlet"],
+  },
+  {
+    name: "Rutgers University - Newark",
+    cost: 15648,
+    colors: ["Scarlet"],
+  },
+  {
+    name: "Rutgers University - Camden",
+    cost: 16112,
+    colors: ["Scarlet"],
+  },
+  {
+    name: "Princeton University",
+    cost: 57410,
+    colors: ["Orange", "Black"],
+  },
+  {
+    name: "New Jersey Institute of Technology",
+    cost: 18496,
+    colors: ["Red", "Blue"],
+  },
+  {
+    name: "Kean University",
+    cost: 12972,
+    colors: ["Blue", "White"],
+  },
+  {
+    name: "Montclair State University",
+    cost: 14400,
+    colors: ["Red", "White"],
+  },
+  {
+    name: "New Jersey City University",
+    cost: 14963,
+    colors: ["Green", "Gold"],
+  },
+  {
+    name: "Rowan University",
+    cost: 15952,
+    colors: ["Brown", "Gold"],
+  },
+  {
+    name: "Stockton University",
+    cost: 14948,
+    colors: ["Blue", "Black"],
+  },
+  {
+    name: "Thomas Edison State University",
+    cost: 11970,
+    colors: ["Burgundy", "Gray"],
+  },
+  {
+    name: "William Paterson University of New Jersey",
+    cost: 15498,
+    colors: ["Orange", "Black"],
+  },
+  {
+    name: "Monmouth University",
+    cost: 45000,
+    colors: ["Blue", "White"],
+  },
+  {
+    name: "Rider University",
+    cost: 37700,
+    colors: ["Cranberry", "Gray"],
+  },
+  {
+    name: "Saint Peter's University",
+    cost: 39890,
+    colors: ["Peacock Blue", "White"],
+  },
+  {
+    name: "Seton Hall University",
+    cost: 49500,
+    colors: ["Blue", "White"],
+  },
+  {
+    name: "Stevens Institute of Technology",
+    cost: 58624,
+    colors: ["Cardinal Red", "Gray"],
+  },
+  {
+    name: "Drew University",
+    cost: 42652,
+    colors: ["Green", "Blue"],
+  },
+  {
+    name: "Fairleigh Dickinson University",
+    cost: 49154,
+    colors: ["Burgundy", "Blue"],
+  },
+  {
+    name: "Felician University",
+    cost: 35600,
+    colors: ["Green", "Gold"],
+  },
+  {
+    name: "Georgian Court University",
+    cost: 35000,
+    colors: ["Blue", "Gold"],
+  },
+  {
+    name: "Caldwell University",
+    cost: 38000,
+    colors: ["Red", "Gold"],
+  },
+  {
+    name: "Centenary University",
+    cost: 34498,
+    colors: ["Blue", "White"],
+  },
+  {
+    name: "Saint Elizabeth University",
+    cost: 35500,
+    colors: ["Blue", "Gold"],
+  },
+];

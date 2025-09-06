@@ -9,15 +9,15 @@
 </head>
 
 <body>
-  <div class="mainHolder">
+<div class="mainHolder">
     <h1>College Savings Planner</h1>
     <div id="dataHolder">
       <div class="summaryHolder">
         <div class="summary right "><span>projected 529 funds/cost:</span>
           <span id="projectedPercentSaved">0</span>
           <div id="projectedExtraHolder" class="hiddenMessage">
-            <span>extra:</span>
             <span id="projectedExtra">+0</span>
+            <span>extra</span>
           </div>
         </div>
       </div>
@@ -190,7 +190,8 @@
         <div class="summary left"><span>projected 529 savings:</span><span id="projectedSavings">0</span></div>
 
         <div id="classBreakdown" class="classBreakdown closed">
-          <span id="fundingNeededTitle">funding needed:</span>
+          <span id="fundingNeededTitle">additional funding needed per year:</span>
+          <div class="breakdown">
           <div class="breakdownSummary left">
             <span id="">freshman</span>
             <span class="fundsNeeded" id="frosh_fundsNeeded">0</span>
@@ -206,6 +207,7 @@
           <div class="breakdownSummary left">
             <span id="">senior</span>
             <span class="fundsNeeded" id="sen_fundsNeeded">0</span>
+          </div>
           </div>
         </div>
         <div class="summary left">
@@ -232,7 +234,7 @@
       <div class="slide">
         <label for="yearsSlider">years until college</label>
         <!--       <input type="range" id="yearsSlider" min="0" max="30" value="17" step=".1"> -->
-        <input id="yearsSlider" type="range" value="17" min="0" max="30" step=".1"
+        <input id="yearsSlider" type="range" value="17" min="1" max="30" step=".1"
           class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
         <div id="yearsUntilText" class="sliderValue">17</div>
       </div>
