@@ -1,312 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./src/css/main.css">
-</head>
-
-<body>
-<div class="mainHolder">
-    <h1>College Savings Planner</h1>
-    <div id="dataHolder">
-      <div class="summaryHolder">
-        <div class="summary right "><span>projected 529 funds/cost:</span>
-          <span id="projectedPercentSaved">0</span>
-          <div id="projectedExtraHolder" class="hiddenMessage">
-            <span id="projectedExtra">+0</span>
-            <span>extra</span>
+  <body>
+    <div class="mainHolder">
+      <div class="text-2xl font-semibold">College Savings Planner</div>
+      <div id="dataHolder">
+        <div class="summaryHolder">
+          <div class="summary right">
+            <span>projected % of costs covered by 529 savings:</span>
+            <span id="projectedPercentSaved" class="right">0</span>
+            <div id="projectedExtraHolder" class="hiddenMessage">
+              <span id="projectedExtra">+0</span>
+              <span>extra</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="svgHolder">
-        <svg id="svg" width="500" height="500" viewBox="-100 -100 1200 1200">
-          <defs>
-            <linearGradient id="numberBackgroundGradient" gradientUnits="userSpaceOnUse" x1="0" y1="-80" x2="0" y2="0">
-              <stop offset="0%" stop-color="#000" stop-opacity="0%" />
-              <stop offset="100%" stop-color="#000" stop-opacity="25%" />
-            </linearGradient>
-            <g id="barGraphic">
-              <rect x="5" y="-2000" width="245" height="2000" rx="10" ry="10" />
-              <rect x="5" y="-80" width="245" height="80" rx="10" ry="10" fill="url(#numberBackgroundGradient)"
-                stroke="none" />
-              <!-- <path d="M5 -20 H250" stroke="url(#numberBackgroundGradient)" fill="none" stroke-width="40" stroke-opacity=".4" /> -->
-              <!-- <text x="125" y="29" text-anchor="middle" font-size="24" fill="#ffffff" transform="scale(1 -1)">$2,345</text> -->
-            </g>
-            <clipPath id="rectClip">
-              <rect x="0" y="0" width="1000" height="1000" />
-            </clipPath>
-            <clipPath id="axisClip">
-              <rect x="-100" y="0" width="1100" height="1000" />
-            </clipPath>
-
-          </defs>
-          <g id="graphs" class="graphs">
-            <g id="barGraph" class="graph hidden" transform="translate(0 1000) scale(1 -1)">
-              <g id="yaxis" class="yaxis" clip-path="url(#axisClip)">
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">50k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">100k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">150k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">200k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">250k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">300k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">350k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">400k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">450k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">500k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">550k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
-                <g class="yaxisText">
-                  <text x="-10" y="0" text-anchor="end" font-size="24">600k</text>
-                  <path d="M0 0 H1000" stroke="#000" />
-                </g>
+        <div class="svgHolder">
+          <svg id="svg" width="500" height="500" viewBox="-100 -100 1200 1200">
+            <defs>
+              <linearGradient
+                id="numberBackgroundGradient"
+                gradientUnits="userSpaceOnUse"
+                x1="0"
+                y1="-80"
+                x2="0"
+                y2="0"
+              >
+                <stop offset="0%" stop-color="#000" stop-opacity="0%" />
+                <stop offset="100%" stop-color="#000" stop-opacity="25%" />
+              </linearGradient>
+              <g id="barGraphic">
+                <rect
+                  x="5"
+                  y="-2000"
+                  width="245"
+                  height="2000"
+                  rx="10"
+                  ry="10"
+                />
+                <rect
+                  x="5"
+                  y="-80"
+                  width="245"
+                  height="80"
+                  rx="10"
+                  ry="10"
+                  fill="url(#numberBackgroundGradient)"
+                  stroke="none"
+                />
+                <!-- <path d="M5 -20 H250" stroke="url(#numberBackgroundGradient)" fill="none" stroke-width="40" stroke-opacity=".4" /> -->
+                <!-- <text x="125" y="29" text-anchor="middle" font-size="24" fill="#ffffff" transform="scale(1 -1)">$2,345</text> -->
               </g>
+              <clipPath id="rectClip">
+                <rect x="0" y="0" width="1000" height="1000" />
+              </clipPath>
+              <clipPath id="axisClip">
+                <rect x="-100" y="0" width="1100" height="1000" />
+              </clipPath>
+            </defs>
+            <g id="graphs" class="graphs">
+              <g
+                id="barGraph"
+                class="graph hidden"
+                transform="translate(0 1000) scale(1 -1)"
+              >
+                <g id="yaxis" class="yaxis" clip-path="url(#axisClip)">
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      50k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      100k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      150k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      200k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      250k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      300k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      350k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      400k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      450k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      500k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      550k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                  <g class="yaxisText">
+                    <text x="-10" y="0" text-anchor="end" font-size="24">
+                      600k
+                    </text>
+                    <path d="M0 0 H1000" stroke="#000" />
+                  </g>
+                </g>
 
-              <g id="xaxis">
-                <g class="xaxisText">
-                  <text x="125" y="25">freshman</text>
-                </g>
-                <g class="xaxisText">
-                  <text x="375" y="25">sophomore</text>
-                </g>
-                <g class="xaxisText">
-                  <text x="625" y="25">junior</text>
-                </g>
-                <g class="xaxisText">
-                  <text x="875" y="25">senior</text>
-                </g>
-              </g>
-
-              <g id="barGraphBars" clip-path="url(#rectClip)">
-
-                <g id="bar1" class="bar">
-                  <use href="#barGraphic" x="0" y="0" transform="scale(1)"></use>
-                  <text x="125" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
-                </g>
-                <g id="bar2" class="bar">
-                  <use href="#barGraphic" x="250" y="0" transform="scale(1)"></use>
-                  <text x="375" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
-                </g>
-                <g id="bar3" class="bar">
-                  <use href="#barGraphic" x="500" y="0" transform="scale(1)"></use>
-                  <text x="625" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
-                </g>
-                <g id="bar4" class="bar">
-                  <use href="#barGraphic" x="750" y="0" transform="scale(1)"></use>
-                  <text x="875" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
+                <g id="xaxis">
+                  <g class="xaxisText">
+                    <text x="125" y="25">freshman</text>
+                  </g>
+                  <g class="xaxisText">
+                    <text x="375" y="25">sophomore</text>
+                  </g>
+                  <g class="xaxisText">
+                    <text x="625" y="25">junior</text>
+                  </g>
+                  <g class="xaxisText">
+                    <text x="875" y="25">senior</text>
+                  </g>
                 </g>
 
-                <g id="savingsBar1" class="savingsBar">
-                  <use href="#barGraphic" x="0" y="0" transform="scale(1)"></use>
-                  <text x="125" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
-                </g>
-                <g id="savingsBar2" class="savingsBar">
-                  <use href="#barGraphic" x="250" y="0" transform="scale(1)"></use>
-                  <text x="375" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
-                </g>
-                <g id="savingsBar3" class="savingsBar">
-                  <use href="#barGraphic" x="500" y="0" transform="scale(1)"></use>
-                  <text x="625" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
-                </g>
-                <g id="savingsBar4" class="savingsBar">
-                  <use href="#barGraphic" x="750" y="0" transform="scale(1)"></use>
-                  <text x="875" y="35" text-anchor="middle" class="barText" transform="scale(1 -1)">$2,345</text>
-                </g>
+                <g id="barGraphBars" clip-path="url(#rectClip)">
+                  <g id="bar1" class="bar">
+                    <use
+                      href="#barGraphic"
+                      x="0"
+                      y="0"
+                      transform="scale(1)"
+                    ></use>
+                    <text
+                      x="125"
+                      y="35"
+                      text-anchor="middle"
+                      class="barText"
+                      transform="scale(1 -1)"
+                    >
+                      $2,345
+                    </text>
+                  </g>
+                  <g id="bar2" class="bar">
+                    <use
+                      href="#barGraphic"
+                      x="250"
+                      y="0"
+                      transform="scale(1)"
+                    ></use>
+                    <text
+                      x="375"
+                      y="35"
+                      text-anchor="middle"
+                      class="barText"
+                      transform="scale(1 -1)"
+                    >
+                      $2,345
+                    </text>
+                  </g>
+                  <g id="bar3" class="bar">
+                    <use
+                      href="#barGraphic"
+                      x="500"
+                      y="0"
+                      transform="scale(1)"
+                    ></use>
+                    <text
+                      x="625"
+                      y="35"
+                      text-anchor="middle"
+                      class="barText"
+                      transform="scale(1 -1)"
+                    >
+                      $2,345
+                    </text>
+                  </g>
+                  <g id="bar4" class="bar">
+                    <use
+                      href="#barGraphic"
+                      x="750"
+                      y="0"
+                      transform="scale(1)"
+                    ></use>
+                    <text
+                      x="875"
+                      y="35"
+                      text-anchor="middle"
+                      class="barText"
+                      transform="scale(1 -1)"
+                    >
+                      $2,345
+                    </text>
+                  </g>
 
-                <!-- <g id="savingsLine" transform="translate(0 100)">
+                  <g id="savingsBar1" class="savingsBar">
+                    <use
+                      href="#barGraphic"
+                      x="0"
+                      y="0"
+                      transform="scale(1)"
+                    ></use>
+                    <text
+                      x="125"
+                      y="35"
+                      text-anchor="middle"
+                      class="barText"
+                      transform="scale(1 -1)"
+                    >
+                      $2,345
+                    </text>
+                  </g>
+                  <g id="savingsBar2" class="savingsBar">
+                    <use
+                      href="#barGraphic"
+                      x="250"
+                      y="0"
+                      transform="scale(1)"
+                    ></use>
+                    <text
+                      x="375"
+                      y="35"
+                      text-anchor="middle"
+                      class="barText"
+                      transform="scale(1 -1)"
+                    >
+                      $2,345
+                    </text>
+                  </g>
+                  <g id="savingsBar3" class="savingsBar">
+                    <use
+                      href="#barGraphic"
+                      x="500"
+                      y="0"
+                      transform="scale(1)"
+                    ></use>
+                    <text
+                      x="625"
+                      y="35"
+                      text-anchor="middle"
+                      class="barText"
+                      transform="scale(1 -1)"
+                    >
+                      $2,345
+                    </text>
+                  </g>
+                  <g id="savingsBar4" class="savingsBar">
+                    <use
+                      href="#barGraphic"
+                      x="750"
+                      y="0"
+                      transform="scale(1)"
+                    ></use>
+                    <text
+                      x="875"
+                      y="35"
+                      text-anchor="middle"
+                      class="barText"
+                      transform="scale(1 -1)"
+                    >
+                      $2,345
+                    </text>
+                  </g>
+
+                  <!-- <g id="savingsLine" transform="translate(0 100)">
               <path stroke='#fff' stroke-width="1" d="M0 0 H1000" stroke-opacity="1" />
             </g> -->
-                <rect id="outline" x="0" y="0" width="1000" height="1000" fill="none" stroke="#000" stroke-width="2">
-                </rect>
+                  <rect
+                    id="outline"
+                    x="0"
+                    y="0"
+                    width="1000"
+                    height="1000"
+                    fill="none"
+                    stroke="#000"
+                    stroke-width="2"
+                  ></rect>
+                </g>
               </g>
-
-            </g>
-            <g id="pieChart" class="graph">
-              <!-- <g transform="translate(500 500) rotate(-90) scale(1.5)">
+              <g id="pieChart" class="graph">
+                <!-- <g transform="translate(500 500) rotate(-90) scale(1.5)">
                 <circle id="overflowPath" cx="0" cy="0" r="300" fill="none" stroke="#00a0df" stroke-opacity="1"
                   stroke-width="50" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75">
                 </circle>
               </g> -->
-              <g transform="translate(500 500) rotate(-90)">
-                <circle id="circleOutline" cx="0" cy="0" r="300" fill="none" stroke="#f0f0f0" stroke-opacity="1"
-                  stroke-width="270"></circle>
+                <g transform="translate(500 500) rotate(-90)">
+                  <circle
+                    id="circleOutline"
+                    cx="0"
+                    cy="0"
+                    r="300"
+                    fill="none"
+                    stroke="#f0f0f0"
+                    stroke-opacity="1"
+                    stroke-width="270"
+                  ></circle>
 
-                <circle id="circleBG" cx="0" cy="0" r="300" fill="none" stroke="#00539B" stroke-opacity="1"
-                  stroke-width="250"></circle>
+                  <circle
+                    id="circleBG"
+                    cx="0"
+                    cy="0"
+                    r="300"
+                    fill="none"
+                    stroke="#00539B"
+                    stroke-opacity="1"
+                    stroke-width="250"
+                  ></circle>
 
-                <circle id="savedPath" cx="0" cy="0" r="300" fill="none" stroke="#1086d5" stroke-width="250"
-                  stroke-linecap="none" pathLength="100" stroke-dasharray="100 100" stroke-dashoffset="-75">
-                </circle>
+                  <circle
+                    id="savedPath"
+                    cx="0"
+                    cy="0"
+                    r="300"
+                    fill="none"
+                    stroke="#1086d5"
+                    stroke-width="250"
+                    stroke-linecap="none"
+                    pathLength="100"
+                    stroke-dasharray="100 100"
+                    stroke-dashoffset="-75"
+                  ></circle>
 
-                <g id="dividerPath">
-                  <path d="M175 0 H425" stroke="#fff" stroke-width="5" stroke-linecap="none"></path>
+                  <g id="dividerPath">
+                    <path
+                      d="M175 0 H425"
+                      stroke="#fff"
+                      stroke-width="5"
+                      stroke-linecap="none"
+                    ></path>
+                  </g>
                 </g>
               </g>
             </g>
-          </g>
-
-        </svg>
-        <div id="iconHolder">
-          <div id="pieIcon" class="icon"></div>
-          <div id="barIcon" class="icon icondeselected"></div>
-        </div>
-      </div>
-      <div class="summaryHolder">
-        <div class="summary left"><span>projected total cost:</span><span id="projectedTotal">0</span></div>
-        <div class="summary left"><span>projected 529 savings:</span><span id="projectedSavings">0</span></div>
-
-        <div id="classBreakdown" class="classBreakdown closed">
-          <span id="fundingNeededTitle">additional funding needed per year:</span>
-          <div class="breakdown">
-          <div class="breakdownSummary left">
-            <span id="">freshman</span>
-            <span class="fundsNeeded" id="frosh_fundsNeeded">0</span>
-          </div>
-          <div class="breakdownSummary left">
-            <span id="">sophmore</span>
-            <span class="fundsNeeded" id="soph_fundsNeeded">0</span>
-          </div>
-          <div class="breakdownSummary left">
-            <span id="">junior</span>
-            <span class="fundsNeeded" id="jun_fundsNeeded">0</span>
-          </div>
-          <div class="breakdownSummary left">
-            <span id="">senior</span>
-            <span class="fundsNeeded" id="sen_fundsNeeded">0</span>
-          </div>
+          </svg>
+          <div id="iconHolder">
+            <div id="pieIcon" class="icon"></div>
+            <div id="barIcon" class="icon icondeselected"></div>
           </div>
         </div>
-        <div class="summary left">
-          <span id="totalFundingNeededTitle">total funding needed:</span>
-          <span id="fundingNeededText">0</span>
+        <div class="summaryHolder">
+          <div class="summary left">
+            <span>projected total cost:</span><span id="projectedTotal">0</span>
+          </div>
+          <div class="summary left">
+            <span>projected 529 savings:</span
+            ><span id="projectedSavings">0</span>
+          </div>
+
+          <div id="classBreakdown" class="classBreakdown closed">
+            <span id="fundingNeededTitle"
+              >additional funding needed per year:</span
+            >
+            <div class="breakdown">
+              <div class="breakdownSummary left">
+                <span id="">freshman</span>
+                <span class="fundsNeeded" id="frosh_fundsNeeded">0</span>
+              </div>
+              <div class="breakdownSummary left">
+                <span id="">sophmore</span>
+                <span class="fundsNeeded" id="soph_fundsNeeded">0</span>
+              </div>
+              <div class="breakdownSummary left">
+                <span id="">junior</span>
+                <span class="fundsNeeded" id="jun_fundsNeeded">0</span>
+              </div>
+              <div class="breakdownSummary left">
+                <span id="">senior</span>
+                <span class="fundsNeeded" id="sen_fundsNeeded">0</span>
+              </div>
+            </div>
+          </div>
+          <div class="summary left">
+            <span id="totalFundingNeededTitle">total funding needed:</span>
+            <span id="fundingNeededText">0</span>
+          </div>
+
+          <div
+            id="extraFundingInstructions"
+            class="extraFundingInstructions summary left hiddenMessage"
+          >
+            <span style="font-weight: bold">Note: </span>You may have excess
+            funds available with the selected contribution.
+            <a
+              target="_blank"
+              href="https://investor.vanguard.com/investor-resources-education/article/things-that-may-surprise-you-about-529s"
+              >See what you can do with them.</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="sliderHolder">
+        <div class="select">
+          <select id="stateSelect" class="collegeSelect">
+            <option value="Average">Average</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New_Hampshire">New Hampshire</option>
+            <option value="New_Jersey">New Jersey</option>
+            <option value="New_Mexico">New Mexico</option>
+            <option value="New_York">New York</option>
+            <option value="North_Carolina">North Carolina</option>
+            <option value="North_Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode_Island">Rhode Island</option>
+            <option value="South_Carolina">South Carolina</option>
+            <option value="South_Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West_Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+          </select>
+
+          <select id="collegeSelect" class="collegeSelect"></select>
         </div>
 
-        <div id="extraFundingInstructions" class="extraFundingInstructions summary left hiddenMessage">
-          <span style="font-weight: bold;">Note: </span>You may have excess funds available with the selected
-          contribution. <a target="_blank"
-            href="https://investor.vanguard.com/investor-resources-education/article/things-that-may-surprise-you-about-529s">See
-            what you can do with them.</a>
+        <div class="slide">
+          <label for="yearsSlider">years until college</label>
+          <!--       <input type="range" id="yearsSlider" min="0" max="30" value="17" step=".1"> -->
+          <input
+            id="yearsSlider"
+            type="range"
+            value="17"
+            min="1"
+            max="30"
+            step=".1"
+            class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed"
+          />
+          <div id="yearsUntilText" class="sliderValue">17</div>
         </div>
 
-      </div>
-    </div>
+        <div class="slide">
+          <label for="annualCollegeCostSlider">current yearly cost</label>
+          <input
+            type="range"
+            id="annualCollegeCostSlider"
+            min="1000"
+            max="100000"
+            value="42000"
+            step="100"
+            class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed"
+          />
+          <div id="annualCollegeCostText" class="sliderValue">$42,000</div>
+        </div>
 
-    <div class="sliderHolder">
-      <div class="select">
-        <select id="stateSelect" class="collegeSelect">
-          <option value="Average">Average</option>
-          <option value="New_Jersey">New Jersey</option>
-          <option value="Pennsylvania">Pennsylvania</option>
-          <option value="Delaware">Delaware</option>
-          <option value="Maryland">Maryland</option>
-          <option value="Virginia">Virginia</option>
-          <option value="West_Virginia">West Virginia</option>
-          <option value="Washington_DC">Washington DC</option>
-        </select>
-        <select id="collegeSelect" class="collegeSelect">
-        </select>
-      </div>
+        <div class="slide">
+          <label for="annualCostIncreaseSlider">annual cost increase</label>
+          <input
+            type="range"
+            id="annualCostIncreaseSlider"
+            min="0"
+            max="10"
+            value="5"
+            step=".1"
+            class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed"
+          />
+          <div id="costIncreaseText" class="sliderValue">5.00%</div>
+        </div>
 
-      <div class="slide">
-        <label for="yearsSlider">years until college</label>
-        <!--       <input type="range" id="yearsSlider" min="0" max="30" value="17" step=".1"> -->
-        <input id="yearsSlider" type="range" value="17" min="1" max="30" step=".1"
-          class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
-        <div id="yearsUntilText" class="sliderValue">17</div>
-      </div>
+        <div class="slide">
+          <label for="startingAmountInput">amount saved</label>
+          <div class="dollarTextInput">
+            <input type="text" id="startingAmountInput" value="$5,000" />
+          </div>
+        </div>
 
-      <div class="slide">
-        <label for="annualCollegeCostSlider">current yearly cost</label>
-        <input type="range" id="annualCollegeCostSlider" min="1000" max="100000" value="42000" step="100"
-          class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
-        <div id="annualCollegeCostText" class="sliderValue">$42,000</div>
-      </div>
+        <div class="slide">
+          <label for="ROfRSlider">rate of return</label>
+          <input
+            type="range"
+            id="ROfRSlider"
+            min="0"
+            max="10"
+            value="6"
+            step=".1"
+            class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed"
+          />
+          <div id="ROfRText" class="sliderValue">6%</div>
+        </div>
 
-      <div class="slide">
-        <label for="annualCostIncreaseSlider">annual cost increase</label>
-        <input type="range" id="annualCostIncreaseSlider" min="0" max="10" value="5" step=".1"
-          class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
-        <div id="costIncreaseText" class="sliderValue">5.00%</div>
-      </div>
-
-      <div class="slide">
-        <label for="startingAmountInput">amount saved</label>
-        <div class="dollarTextInput"><input type="text" id="startingAmountInput" value="$5,000"></div>
-      </div>
-
-      <div class="slide">
-        <label for="ROfRSlider">rate of return</label>
-        <input type="range" id="ROfRSlider" min="0" max="10" value="6" step=".1"
-          class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
-        <div id="ROfRText" class="sliderValue">6%</div>
-      </div>
-
-      <!-- <div class="slide">
+        <!-- <div class="slide">
       <label for="annualCollegeCostInput">current yearly cost</label>
       <input type="text" id="annualCollegeCostInput" value="42000">
     </div> -->
 
-      <div class="slide">
-        <div style="display: flex; justify-content: flex-start; align-items: center;">
-          <select class="collegeSelect" id="periodSelect">
-            <option value="56">weekly</option>
-            <option value="26">bi-weekly</option>
-            <option value="24">bi-monthly</option>
-            <option value="12" selected>monthly</option>
-            <option value="4">quarterly</option>
-            <option value="1">yearly</option>
-          </select>
-          <label for="plannedContributionSlider">contribution</label>
+        <div class="slide">
+          <div
+            style="
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+            "
+          >
+            <select class="collegeSelect" id="periodSelect">
+              <option value="56">weekly</option>
+              <option value="26">bi-weekly</option>
+              <option value="24">bi-monthly</option>
+              <option value="12" selected>monthly</option>
+              <option value="4">quarterly</option>
+              <option value="1">yearly</option>
+            </select>
+            <label for="plannedContributionSlider">contribution</label>
+          </div>
+
+          <input
+            type="range"
+            id="plannedContributionSlider"
+            min="0"
+            max="3000"
+            value="100"
+            step="25"
+            class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed"
+          />
+          <div
+            id="plannedContributionText"
+            class="sliderValue"
+            style="font-weight: bold; font-size: 1.2rem"
+          >
+            $100
+          </div>
         </div>
 
-        <input type="range" id="plannedContributionSlider" min="0" max="3000" value="100" step="25"
-          class="h-1 w-full cursor-ew-resize appearance-none rounded-full bg-gray-300 disabled:cursor-not-allowed">
-        <div id="plannedContributionText" class="sliderValue" style="font-weight: bold; font-size: 1.2rem;">$100</div>
+        <div class="select"></div>
       </div>
-
-      <div class="select">
-
-      </div>
-
     </div>
-  </div>
-  </div>
-</body>
-<script src="./src/js/main.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-
+  </body>
+  <script src="./src/js/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </html>

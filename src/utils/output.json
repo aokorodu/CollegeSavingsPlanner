@@ -1,0 +1,2897 @@
+[
+  {
+    "name": "ATA College, Tulsa, OK ",
+    "cost": 15000,
+    "colors": []
+  },
+  {
+    "name": "Cameron University, Lawton, OK ",
+    "cost": 25203,
+    "colors": []
+  },
+  {
+    "name": "Carl Albert State College, Poteau, OK ",
+    "cost": 14287,
+    "colors": []
+  },
+  {
+    "name": "College of the Muscogee Nation, Okmulgee, OK ",
+    "cost": 16545,
+    "colors": []
+  },
+  {
+    "name": "Connors State College, Warner, OK ",
+    "cost": 15244,
+    "colors": []
+  },
+  {
+    "name": "East Central University, Ada, OK ",
+    "cost": 25294,
+    "colors": []
+  },
+  {
+    "name": "Eastern Oklahoma State College, Wilburton, OK ",
+    "cost": 15724,
+    "colors": []
+  },
+  {
+    "name": "Family of Faith Christian University, Shawnee, OK ",
+    "cost": 17712,
+    "colors": []
+  },
+  {
+    "name": "Langston University, Langston, OK ",
+    "cost": 25141,
+    "colors": []
+  },
+  {
+    "name": "Mid-America Christian University, Oklahoma City, OK ",
+    "cost": 28960,
+    "colors": []
+  },
+  {
+    "name": "Murray State College, Tishomingo, OK ",
+    "cost": 18376,
+    "colors": []
+  },
+  {
+    "name": "Northeastern Oklahoma A&M College, Miami, OK ",
+    "cost": 18293,
+    "colors": []
+  },
+  {
+    "name": "Northeastern State University, Tahlequah, OK ",
+    "cost": 27127,
+    "colors": []
+  },
+  {
+    "name": "Northern Oklahoma College, Tonkawa, OK ",
+    "cost": 19410,
+    "colors": []
+  },
+  {
+    "name": "Northwestern Oklahoma State University, Alva, OK ",
+    "cost": 17184,
+    "colors": []
+  },
+  {
+    "name": "Oklahoma Baptist University, Shawnee, OK ",
+    "cost": 43290,
+    "colors": []
+  },
+  {
+    "name": "Oklahoma Christian University, Edmond, OK ",
+    "cost": 34580,
+    "colors": []
+  },
+  {
+    "name": "Oklahoma City Community College, Oklahoma City, OK ",
+    "cost": 9810,
+    "colors": []
+  },
+  {
+    "name": "Oklahoma City University, Oklahoma City, OK ",
+    "cost": 43188,
+    "colors": []
+  },
+  {
+    "name": "Oklahoma Panhandle State University, Goodwell, OK ",
+    "cost": 14933,
+    "colors": []
+  },
+  {
+    "name": "Oklahoma State University Institute of Technology, Okmulgee, OK ",
+    "cost": 18310,
+    "colors": []
+  },
+  {
+    "name": "Oklahoma State University-Main Campus, Stillwater, OK ",
+    "cost": 37054,
+    "colors": []
+  },
+  {
+    "name": "Oklahoma State University-Oklahoma City, Oklahoma City, OK ",
+    "cost": 9564,
+    "colors": []
+  },
+  {
+    "name": "Oklahoma Wesleyan University, Bartlesville, OK ",
+    "cost": 40648,
+    "colors": []
+  },
+  {
+    "name": "Oral Roberts University, Tulsa, OK ",
+    "cost": 43500,
+    "colors": []
+  },
+  {
+    "name": "Randall University, Moore, OK ",
+    "cost": 25512,
+    "colors": []
+  },
+  {
+    "name": "Redlands Community College, El Reno, OK ",
+    "cost": 14815,
+    "colors": []
+  },
+  {
+    "name": "Rogers State University, Claremore, OK ",
+    "cost": 25898,
+    "colors": []
+  },
+  {
+    "name": "Rose State College, Midwest City, OK ",
+    "cost": 20333,
+    "colors": []
+  },
+  {
+    "name": "Seminole State College, Seminole, OK ",
+    "cost": 19654,
+    "colors": []
+  },
+  {
+    "name": "Southeastern Oklahoma State University, Durant, OK ",
+    "cost": 24170,
+    "colors": []
+  },
+  {
+    "name": "Southern Nazarene University, Bethany, OK ",
+    "cost": 39160,
+    "colors": []
+  },
+  {
+    "name": "Southwestern Christian University, Bethany, OK ",
+    "cost": 30716,
+    "colors": []
+  },
+  {
+    "name": "Southwestern Oklahoma State University, Weatherford, OK ",
+    "cost": 15735,
+    "colors": []
+  },
+  {
+    "name": "Spartan College of Aeronautics and Technology, Tulsa, OK ",
+    "cost": 25548,
+    "colors": []
+  },
+  {
+    "name": "Tulsa Community College, Tulsa, OK ",
+    "cost": 9720,
+    "colors": []
+  },
+  {
+    "name": "University of Central Oklahoma, Edmond, OK ",
+    "cost": 28295,
+    "colors": []
+  },
+  {
+    "name": "University of Oklahoma-Norman Campus, Norman, OK ",
+    "cost": 39975,
+    "colors": []
+  },
+  {
+    "name": "University of Science and Arts of Oklahoma, Chickasha, OK ",
+    "cost": 27830,
+    "colors": []
+  },
+  {
+    "name": "University of Tulsa, Tulsa, OK ",
+    "cost": 59794,
+    "colors": []
+  },
+  {
+    "name": "Western Oklahoma State College, Altus, OK ",
+    "cost": 17248,
+    "colors": []
+  },
+  {
+    "name": "American College of Healthcare Sciences, Portland, OR ",
+    "cost": 12656,
+    "colors": []
+  },
+  {
+    "name": "Blue Mountain Community College, Pendleton, OR ",
+    "cost": 9551,
+    "colors": []
+  },
+  {
+    "name": "Bushnell University, Eugene, OR ",
+    "cost": 45720,
+    "colors": []
+  },
+  {
+    "name": "Central Oregon Community College, Bend, OR ",
+    "cost": 26026,
+    "colors": []
+  },
+  {
+    "name": "Chemeketa Community College, Salem, OR ",
+    "cost": 13905,
+    "colors": []
+  },
+  {
+    "name": "Clackamas Community College, Oregon City, OR ",
+    "cost": 14040,
+    "colors": []
+  },
+  {
+    "name": "Clatsop Community College, Astoria, OR ",
+    "cost": 8607,
+    "colors": []
+  },
+  {
+    "name": "Columbia Gorge Community College, The Dalles, OR ",
+    "cost": 17421,
+    "colors": []
+  },
+  {
+    "name": "Corban University, Salem, OR ",
+    "cost": 48694,
+    "colors": []
+  },
+  {
+    "name": "Eastern Oregon University, La Grande, OR ",
+    "cost": 36279,
+    "colors": []
+  },
+  {
+    "name": "George Fox University, Newberg, OR ",
+    "cost": 54540,
+    "colors": []
+  },
+  {
+    "name": "Klamath Community College, Klamath Falls, OR ",
+    "cost": 7809,
+    "colors": []
+  },
+  {
+    "name": "Lane Community College, Eugene, OR ",
+    "cost": 24420,
+    "colors": []
+  },
+  {
+    "name": "Lewis & Clark College, Portland, OR ",
+    "cost": 77352,
+    "colors": []
+  },
+  {
+    "name": "Linfield University, McMinnville, OR ",
+    "cost": 63590,
+    "colors": []
+  },
+  {
+    "name": "Linn-Benton Community College, Albany, OR ",
+    "cost": 13992,
+    "colors": []
+  },
+  {
+    "name": "Mount Angel Seminary, Saint Benedict, OR ",
+    "cost": 46398,
+    "colors": []
+  },
+  {
+    "name": "Mt Hood Community College, Gresham, OR ",
+    "cost": 9675,
+    "colors": []
+  },
+  {
+    "name": "Multnomah University, Portland, OR ",
+    "cost": 41310,
+    "colors": []
+  },
+  {
+    "name": "New Hope Christian College-Eugene, Eugene, OR ",
+    "cost": 26020,
+    "colors": []
+  },
+  {
+    "name": "Oregon Coast Community College, Newport, OR ",
+    "cost": 5400,
+    "colors": []
+  },
+  {
+    "name": "Oregon Institute of Technology, Klamath Falls, OR ",
+    "cost": 47196,
+    "colors": []
+  },
+  {
+    "name": "Oregon State University, Corvallis, OR ",
+    "cost": 50739,
+    "colors": []
+  },
+  {
+    "name": "Oregon State University-Cascades Campus, Bend, OR ",
+    "cost": 50019,
+    "colors": []
+  },
+  {
+    "name": "Pacific Bible College, Medford, OR ",
+    "cost": 6555,
+    "colors": []
+  },
+  {
+    "name": "Pacific Northwest College of Art, Portland, OR ",
+    "cost": 66038,
+    "colors": []
+  },
+  {
+    "name": "Pacific University, Forest Grove, OR ",
+    "cost": 69524,
+    "colors": []
+  },
+  {
+    "name": "Portland Actors Conservatory, Portland, OR ",
+    "cost": 12115,
+    "colors": []
+  },
+  {
+    "name": "Portland Community College, Portland, OR ",
+    "cost": 10080,
+    "colors": []
+  },
+  {
+    "name": "Portland State University, Portland, OR ",
+    "cost": 43866,
+    "colors": []
+  },
+  {
+    "name": "Reed College, Portland, OR ",
+    "cost": 83840,
+    "colors": []
+  },
+  {
+    "name": "Rogue Community College, Grants Pass, OR ",
+    "cost": 6192,
+    "colors": []
+  },
+  {
+    "name": "Southern Oregon University, Ashland, OR ",
+    "cost": 46971,
+    "colors": []
+  },
+  {
+    "name": "Southwestern Oregon Community College, Coos Bay, OR ",
+    "cost": 14799,
+    "colors": []
+  },
+  {
+    "name": "Tillamook Bay Community College, Tillamook, OR ",
+    "cost": 5184,
+    "colors": []
+  },
+  {
+    "name": "Treasure Valley Community College, Ontario, OR ",
+    "cost": 15195,
+    "colors": []
+  },
+  {
+    "name": "Umpqua Community College, Roseburg, OR ",
+    "cost": 11613,
+    "colors": []
+  },
+  {
+    "name": "University of Oregon, Eugene, OR ",
+    "cost": 59142,
+    "colors": []
+  },
+  {
+    "name": "University of Portland, Portland, OR ",
+    "cost": 71500,
+    "colors": []
+  },
+  {
+    "name": "Warner Pacific University, Portland, OR ",
+    "cost": 35232,
+    "colors": []
+  },
+  {
+    "name": "Western Oregon University, Monmouth, OR ",
+    "cost": 42345,
+    "colors": []
+  },
+  {
+    "name": "Willamette University, Salem, OR ",
+    "cost": 63758,
+    "colors": []
+  },
+  {
+    "name": "Brown University, Providence, RI ",
+    "cost": 84828,
+    "colors": []
+  },
+  {
+    "name": "Bryant University, Smithfield, RI ",
+    "cost": 68107,
+    "colors": []
+  },
+  {
+    "name": "College Unbound, Providence, RI ",
+    "cost": 10488,
+    "colors": []
+  },
+  {
+    "name": "Community College of Rhode Island, Warwick, RI ",
+    "cost": 14210,
+    "colors": []
+  },
+  {
+    "name": "Johnson & Wales University-Online, Providence, RI ",
+    "cost": 13365,
+    "colors": []
+  },
+  {
+    "name": "Johnson & Wales University-Providence, Providence, RI ",
+    "cost": 59184,
+    "colors": []
+  },
+  {
+    "name": "New England Institute of Technology, East Greenwich, RI ",
+    "cost": 52665,
+    "colors": []
+  },
+  {
+    "name": "Providence College, Providence, RI ",
+    "cost": 77998,
+    "colors": []
+  },
+  {
+    "name": "Rhode Island College, Providence, RI ",
+    "cost": 40238,
+    "colors": []
+  },
+  {
+    "name": "Rhode Island School of Design, Providence, RI ",
+    "cost": 75610,
+    "colors": []
+  },
+  {
+    "name": "Roger Williams University, Bristol, RI ",
+    "cost": 59356,
+    "colors": []
+  },
+  {
+    "name": "Salve Regina University, Newport, RI ",
+    "cost": 65430,
+    "colors": []
+  },
+  {
+    "name": "University of Rhode Island, Kingston, RI ",
+    "cost": 50704,
+    "colors": []
+  },
+  {
+    "name": "Aiken Technical College, Graniteville, SC ",
+    "cost": 6916,
+    "colors": []
+  },
+  {
+    "name": "Allen University, Columbia, SC ",
+    "cost": 22888,
+    "colors": []
+  },
+  {
+    "name": "American College of the Building Arts, Charleston, SC ",
+    "cost": 20572,
+    "colors": []
+  },
+  {
+    "name": "Anderson University, Anderson, SC ",
+    "cost": 45870,
+    "colors": []
+  },
+  {
+    "name": "Benedict College, Columbia, SC ",
+    "cost": 25000,
+    "colors": []
+  },
+  {
+    "name": "Bob Jones University, Greenville, SC ",
+    "cost": 33300,
+    "colors": []
+  },
+  {
+    "name": "Central Carolina Technical College, Sumter, SC ",
+    "cost": 9016,
+    "colors": []
+  },
+  {
+    "name": "Charleston Southern University, Charleston, SC ",
+    "cost": 42620,
+    "colors": []
+  },
+  {
+    "name": "Citadel Military College of South Carolina, Charleston, SC ",
+    "cost": 46516,
+    "colors": []
+  },
+  {
+    "name": "Claflin University, Orangeburg, SC ",
+    "cost": 26526,
+    "colors": []
+  },
+  {
+    "name": "Clemson University, Clemson, SC ",
+    "cost": 52370,
+    "colors": []
+  },
+  {
+    "name": "Clinton College, Rock Hill, SC ",
+    "cost": 21010,
+    "colors": []
+  },
+  {
+    "name": "Coastal Carolina University, Conway, SC ",
+    "cost": 41046,
+    "colors": []
+  },
+  {
+    "name": "Coker University, Hartsville, SC ",
+    "cost": 42736,
+    "colors": []
+  },
+  {
+    "name": "College of Charleston, Charleston, SC ",
+    "cost": 50890,
+    "colors": []
+  },
+  {
+    "name": "Columbia College, Columbia, SC ",
+    "cost": 30000,
+    "colors": []
+  },
+  {
+    "name": "Columbia International University, Columbia, SC ",
+    "cost": 39850,
+    "colors": []
+  },
+  {
+    "name": "Converse University, Spartanburg, SC ",
+    "cost": 36520,
+    "colors": []
+  },
+  {
+    "name": "Denmark Technical College, Denmark, SC ",
+    "cost": 21363,
+    "colors": []
+  },
+  {
+    "name": "Erskine College, Due West, SC ",
+    "cost": 49160,
+    "colors": []
+  },
+  {
+    "name": "Florence-Darlington Technical College, Florence, SC ",
+    "cost": 6772,
+    "colors": []
+  },
+  {
+    "name": "Fortis College-Columbia, Columbia, SC ",
+    "cost": 14576,
+    "colors": []
+  },
+  {
+    "name": "Francis Marion University, Florence, SC ",
+    "cost": 30442,
+    "colors": []
+  },
+  {
+    "name": "Furman University, Greenville, SC ",
+    "cost": 74180,
+    "colors": []
+  },
+  {
+    "name": "Galen Health Institutes-Myrtle Beach, Myrtle Beach, SC ",
+    "cost": 15860,
+    "colors": []
+  },
+  {
+    "name": "Greenville Technical College, Greenville, SC ",
+    "cost": 10657,
+    "colors": []
+  },
+  {
+    "name": "Horry-Georgetown Technical College, Conway, SC ",
+    "cost": 8836,
+    "colors": []
+  },
+  {
+    "name": "Lander University, Greenwood, SC ",
+    "cost": 32000,
+    "colors": []
+  },
+  {
+    "name": "Limestone University, Gaffney, SC ",
+    "cost": 37579,
+    "colors": []
+  },
+  {
+    "name": "Midlands Technical College, West Columbia, SC ",
+    "cost": 13812,
+    "colors": []
+  },
+  {
+    "name": "Morris College, Sumter, SC ",
+    "cost": 23604,
+    "colors": []
+  },
+  {
+    "name": "Newberry College, Newberry, SC ",
+    "cost": 42900,
+    "colors": []
+  },
+  {
+    "name": "North Greenville University, Tigerville, SC ",
+    "cost": 36120,
+    "colors": []
+  },
+  {
+    "name": "Northeastern Technical College, Cheraw, SC ",
+    "cost": 6024,
+    "colors": []
+  },
+  {
+    "name": "Orangeburg Calhoun Technical College, Orangeburg, SC ",
+    "cost": 7970,
+    "colors": []
+  },
+  {
+    "name": "Piedmont Technical College, Greenwood, SC ",
+    "cost": 6923,
+    "colors": []
+  },
+  {
+    "name": "Presbyterian College, Clinton, SC ",
+    "cost": 56013,
+    "colors": []
+  },
+  {
+    "name": "South Carolina State University, Orangeburg, SC ",
+    "cost": 30750,
+    "colors": []
+  },
+  {
+    "name": "South University-Columbia, Columbia, SC ",
+    "cost": 18238,
+    "colors": []
+  },
+  {
+    "name": "Southeastern College-Charleston, North Charleston, SC ",
+    "cost": 24184,
+    "colors": []
+  },
+  {
+    "name": "Southeastern College-Columbia, Columbia, SC ",
+    "cost": 24184,
+    "colors": []
+  },
+  {
+    "name": "Southern Wesleyan University, Central, SC ",
+    "cost": 38524,
+    "colors": []
+  },
+  {
+    "name": "Spartanburg Community College, Spartanburg, SC ",
+    "cost": 10110,
+    "colors": []
+  },
+  {
+    "name": "Spartanburg Methodist College, Spartanburg, SC ",
+    "cost": 31300,
+    "colors": []
+  },
+  {
+    "name": "Strayer University-South Carolina, Greenville, SC ",
+    "cost": 13920,
+    "colors": []
+  },
+  {
+    "name": "Technical College of the Lowcountry, Beaufort, SC ",
+    "cost": 11044,
+    "colors": []
+  },
+  {
+    "name": "Tri-County Technical College, Pendleton, SC ",
+    "cost": 11096,
+    "colors": []
+  },
+  {
+    "name": "Trident Technical College, Charleston, SC ",
+    "cost": 8606,
+    "colors": []
+  },
+  {
+    "name": "University of South Carolina Aiken, Aiken, SC ",
+    "cost": 29954,
+    "colors": []
+  },
+  {
+    "name": "University of South Carolina Beaufort, Bluffton, SC ",
+    "cost": 31586,
+    "colors": []
+  },
+  {
+    "name": "University of South Carolina-Columbia, Columbia, SC ",
+    "cost": 47492,
+    "colors": []
+  },
+  {
+    "name": "University of South Carolina-Lancaster, Lancaster, SC ",
+    "cost": 18238,
+    "colors": []
+  },
+  {
+    "name": "University of South Carolina-Salkehatchie, Allendale, SC ",
+    "cost": 18238,
+    "colors": []
+  },
+  {
+    "name": "University of South Carolina-Sumter, Sumter, SC ",
+    "cost": 18238,
+    "colors": []
+  },
+  {
+    "name": "University of South Carolina-Union, Union, SC ",
+    "cost": 18238,
+    "colors": []
+  },
+  {
+    "name": "University of South Carolina-Upstate, Spartanburg, SC ",
+    "cost": 32585,
+    "colors": []
+  },
+  {
+    "name": "Voorhees University, Denmark, SC ",
+    "cost": 19975,
+    "colors": []
+  },
+  {
+    "name": "Williamsburg Technical College, Kingstree, SC ",
+    "cost": 8592,
+    "colors": []
+  },
+  {
+    "name": "Winthrop University, Rock Hill, SC ",
+    "cost": 40774,
+    "colors": []
+  },
+  {
+    "name": "Wofford College, Spartanburg, SC ",
+    "cost": 69115,
+    "colors": []
+  },
+  {
+    "name": "York Technical College, Rock Hill, SC ",
+    "cost": 10824,
+    "colors": []
+  },
+  {
+    "name": "Augustana University, Sioux Falls, SD ",
+    "cost": 48660,
+    "colors": []
+  },
+  {
+    "name": "Black Hills State University, Spearfish, SD ",
+    "cost": 19500,
+    "colors": []
+  },
+  {
+    "name": "California Intercontinental University, Sioux Falls, SD ",
+    "cost": 9054,
+    "colors": []
+  },
+  {
+    "name": "Dakota State University, Madison, SD ",
+    "cost": 21725,
+    "colors": []
+  },
+  {
+    "name": "Dakota Wesleyan University, Mitchell, SD ",
+    "cost": 40490,
+    "colors": []
+  },
+  {
+    "name": "Lake Area Technical College, Watertown, SD ",
+    "cost": 6718,
+    "colors": []
+  },
+  {
+    "name": "Mitchell Technical College, Mitchell, SD ",
+    "cost": 7524,
+    "colors": []
+  },
+  {
+    "name": "Mount Marty University, Yankton, SD ",
+    "cost": 42400,
+    "colors": []
+  },
+  {
+    "name": "National American University-Rapid City, Rapid City, SD ",
+    "cost": 16065,
+    "colors": []
+  },
+  {
+    "name": "Northern State University, Aberdeen, SD ",
+    "cost": 22247,
+    "colors": []
+  },
+  {
+    "name": "Oglala Lakota College, Kyle, SD ",
+    "cost": 9884,
+    "colors": []
+  },
+  {
+    "name": "Sinte Gleska University, Mission, SD ",
+    "cost": 4714,
+    "colors": []
+  },
+  {
+    "name": "Sisseton Wahpeton College, Sisseton, SD ",
+    "cost": 7330,
+    "colors": []
+  },
+  {
+    "name": "South Dakota School of Mines and Technology, Rapid City, SD ",
+    "cost": 23600,
+    "colors": []
+  },
+  {
+    "name": "South Dakota State University, Brookings, SD ",
+    "cost": 22371,
+    "colors": []
+  },
+  {
+    "name": "Southeast Technical College, Sioux Falls, SD ",
+    "cost": 16054,
+    "colors": []
+  },
+  {
+    "name": "University of Sioux Falls, Sioux Falls, SD ",
+    "cost": 29700,
+    "colors": []
+  },
+  {
+    "name": "University of South Dakota, Vermillion, SD ",
+    "cost": 22002,
+    "colors": []
+  },
+  {
+    "name": "Western Dakota Technical College, Rapid City, SD ",
+    "cost": 17308,
+    "colors": []
+  },
+  {
+    "name": "American Baptist College, Nashville, TN ",
+    "cost": 21114,
+    "colors": []
+  },
+  {
+    "name": "Austin Peay State University, Clarksville, TN ",
+    "cost": 27289,
+    "colors": []
+  },
+  {
+    "name": "Baptist Health Sciences University, Memphis, TN ",
+    "cost": 17826,
+    "colors": []
+  },
+  {
+    "name": "Belmont University, Nashville, TN ",
+    "cost": 55610,
+    "colors": []
+  },
+  {
+    "name": "Bethel University, McKenzie, TN ",
+    "cost": 28705,
+    "colors": []
+  },
+  {
+    "name": "Bryan College-Dayton, Dayton, TN ",
+    "cost": 27450,
+    "colors": []
+  },
+  {
+    "name": "Carson-Newman University, Jefferson City, TN ",
+    "cost": 45207,
+    "colors": []
+  },
+  {
+    "name": "Chattanooga College Medical Dental and & Technical Careers, Chattanooga, TN ",
+    "cost": 10690,
+    "colors": []
+  },
+  {
+    "name": "Chattanooga State Community College, Chattanooga, TN ",
+    "cost": 17750,
+    "colors": []
+  },
+  {
+    "name": "Christian Brothers University, Memphis, TN ",
+    "cost": 48031,
+    "colors": []
+  },
+  {
+    "name": "Cleveland State Community College, Cleveland, TN ",
+    "cost": 17730,
+    "colors": []
+  },
+  {
+    "name": "Columbia State Community College, Columbia, TN ",
+    "cost": 18104,
+    "colors": []
+  },
+  {
+    "name": "Cumberland University, Lebanon, TN ",
+    "cost": 38200,
+    "colors": []
+  },
+  {
+    "name": "Dyersburg State Community College, Dyersburg, TN ",
+    "cost": 17740,
+    "colors": []
+  },
+  {
+    "name": "East Tennessee State University, Johnson City, TN ",
+    "cost": 24060,
+    "colors": []
+  },
+  {
+    "name": "Fisk University, Nashville, TN ",
+    "cost": 35996,
+    "colors": []
+  },
+  {
+    "name": "Fortis Institute-Cookeville, Cookeville, TN ",
+    "cost": 14644,
+    "colors": []
+  },
+  {
+    "name": "Fortis Institute-Nashville, Nashville, TN ",
+    "cost": 15237,
+    "colors": []
+  },
+  {
+    "name": "Freed-Hardeman University, Henderson, TN ",
+    "cost": 33540,
+    "colors": []
+  },
+  {
+    "name": "Galen Health Institutes-Nashville Campus, Nashville, TN ",
+    "cost": 16400,
+    "colors": []
+  },
+  {
+    "name": "Herzing University-Nashville, Nashville, TN ",
+    "cost": 13420,
+    "colors": []
+  },
+  {
+    "name": "Jackson State Community College, Jackson, TN ",
+    "cost": 17716,
+    "colors": []
+  },
+  {
+    "name": "John A Gupton College, Nashville, TN ",
+    "cost": 12040,
+    "colors": []
+  },
+  {
+    "name": "Johnson University, Knoxville, TN ",
+    "cost": 29596,
+    "colors": []
+  },
+  {
+    "name": "King University, Bristol, TN ",
+    "cost": 45062,
+    "colors": []
+  },
+  {
+    "name": "Lane College, Jackson, TN ",
+    "cost": 19400,
+    "colors": []
+  },
+  {
+    "name": "Le Moyne-Owen College, Memphis, TN ",
+    "cost": 18176,
+    "colors": []
+  },
+  {
+    "name": "Lee University, Cleveland, TN ",
+    "cost": 32030,
+    "colors": []
+  },
+  {
+    "name": "Lincoln Memorial University, Harrogate, TN ",
+    "cost": 37958,
+    "colors": []
+  },
+  {
+    "name": "Lipscomb University, Nashville, TN ",
+    "cost": 53628,
+    "colors": []
+  },
+  {
+    "name": "Maryville College, Maryville, TN ",
+    "cost": 51514,
+    "colors": []
+  },
+  {
+    "name": "Mid-South Christian College, Memphis, TN ",
+    "cost": 16505,
+    "colors": []
+  },
+  {
+    "name": "Middle Tennessee State University, Murfreesboro, TN ",
+    "cost": 40746,
+    "colors": []
+  },
+  {
+    "name": "Milligan University, Milligan, TN ",
+    "cost": 47350,
+    "colors": []
+  },
+  {
+    "name": "Motlow State Community College, Tullahoma, TN ",
+    "cost": 17736,
+    "colors": []
+  },
+  {
+    "name": "Nashville State Community College, Nashville, TN ",
+    "cost": 17698,
+    "colors": []
+  },
+  {
+    "name": "Northeast State Community College, Blountville, TN ",
+    "cost": 17742,
+    "colors": []
+  },
+  {
+    "name": "Nossi College of Art and Design, Nashville, TN ",
+    "cost": 20350,
+    "colors": []
+  },
+  {
+    "name": "Pellissippi State Community College, Knoxville, TN ",
+    "cost": 17776,
+    "colors": []
+  },
+  {
+    "name": "Remington College-Memphis Campus, Memphis, TN ",
+    "cost": 20047,
+    "colors": []
+  },
+  {
+    "name": "Remington College-Nashville Campus, Nashville, TN ",
+    "cost": 21230,
+    "colors": []
+  },
+  {
+    "name": "Rhodes College, Memphis, TN ",
+    "cost": 67802,
+    "colors": []
+  },
+  {
+    "name": "Roane State Community College, Harriman, TN ",
+    "cost": 18622,
+    "colors": []
+  },
+  {
+    "name": "SAE Institute of Technology-Nashville, Nashville, TN ",
+    "cost": 17027,
+    "colors": []
+  },
+  {
+    "name": "South College, Knoxville, TN ",
+    "cost": 17935,
+    "colors": []
+  },
+  {
+    "name": "Southern Adventist University, Collegedale, TN ",
+    "cost": 34050,
+    "colors": []
+  },
+  {
+    "name": "Southwest Tennessee Community College, Memphis, TN ",
+    "cost": 17750,
+    "colors": []
+  },
+  {
+    "name": "Strayer University-Tennessee, Memphis, TN ",
+    "cost": 13920,
+    "colors": []
+  },
+  {
+    "name": "Tennessee State University, Nashville, TN ",
+    "cost": 32404,
+    "colors": []
+  },
+  {
+    "name": "Tennessee Technological University, Cookeville, TN ",
+    "cost": 30618,
+    "colors": []
+  },
+  {
+    "name": "Tennessee Wesleyan University, Athens, TN ",
+    "cost": 38680,
+    "colors": []
+  },
+  {
+    "name": "The University of Tennessee Southern, Pulaski, TN ",
+    "cost": 19106,
+    "colors": []
+  },
+  {
+    "name": "The University of Tennessee-Chattanooga, Chattanooga, TN ",
+    "cost": 28260,
+    "colors": []
+  },
+  {
+    "name": "The University of Tennessee-Knoxville, Knoxville, TN ",
+    "cost": 44474,
+    "colors": []
+  },
+  {
+    "name": "The University of Tennessee-Martin, Martin, TN ",
+    "cost": 23528,
+    "colors": []
+  },
+  {
+    "name": "The University of the South, Sewanee, TN ",
+    "cost": 69036,
+    "colors": []
+  },
+  {
+    "name": "Trevecca Nazarene University, Nashville, TN ",
+    "cost": 39940,
+    "colors": []
+  },
+  {
+    "name": "Tusculum University, Greeneville, TN ",
+    "cost": 39250,
+    "colors": []
+  },
+  {
+    "name": "Union University, Jackson, TN ",
+    "cost": 50616,
+    "colors": []
+  },
+  {
+    "name": "University of Memphis, Memphis, TN ",
+    "cost": 25128,
+    "colors": []
+  },
+  {
+    "name": "Vanderbilt University, Nashville, TN ",
+    "cost": 85000,
+    "colors": []
+  },
+  {
+    "name": "Visible Music College, Memphis, TN ",
+    "cost": 29000,
+    "colors": []
+  },
+  {
+    "name": "Volunteer State Community College, Gallatin, TN ",
+    "cost": 17724,
+    "colors": []
+  },
+  {
+    "name": "Walters State Community College, Morristown, TN ",
+    "cost": 17719,
+    "colors": []
+  },
+  {
+    "name": "Welch College, Gallatin, TN ",
+    "cost": 29212,
+    "colors": []
+  },
+  {
+    "name": "William R Moore College of Technology, Memphis, TN ",
+    "cost": 9678,
+    "colors": []
+  },
+  {
+    "name": "Williamson Christian College, Franklin, TN ",
+    "cost": 15010,
+    "colors": []
+  },
+  {
+    "name": "Abilene Christian University, Abilene, TX ",
+    "cost": 54880,
+    "colors": []
+  },
+  {
+    "name": "Abilene Christian University-Undergraduate Online, Addison, TX ",
+    "cost": 14520,
+    "colors": []
+  },
+  {
+    "name": "Alvin Community College, Alvin, TX ",
+    "cost": 4330,
+    "colors": []
+  },
+  {
+    "name": "Amarillo College, Amarillo, TX ",
+    "cost": 4704,
+    "colors": []
+  },
+  {
+    "name": "American InterContinental University-Houston, Houston, TX ",
+    "cost": 14842,
+    "colors": []
+  },
+  {
+    "name": "Angelina College, Lufkin, TX ",
+    "cost": 13114,
+    "colors": []
+  },
+  {
+    "name": "Angelo State University, San Angelo, TX ",
+    "cost": 30199,
+    "colors": []
+  },
+  {
+    "name": "Arizona College of Nursing-Dallas, Dallas, TX ",
+    "cost": 23760,
+    "colors": []
+  },
+  {
+    "name": "Arlington Baptist University, Arlington, TX ",
+    "cost": 27600,
+    "colors": []
+  },
+  {
+    "name": "Austin College, Sherman, TX ",
+    "cost": 59995,
+    "colors": []
+  },
+  {
+    "name": "Austin Community College District, Austin, TX ",
+    "cost": 10590,
+    "colors": []
+  },
+  {
+    "name": "Aviation Institute of Maintenance-Dallas, Irving, TX ",
+    "cost": 16757,
+    "colors": []
+  },
+  {
+    "name": "Aviation Institute of Maintenance-Houston, Houston, TX ",
+    "cost": 16757,
+    "colors": []
+  },
+  {
+    "name": "Baptist Health System School of Health Professions, San Antonio, TX ",
+    "cost": 14675,
+    "colors": []
+  },
+  {
+    "name": "Baptist Missionary Association Theological Seminary, Jacksonville, TX ",
+    "cost": 19050,
+    "colors": []
+  },
+  {
+    "name": "Baptist University of the Americas, San Antonio, TX ",
+    "cost": 15350,
+    "colors": []
+  },
+  {
+    "name": "Baylor University, Waco, TX ",
+    "cost": 69079,
+    "colors": []
+  },
+  {
+    "name": "Blinn College District, Brenham, TX ",
+    "cost": 21830,
+    "colors": []
+  },
+  {
+    "name": "Brazosport College, Lake Jackson, TX ",
+    "cost": 4711,
+    "colors": []
+  },
+  {
+    "name": "Central Texas College, Killeen, TX ",
+    "cost": 14523,
+    "colors": []
+  },
+  {
+    "name": "Chamberlain University-Texas, Houston, TX ",
+    "cost": 19686,
+    "colors": []
+  },
+  {
+    "name": "Christ Mission College, San Antonio, TX ",
+    "cost": 13551,
+    "colors": []
+  },
+  {
+    "name": "Cisco College, Cisco, TX ",
+    "cost": 10971,
+    "colors": []
+  },
+  {
+    "name": "Clarendon College, Clarendon, TX ",
+    "cost": 10192,
+    "colors": []
+  },
+  {
+    "name": "Coastal Bend College, Beeville, TX ",
+    "cost": 12244,
+    "colors": []
+  },
+  {
+    "name": "College of Biblical Studies-Houston, Houston, TX ",
+    "cost": 13275,
+    "colors": []
+  },
+  {
+    "name": "College of the Mainland, Texas City, TX ",
+    "cost": 3873,
+    "colors": []
+  },
+  {
+    "name": "Collin County Community College District, McKinney, TX ",
+    "cost": 15334,
+    "colors": []
+  },
+  {
+    "name": "Commonwealth Institute of Funeral Service, Houston, TX ",
+    "cost": 15313,
+    "colors": []
+  },
+  {
+    "name": "Concordia University Texas, Austin, TX ",
+    "cost": 49630,
+    "colors": []
+  },
+  {
+    "name": "Criswell College, Dallas, TX ",
+    "cost": 22991,
+    "colors": []
+  },
+  {
+    "name": "Culinary Institute Inc, Houston, TX ",
+    "cost": 18539,
+    "colors": []
+  },
+  {
+    "name": "Dallas Baptist University, Dallas, TX ",
+    "cost": 48355,
+    "colors": []
+  },
+  {
+    "name": "Dallas Christian College, Dallas, TX ",
+    "cost": 30361,
+    "colors": []
+  },
+  {
+    "name": "Dallas College, Dallas, TX ",
+    "cost": 6000,
+    "colors": []
+  },
+  {
+    "name": "Dallas Institute of Funeral Service, Dallas, TX ",
+    "cost": 13496,
+    "colors": []
+  },
+  {
+    "name": "Del Mar College, Corpus Christi, TX ",
+    "cost": 6050,
+    "colors": []
+  },
+  {
+    "name": "DeVry University-Texas, Irving, TX ",
+    "cost": 17488,
+    "colors": []
+  },
+  {
+    "name": "East Texas Baptist University, Marshall, TX ",
+    "cost": 40679,
+    "colors": []
+  },
+  {
+    "name": "El Paso Community College, El Paso, TX ",
+    "cost": 5314,
+    "colors": []
+  },
+  {
+    "name": "Frank Phillips College, Borger, TX ",
+    "cost": 9856,
+    "colors": []
+  },
+  {
+    "name": "Galen College of Nursing-San Antonio, San Antonio, TX ",
+    "cost": 16400,
+    "colors": []
+  },
+  {
+    "name": "Galen Health Institutes-Austin Campus, Round Rock, TX ",
+    "cost": 16400,
+    "colors": []
+  },
+  {
+    "name": "Galen Health Institutes-Dallas, Richardson, TX ",
+    "cost": 16400,
+    "colors": []
+  },
+  {
+    "name": "Galen Health Institutes-Houston, Houston, TX ",
+    "cost": 16400,
+    "colors": []
+  },
+  {
+    "name": "Galveston College, Galveston, TX ",
+    "cost": 14238,
+    "colors": []
+  },
+  {
+    "name": "Grace School of Theology, Conroe, TX ",
+    "cost": 6760,
+    "colors": []
+  },
+  {
+    "name": "Grayson College, Denison, TX ",
+    "cost": 13320,
+    "colors": []
+  },
+  {
+    "name": "Hardin-Simmons University, Abilene, TX ",
+    "cost": 42320,
+    "colors": []
+  },
+  {
+    "name": "Hill College, Hillsboro, TX ",
+    "cost": 8920,
+    "colors": []
+  },
+  {
+    "name": "Houston Christian University, Houston, TX ",
+    "cost": 48916,
+    "colors": []
+  },
+  {
+    "name": "Houston Community College, Houston, TX ",
+    "cost": 5460,
+    "colors": []
+  },
+  {
+    "name": "Houston International College Cardiotech Ultrasound School, Houston, TX ",
+    "cost": 11978,
+    "colors": []
+  },
+  {
+    "name": "Howard College, Big Spring, TX ",
+    "cost": 11914,
+    "colors": []
+  },
+  {
+    "name": "Howard Payne University, Brownwood, TX ",
+    "cost": 43396,
+    "colors": []
+  },
+  {
+    "name": "Huston-Tillotson University, Austin, TX ",
+    "cost": 23152,
+    "colors": []
+  },
+  {
+    "name": "Interactive College of Technology, Pasadena, TX ",
+    "cost": 10970,
+    "colors": []
+  },
+  {
+    "name": "Interactive College of Technology, Houston, TX ",
+    "cost": 10970,
+    "colors": []
+  },
+  {
+    "name": "Interactive College of Technology, Houston, TX ",
+    "cost": 10970,
+    "colors": []
+  },
+  {
+    "name": "Jacksonville College-Main Campus, Jacksonville, TX ",
+    "cost": 16820,
+    "colors": []
+  },
+  {
+    "name": "Jarvis Christian University, Hawkins, TX ",
+    "cost": 21600,
+    "colors": []
+  },
+  {
+    "name": "KD Conservatory College of Film and Dramatic Arts, Dallas, TX ",
+    "cost": 18080,
+    "colors": []
+  },
+  {
+    "name": "Kilgore College, Kilgore, TX ",
+    "cost": 12400,
+    "colors": []
+  },
+  {
+    "name": "Lamar Institute of Technology, Beaumont, TX ",
+    "cost": 12924,
+    "colors": []
+  },
+  {
+    "name": "Lamar State College-Orange, Orange, TX ",
+    "cost": 13824,
+    "colors": []
+  },
+  {
+    "name": "Lamar State College-Port Arthur, Port Arthur, TX ",
+    "cost": 8070,
+    "colors": []
+  },
+  {
+    "name": "Lamar University, Beaumont, TX ",
+    "cost": 28754,
+    "colors": []
+  },
+  {
+    "name": "Laredo College, Laredo, TX ",
+    "cost": 5748,
+    "colors": []
+  },
+  {
+    "name": "Lee College, Baytown, TX ",
+    "cost": 4302,
+    "colors": []
+  },
+  {
+    "name": "LeTourneau University, Longview, TX ",
+    "cost": 46070,
+    "colors": []
+  },
+  {
+    "name": "Lone Star College System, The Woodlands, TX ",
+    "cost": 8700,
+    "colors": []
+  },
+  {
+    "name": "Lubbock Christian University, Lubbock, TX ",
+    "cost": 36196,
+    "colors": []
+  },
+  {
+    "name": "McLennan Community College, Waco, TX ",
+    "cost": 5910,
+    "colors": []
+  },
+  {
+    "name": "McMurry University, Abilene, TX ",
+    "cost": 41160,
+    "colors": []
+  },
+  {
+    "name": "Messenger College, Bedford, TX ",
+    "cost": 23835,
+    "colors": []
+  },
+  {
+    "name": "Midland College, Midland, TX ",
+    "cost": 12030,
+    "colors": []
+  },
+  {
+    "name": "Midwestern State University, Wichita Falls, TX ",
+    "cost": 22500,
+    "colors": []
+  },
+  {
+    "name": "Navarro College, Corsicana, TX ",
+    "cost": 14571,
+    "colors": []
+  },
+  {
+    "name": "North American University, Stafford, TX ",
+    "cost": 21196,
+    "colors": []
+  },
+  {
+    "name": "North Central Texas College, Gainesville, TX ",
+    "cost": 12027,
+    "colors": []
+  },
+  {
+    "name": "Northeast Lakeview College, Universal City, TX ",
+    "cost": 14422,
+    "colors": []
+  },
+  {
+    "name": "Northeast Texas Community College, Mount Pleasant, TX ",
+    "cost": 12674,
+    "colors": []
+  },
+  {
+    "name": "Northwest Vista College, San Antonio, TX ",
+    "cost": 14422,
+    "colors": []
+  },
+  {
+    "name": "Odessa College, Odessa, TX ",
+    "cost": 11606,
+    "colors": []
+  },
+  {
+    "name": "Our Lady of the Lake University, San Antonio, TX ",
+    "cost": 42434,
+    "colors": []
+  },
+  {
+    "name": "Palo Alto College, San Antonio, TX ",
+    "cost": 14422,
+    "colors": []
+  },
+  {
+    "name": "Panola College, Carthage, TX ",
+    "cost": 11924,
+    "colors": []
+  },
+  {
+    "name": "Paris Junior College, Paris, TX ",
+    "cost": 11481,
+    "colors": []
+  },
+  {
+    "name": "Parker University, Dallas, TX ",
+    "cost": 17457,
+    "colors": []
+  },
+  {
+    "name": "Paul Quinn College, Dallas, TX ",
+    "cost": 21148,
+    "colors": []
+  },
+  {
+    "name": "Prairie View A & M University, Prairie View, TX ",
+    "cost": 37191,
+    "colors": []
+  },
+  {
+    "name": "Ranger College, Ranger, TX ",
+    "cost": 13739,
+    "colors": []
+  },
+  {
+    "name": "Redeemers University North America, Greenville, TX ",
+    "cost": 6800,
+    "colors": []
+  },
+  {
+    "name": "Remington College-Dallas Campus, Dallas, TX ",
+    "cost": 23785,
+    "colors": []
+  },
+  {
+    "name": "Remington College-Fort Worth Campus, North Richland Hills, TX ",
+    "cost": 19341,
+    "colors": []
+  },
+  {
+    "name": "Remington College-Houston Southeast Campus, League City, TX ",
+    "cost": 13484,
+    "colors": []
+  },
+  {
+    "name": "Remington College-North Houston Campus, Houston, TX ",
+    "cost": 20001,
+    "colors": []
+  },
+  {
+    "name": "Remington College-Online Dallas, Dallas, TX ",
+    "cost": 15764,
+    "colors": []
+  },
+  {
+    "name": "Rice University, Houston, TX ",
+    "cost": 74028,
+    "colors": []
+  },
+  {
+    "name": "Saint Edward's University, Austin, TX ",
+    "cost": 65394,
+    "colors": []
+  },
+  {
+    "name": "Sam Houston State University, Huntsville, TX ",
+    "cost": 30740,
+    "colors": []
+  },
+  {
+    "name": "San Antonio College, San Antonio, TX ",
+    "cost": 14422,
+    "colors": []
+  },
+  {
+    "name": "San Jacinto Community College, Pasadena, TX ",
+    "cost": 5352,
+    "colors": []
+  },
+  {
+    "name": "Schreiner University, Kerrville, TX ",
+    "cost": 47803,
+    "colors": []
+  },
+  {
+    "name": "South Plains College, Levelland, TX ",
+    "cost": 10167,
+    "colors": []
+  },
+  {
+    "name": "South Texas College, McAllen, TX ",
+    "cost": 7500,
+    "colors": []
+  },
+  {
+    "name": "South Texas Training Center, Pharr, TX ",
+    "cost": 12370,
+    "colors": []
+  },
+  {
+    "name": "South University-Austin, Round Rock, TX ",
+    "cost": 18238,
+    "colors": []
+  },
+  {
+    "name": "Southern Methodist University, Dallas, TX ",
+    "cost": 82690,
+    "colors": []
+  },
+  {
+    "name": "Southwest College for the Deaf, Big Spring, TX ",
+    "cost": 19883,
+    "colors": []
+  },
+  {
+    "name": "Southwest Texas Junior College, Uvalde, TX ",
+    "cost": 12294,
+    "colors": []
+  },
+  {
+    "name": "Southwest University at El Paso, El Paso, TX ",
+    "cost": 16000,
+    "colors": []
+  },
+  {
+    "name": "Southwestern Adventist University, Keene, TX ",
+    "cost": 33620,
+    "colors": []
+  },
+  {
+    "name": "Southwestern Assemblies of God University, Waxahachie, TX ",
+    "cost": 27660,
+    "colors": []
+  },
+  {
+    "name": "Southwestern Christian College, Terrell, TX ",
+    "cost": 19163,
+    "colors": []
+  },
+  {
+    "name": "Southwestern University, Georgetown, TX ",
+    "cost": 64686,
+    "colors": []
+  },
+  {
+    "name": "St Philip's College, San Antonio, TX ",
+    "cost": 14422,
+    "colors": []
+  },
+  {
+    "name": "St. Mary's University, San Antonio, TX ",
+    "cost": 47962,
+    "colors": []
+  },
+  {
+    "name": "Stephen F Austin State University, Nacogdoches, TX ",
+    "cost": 31822,
+    "colors": []
+  },
+  {
+    "name": "Strayer University-Texas, Farmers Branch, TX ",
+    "cost": 13920,
+    "colors": []
+  },
+  {
+    "name": "Sul Ross State University, Alpine, TX ",
+    "cost": 27714,
+    "colors": []
+  },
+  {
+    "name": "Tarleton State University, Stephenville, TX ",
+    "cost": 28804,
+    "colors": []
+  },
+  {
+    "name": "Tarrant County College District, Fort Worth, TX ",
+    "cost": 8235,
+    "colors": []
+  },
+  {
+    "name": "Temple College, Temple, TX ",
+    "cost": 6696,
+    "colors": []
+  },
+  {
+    "name": "Texarkana College, Texarkana, TX ",
+    "cost": 5332,
+    "colors": []
+  },
+  {
+    "name": "Texas A & M International University, Laredo, TX ",
+    "cost": 29032,
+    "colors": []
+  },
+  {
+    "name": "Texas A & M University-College Station, College Station, TX ",
+    "cost": 53482,
+    "colors": []
+  },
+  {
+    "name": "Texas A & M University-Commerce, Commerce, TX ",
+    "cost": 32434,
+    "colors": []
+  },
+  {
+    "name": "Texas A & M University-Corpus Christi, Corpus Christi, TX ",
+    "cost": 33902,
+    "colors": []
+  },
+  {
+    "name": "Texas A & M University-Kingsville, Kingsville, TX ",
+    "cost": 36929,
+    "colors": []
+  },
+  {
+    "name": "Texas A&M University-Central Texas, Killeen, TX ",
+    "cost": 16419,
+    "colors": []
+  },
+  {
+    "name": "Texas A&M University-San Antonio, San Antonio, TX ",
+    "cost": 33884,
+    "colors": []
+  },
+  {
+    "name": "Texas A&M University-Texarkana, Texarkana, TX ",
+    "cost": 33029,
+    "colors": []
+  },
+  {
+    "name": "Texas Christian University, Fort Worth, TX ",
+    "cost": 72020,
+    "colors": []
+  },
+  {
+    "name": "Texas College, Tyler, TX ",
+    "cost": 18008,
+    "colors": []
+  },
+  {
+    "name": "Texas Lutheran University, Seguin, TX ",
+    "cost": 46800,
+    "colors": []
+  },
+  {
+    "name": "Texas Southern University, Houston, TX ",
+    "cost": 32687,
+    "colors": []
+  },
+  {
+    "name": "Texas Southmost College, Brownsville, TX ",
+    "cost": 4948,
+    "colors": []
+  },
+  {
+    "name": "Texas State Technical College, Waco, TX ",
+    "cost": 21277,
+    "colors": []
+  },
+  {
+    "name": "Texas State University, San Marcos, TX ",
+    "cost": 35480,
+    "colors": []
+  },
+  {
+    "name": "Texas Tech University, Lubbock, TX ",
+    "cost": 34911,
+    "colors": []
+  },
+  {
+    "name": "Texas Wesleyan University, Fort Worth, TX ",
+    "cost": 50958,
+    "colors": []
+  },
+  {
+    "name": "Texas Woman's University, Denton, TX ",
+    "cost": 30078,
+    "colors": []
+  },
+  {
+    "name": "The Chicago School at Dallas, Richardson, TX ",
+    "cost": 20844,
+    "colors": []
+  },
+  {
+    "name": "The King's University, Southlake, TX ",
+    "cost": 12480,
+    "colors": []
+  },
+  {
+    "name": "The University of Texas at Arlington, Arlington, TX ",
+    "cost": 40242,
+    "colors": []
+  },
+  {
+    "name": "The University of Texas at Austin, Austin, TX ",
+    "cost": 56914,
+    "colors": []
+  },
+  {
+    "name": "The University of Texas at Dallas, Richardson, TX ",
+    "cost": 53896,
+    "colors": []
+  },
+  {
+    "name": "The University of Texas at El Paso, El Paso, TX ",
+    "cost": 36376,
+    "colors": []
+  },
+  {
+    "name": "The University of Texas at San Antonio, San Antonio, TX ",
+    "cost": 33808,
+    "colors": []
+  },
+  {
+    "name": "The University of Texas at Tyler, Tyler, TX ",
+    "cost": 35908,
+    "colors": []
+  },
+  {
+    "name": "The University of Texas Permian Basin, Odessa, TX ",
+    "cost": 35992,
+    "colors": []
+  },
+  {
+    "name": "The University of Texas Rio Grande Valley, Edinburg, TX ",
+    "cost": 29601,
+    "colors": []
+  },
+  {
+    "name": "Trinity University, San Antonio, TX ",
+    "cost": 65824,
+    "colors": []
+  },
+  {
+    "name": "Trinity Valley Community College, Athens, TX ",
+    "cost": 13504,
+    "colors": []
+  },
+  {
+    "name": "Tyler Junior College, Tyler, TX ",
+    "cost": 15210,
+    "colors": []
+  },
+  {
+    "name": "University of Dallas, Irving, TX ",
+    "cost": 65240,
+    "colors": []
+  },
+  {
+    "name": "University of Houston, Houston, TX ",
+    "cost": 33021,
+    "colors": []
+  },
+  {
+    "name": "University of Houston-Clear Lake, Houston, TX ",
+    "cost": 32344,
+    "colors": []
+  },
+  {
+    "name": "University of Houston-Downtown, Houston, TX ",
+    "cost": 17788,
+    "colors": []
+  },
+  {
+    "name": "University of Houston-Victoria, Victoria, TX ",
+    "cost": 27785,
+    "colors": []
+  },
+  {
+    "name": "University of Mary Hardin-Baylor, Belton, TX ",
+    "cost": 43870,
+    "colors": []
+  },
+  {
+    "name": "University of North Texas, Denton, TX ",
+    "cost": 32049,
+    "colors": []
+  },
+  {
+    "name": "University of North Texas at Dallas, Dallas, TX ",
+    "cost": 32143,
+    "colors": []
+  },
+  {
+    "name": "University of St Thomas, Houston, TX ",
+    "cost": 43908,
+    "colors": []
+  },
+  {
+    "name": "University of the Incarnate Word, San Antonio, TX ",
+    "cost": 49406,
+    "colors": []
+  },
+  {
+    "name": "Vernon College, Vernon, TX ",
+    "cost": 12618,
+    "colors": []
+  },
+  {
+    "name": "Vet Tech Institute of Houston, Houston, TX ",
+    "cost": 16024,
+    "colors": []
+  },
+  {
+    "name": "Victoria College, Victoria, TX ",
+    "cost": 5256,
+    "colors": []
+  },
+  {
+    "name": "Wade College, Dallas, TX ",
+    "cost": 17692,
+    "colors": []
+  },
+  {
+    "name": "Wayland Baptist University, Plainview, TX ",
+    "cost": 32542,
+    "colors": []
+  },
+  {
+    "name": "Weatherford College, Weatherford, TX ",
+    "cost": 17400,
+    "colors": []
+  },
+  {
+    "name": "West Coast University-Dallas, Richardson, TX ",
+    "cost": 16715,
+    "colors": []
+  },
+  {
+    "name": "West Texas A & M University, Canyon, TX ",
+    "cost": 20445,
+    "colors": []
+  },
+  {
+    "name": "Western Texas College, Snyder, TX ",
+    "cost": 11635,
+    "colors": []
+  },
+  {
+    "name": "Wharton County Junior College, Wharton, TX ",
+    "cost": 11168,
+    "colors": []
+  },
+  {
+    "name": "Wiley University, Marshall, TX ",
+    "cost": 17500,
+    "colors": []
+  },
+  {
+    "name": "Arizona College of Nursing-Salt Lake City, Murray, UT ",
+    "cost": 22586,
+    "colors": []
+  },
+  {
+    "name": "Brigham Young University, Provo, UT ",
+    "cost": 16216,
+    "colors": []
+  },
+  {
+    "name": "Eagle Gate College-Murray, Murray, UT ",
+    "cost": 16491,
+    "colors": []
+  },
+  {
+    "name": "Ensign College, Salt Lake City, UT ",
+    "cost": 3888,
+    "colors": []
+  },
+  {
+    "name": "Fortis College-Salt Lake City, Salt Lake City, UT ",
+    "cost": 13112,
+    "colors": []
+  },
+  {
+    "name": "Galen Health Institutes-Salt Lake City, Draper, UT ",
+    "cost": 15860,
+    "colors": []
+  },
+  {
+    "name": "Joyce University of Nursing and Health Sciences, Draper, UT ",
+    "cost": 20780,
+    "colors": []
+  },
+  {
+    "name": "Midwives College of Utah, Salt Lake City, UT ",
+    "cost": 8256,
+    "colors": []
+  },
+  {
+    "name": "Neumont College of Computer Science, Salt Lake City, UT ",
+    "cost": 42099,
+    "colors": []
+  },
+  {
+    "name": "Provo College, Provo, UT ",
+    "cost": 16491,
+    "colors": []
+  },
+  {
+    "name": "Salt Lake Community College, Salt Lake City, UT ",
+    "cost": 13701,
+    "colors": []
+  },
+  {
+    "name": "Snow College, Ephraim, UT ",
+    "cost": 19180,
+    "colors": []
+  },
+  {
+    "name": "Southern Utah University, Cedar City, UT ",
+    "cost": 29410,
+    "colors": []
+  },
+  {
+    "name": "University of Utah, Salt Lake City, UT ",
+    "cost": 42235,
+    "colors": []
+  },
+  {
+    "name": "Utah State University, Logan, UT ",
+    "cost": 33446,
+    "colors": []
+  },
+  {
+    "name": "Utah Tech University, Saint George, UT ",
+    "cost": 26952,
+    "colors": []
+  },
+  {
+    "name": "Utah Valley University, Orem, UT ",
+    "cost": 17830,
+    "colors": []
+  },
+  {
+    "name": "Weber State University, Ogden, UT ",
+    "cost": 26316,
+    "colors": []
+  },
+  {
+    "name": "Western Governors University, Salt Lake City, UT ",
+    "cost": 8300,
+    "colors": []
+  },
+  {
+    "name": "Westminster University, Salt Lake City, UT ",
+    "cost": 53186,
+    "colors": []
+  },
+  {
+    "name": "Bennington College, Bennington, VT ",
+    "cost": 83284,
+    "colors": []
+  },
+  {
+    "name": "Champlain College, Burlington, VT ",
+    "cost": 62450,
+    "colors": []
+  },
+  {
+    "name": "Community College of Vermont, Montpelier, VT ",
+    "cost": 13640,
+    "colors": []
+  },
+  {
+    "name": "Goddard College, Plainfield, VT ",
+    "cost": 21668,
+    "colors": []
+  },
+  {
+    "name": "Landmark College, Putney, VT ",
+    "cost": 78600,
+    "colors": []
+  },
+  {
+    "name": "Middlebury College, Middlebury, VT ",
+    "cost": 83880,
+    "colors": []
+  },
+  {
+    "name": "Norwich University, Northfield, VT ",
+    "cost": 63600,
+    "colors": []
+  },
+  {
+    "name": "Saint Michael's College, Colchester, VT ",
+    "cost": 66535,
+    "colors": []
+  },
+  {
+    "name": "Sterling College, Craftsbury Common, VT ",
+    "cost": 51710,
+    "colors": []
+  },
+  {
+    "name": "University of Vermont, Burlington, VT ",
+    "cost": 57244,
+    "colors": []
+  },
+  {
+    "name": "Vermont State University, Randolph, VT ",
+    "cost": 34306,
+    "colors": []
+  },
+  {
+    "name": "Academy of Interactive Entertainment, Seattle, WA ",
+    "cost": 24600,
+    "colors": []
+  },
+  {
+    "name": "Bates Technical College, Tacoma, WA ",
+    "cost": 11518,
+    "colors": []
+  },
+  {
+    "name": "Bellevue College, Bellevue, WA ",
+    "cost": 29605,
+    "colors": []
+  },
+  {
+    "name": "Bellingham Technical College, Bellingham, WA ",
+    "cost": 5555,
+    "colors": []
+  },
+  {
+    "name": "Big Bend Community College, Moses Lake, WA ",
+    "cost": 24865,
+    "colors": []
+  },
+  {
+    "name": "Cascadia College, Bothell, WA ",
+    "cost": 10864,
+    "colors": []
+  },
+  {
+    "name": "Central Washington University, Ellensburg, WA ",
+    "cost": 43085,
+    "colors": []
+  },
+  {
+    "name": "Centralia College, Centralia, WA ",
+    "cost": 23508,
+    "colors": []
+  },
+  {
+    "name": "City University of Seattle, Seattle, WA ",
+    "cost": 26202,
+    "colors": []
+  },
+  {
+    "name": "Clark College, Vancouver, WA ",
+    "cost": 10380,
+    "colors": []
+  },
+  {
+    "name": "Clover Park Technical College, Lakewood, WA ",
+    "cost": 6634,
+    "colors": []
+  },
+  {
+    "name": "Columbia Basin College, Pasco, WA ",
+    "cost": 18689,
+    "colors": []
+  },
+  {
+    "name": "Cornish College of the Arts, Seattle, WA ",
+    "cost": 55673,
+    "colors": []
+  },
+  {
+    "name": "DigiPen Institute of Technology, Redmond, WA ",
+    "cost": 53640,
+    "colors": []
+  },
+  {
+    "name": "Eastern Washington University, Cheney, WA ",
+    "cost": 40772,
+    "colors": []
+  },
+  {
+    "name": "Edmonds College, Lynnwood, WA ",
+    "cost": 29975,
+    "colors": []
+  },
+  {
+    "name": "Everett Community College, Everett, WA ",
+    "cost": 28048,
+    "colors": []
+  },
+  {
+    "name": "Faith International University, Tacoma, WA ",
+    "cost": 8850,
+    "colors": []
+  },
+  {
+    "name": "Gonzaga University, Spokane, WA ",
+    "cost": 68580,
+    "colors": []
+  },
+  {
+    "name": "Grays Harbor College, Aberdeen, WA ",
+    "cost": 10629,
+    "colors": []
+  },
+  {
+    "name": "Great Northern University, Spokane, WA ",
+    "cost": 29238,
+    "colors": []
+  },
+  {
+    "name": "Green River College, Auburn, WA ",
+    "cost": 5105,
+    "colors": []
+  },
+  {
+    "name": "Heritage University, Toppenish, WA ",
+    "cost": 19920,
+    "colors": []
+  },
+  {
+    "name": "Highline College, Des Moines, WA ",
+    "cost": 18182,
+    "colors": []
+  },
+  {
+    "name": "Lake Washington Institute of Technology, Kirkland, WA ",
+    "cost": 11017,
+    "colors": []
+  },
+  {
+    "name": "Lower Columbia College, Longview, WA ",
+    "cost": 23501,
+    "colors": []
+  },
+  {
+    "name": "North Seattle College, Seattle, WA ",
+    "cost": 5547,
+    "colors": []
+  },
+  {
+    "name": "Northwest College of Art & Design, Tacoma, WA ",
+    "cost": 18100,
+    "colors": []
+  },
+  {
+    "name": "Northwest Indian College, Bellingham, WA ",
+    "cost": 9469,
+    "colors": []
+  },
+  {
+    "name": "Northwest School of Wooden Boat Building, Port Hadlock, WA ",
+    "cost": 36537,
+    "colors": []
+  },
+  {
+    "name": "Northwest University, Kirkland, WA ",
+    "cost": 46683,
+    "colors": []
+  },
+  {
+    "name": "Northwest University-Center for Online and Extended Education, Kirkland, WA ",
+    "cost": 14652,
+    "colors": []
+  },
+  {
+    "name": "Olympic College, Bremerton, WA ",
+    "cost": 20240,
+    "colors": []
+  },
+  {
+    "name": "Pacific Lutheran University, Tacoma, WA ",
+    "cost": 63410,
+    "colors": []
+  },
+  {
+    "name": "Pacific Northwest Christian College, Kennewick, WA ",
+    "cost": 11350,
+    "colors": []
+  },
+  {
+    "name": "Peninsula College, Port Angeles, WA ",
+    "cost": 5111,
+    "colors": []
+  },
+  {
+    "name": "Pierce College District, Lakewood, WA ",
+    "cost": 18504,
+    "colors": []
+  },
+  {
+    "name": "Renton Technical College, Renton, WA ",
+    "cost": 7257,
+    "colors": []
+  },
+  {
+    "name": "Saint Martin's University, Lacey, WA ",
+    "cost": 58190,
+    "colors": []
+  },
+  {
+    "name": "Seattle Central College, Seattle, WA ",
+    "cost": 5354,
+    "colors": []
+  },
+  {
+    "name": "Seattle Film Institute, Seattle, WA ",
+    "cost": 33000,
+    "colors": []
+  },
+  {
+    "name": "Seattle Pacific University, Seattle, WA ",
+    "cost": 54312,
+    "colors": []
+  },
+  {
+    "name": "Seattle University, Seattle, WA ",
+    "cost": 69033,
+    "colors": []
+  },
+  {
+    "name": "Shoreline Community College, Shoreline, WA ",
+    "cost": 26852,
+    "colors": []
+  },
+  {
+    "name": "Skagit Valley College, Mount Vernon, WA ",
+    "cost": 17211,
+    "colors": []
+  },
+  {
+    "name": "South Puget Sound Community College, Olympia, WA ",
+    "cost": 5637,
+    "colors": []
+  },
+  {
+    "name": "South Seattle College, Seattle, WA ",
+    "cost": 5354,
+    "colors": []
+  },
+  {
+    "name": "Spokane Community College, Spokane, WA ",
+    "cost": 5494,
+    "colors": []
+  },
+  {
+    "name": "Spokane Falls Community College, Spokane, WA ",
+    "cost": 5494,
+    "colors": []
+  },
+  {
+    "name": "Tacoma Community College, Tacoma, WA ",
+    "cost": 11030,
+    "colors": []
+  },
+  {
+    "name": "The Evergreen State College, Olympia, WA ",
+    "cost": 47431,
+    "colors": []
+  },
+  {
+    "name": "University of Puget Sound, Tacoma, WA ",
+    "cost": 74940,
+    "colors": []
+  },
+  {
+    "name": "University of Washington-Bothell Campus, Bothell, WA ",
+    "cost": 59028,
+    "colors": []
+  },
+  {
+    "name": "University of Washington-Seattle Campus, Seattle, WA ",
+    "cost": 59979,
+    "colors": []
+  },
+  {
+    "name": "University of Washington-Tacoma Campus, Tacoma, WA ",
+    "cost": 58119,
+    "colors": []
+  },
+  {
+    "name": "Walla Walla Community College, Walla Walla, WA ",
+    "cost": 7967,
+    "colors": []
+  },
+  {
+    "name": "Walla Walla University, College Place, WA ",
+    "cost": 43443,
+    "colors": []
+  },
+  {
+    "name": "Washington State University, Pullman, WA ",
+    "cost": 42204,
+    "colors": []
+  },
+  {
+    "name": "Wenatchee Valley College, Wenatchee, WA ",
+    "cost": 13347,
+    "colors": []
+  },
+  {
+    "name": "Western Washington University, Bellingham, WA ",
+    "cost": 42768,
+    "colors": []
+  },
+  {
+    "name": "Whatcom Community College, Bellingham, WA ",
+    "cost": 30518,
+    "colors": []
+  },
+  {
+    "name": "Whitman College, Walla Walla, WA ",
+    "cost": 76132,
+    "colors": []
+  },
+  {
+    "name": "Whitworth University, Spokane, WA ",
+    "cost": 64620,
+    "colors": []
+  },
+  {
+    "name": "Yakima Valley College, Yakima, WA ",
+    "cost": 15060,
+    "colors": []
+  },
+  {
+    "name": "Alverno College, Milwaukee, WI ",
+    "cost": 43032,
+    "colors": []
+  },
+  {
+    "name": "Bellin College, Green Bay, WI ",
+    "cost": 28211,
+    "colors": []
+  },
+  {
+    "name": "Beloit College, Beloit, WI ",
+    "cost": 69294,
+    "colors": []
+  },
+  {
+    "name": "Blackhawk Technical College, Janesville, WI ",
+    "cost": 5927,
+    "colors": []
+  },
+  {
+    "name": "Bryant & Stratton College-Wauwatosa, Wauwatosa, WI ",
+    "cost": 19944,
+    "colors": []
+  },
+  {
+    "name": "Carroll University, Waukesha, WI ",
+    "cost": 50570,
+    "colors": []
+  },
+  {
+    "name": "Carthage College, Kenosha, WI ",
+    "cost": 49450,
+    "colors": []
+  },
+  {
+    "name": "Chippewa Valley Technical College, Eau Claire, WI ",
+    "cost": 6917,
+    "colors": []
+  },
+  {
+    "name": "College of Menominee Nation, Keshena, WI ",
+    "cost": 6200,
+    "colors": []
+  },
+  {
+    "name": "Concordia University-Wisconsin, Mequon, WI ",
+    "cost": 46950,
+    "colors": []
+  },
+  {
+    "name": "Edgewood College, Madison, WI ",
+    "cost": 47440,
+    "colors": []
+  },
+  {
+    "name": "Fox Valley Technical College, Appleton, WI ",
+    "cost": 7109,
+    "colors": []
+  },
+  {
+    "name": "Gateway Technical College, Kenosha, WI ",
+    "cost": 7046,
+    "colors": []
+  },
+  {
+    "name": "Herzing University-Brookfield, Brookfield, WI ",
+    "cost": 13420,
+    "colors": []
+  },
+  {
+    "name": "Herzing University-Kenosha, Kenosha, WI ",
+    "cost": 13420,
+    "colors": []
+  },
+  {
+    "name": "Herzing University-Madison, Madison, WI ",
+    "cost": 13420,
+    "colors": []
+  },
+  {
+    "name": "Lac Courte Oreilles Ojibwe University, Hayward, WI ",
+    "cost": 6030,
+    "colors": []
+  },
+  {
+    "name": "Lakeland University, Plymouth, WI ",
+    "cost": 44158,
+    "colors": []
+  },
+  {
+    "name": "Lakeshore Technical College, Cleveland, WI ",
+    "cost": 6842,
+    "colors": []
+  },
+  {
+    "name": "Lawrence University, Appleton, WI ",
+    "cost": 67299,
+    "colors": []
+  },
+  {
+    "name": "Madison Area Technical College, Madison, WI ",
+    "cost": 7027,
+    "colors": []
+  },
+  {
+    "name": "Maranatha Baptist University, Watertown, WI ",
+    "cost": 29080,
+    "colors": []
+  },
+  {
+    "name": "Marian University, Fond Du Lac, WI ",
+    "cost": 41953,
+    "colors": []
+  },
+  {
+    "name": "Marquette University, Milwaukee, WI ",
+    "cost": 64440,
+    "colors": []
+  },
+  {
+    "name": "Mid-State Technical College, Wisconsin Rapids, WI ",
+    "cost": 7016,
+    "colors": []
+  },
+  {
+    "name": "Milwaukee Area Technical College, Milwaukee, WI ",
+    "cost": 15868,
+    "colors": []
+  },
+  {
+    "name": "Milwaukee Institute of Art & Design, Milwaukee, WI ",
+    "cost": 52698,
+    "colors": []
+  },
+  {
+    "name": "Milwaukee School of Engineering, Milwaukee, WI ",
+    "cost": 60983,
+    "colors": []
+  },
+  {
+    "name": "Moraine Park Technical College, Fond du Lac, WI ",
+    "cost": 6917,
+    "colors": []
+  },
+  {
+    "name": "Mount Mary University, Milwaukee, WI ",
+    "cost": 44510,
+    "colors": []
+  },
+  {
+    "name": "Nicolet Area Technical College, Rhinelander, WI ",
+    "cost": 6917,
+    "colors": []
+  },
+  {
+    "name": "Northcentral Technical College, Wausau, WI ",
+    "cost": 5615,
+    "colors": []
+  },
+  {
+    "name": "Northeast Wisconsin Technical College, Green Bay, WI ",
+    "cost": 7097,
+    "colors": []
+  },
+  {
+    "name": "Northland College, Ashland, WI ",
+    "cost": 53591,
+    "colors": []
+  },
+  {
+    "name": "Northwood Technical College, Rice Lake, WI ",
+    "cost": 6583,
+    "colors": []
+  },
+  {
+    "name": "Rasmussen University-Wisconsin, Green Bay, WI ",
+    "cost": 11982,
+    "colors": []
+  },
+  {
+    "name": "Ripon College, Ripon, WI ",
+    "cost": 60890,
+    "colors": []
+  },
+  {
+    "name": "Saint Norbert College, De Pere, WI ",
+    "cost": 57130,
+    "colors": []
+  },
+  {
+    "name": "Southwest Wisconsin Technical College, Fennimore, WI ",
+    "cost": 16603,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Eau Claire, Eau Claire, WI ",
+    "cost": 27716,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Green Bay, Green Bay, WI ",
+    "cost": 24971,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-La Crosse, La Crosse, WI ",
+    "cost": 26651,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Madison, Madison, WI ",
+    "cost": 54103,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Milwaukee, Milwaukee, WI ",
+    "cost": 33000,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Oshkosh, Oshkosh, WI ",
+    "cost": 25065,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Parkside, Kenosha, WI ",
+    "cost": 24783,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Platteville, Platteville, WI ",
+    "cost": 25448,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-River Falls, River Falls, WI ",
+    "cost": 24545,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Stevens Point, Stevens Point, WI ",
+    "cost": 26354,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Stout, Menomonie, WI ",
+    "cost": 27424,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Superior, Superior, WI ",
+    "cost": 23627,
+    "colors": []
+  },
+  {
+    "name": "University of Wisconsin-Whitewater, Whitewater, WI ",
+    "cost": 25686,
+    "colors": []
+  },
+  {
+    "name": "Viterbo University, La Crosse, WI ",
+    "cost": 43030,
+    "colors": []
+  },
+  {
+    "name": "Waukesha County Technical College, Pewaukee, WI ",
+    "cost": 6996,
+    "colors": []
+  },
+  {
+    "name": "Western Technical College, La Crosse, WI ",
+    "cost": 13859,
+    "colors": []
+  },
+  {
+    "name": "Wisconsin Lutheran College, Milwaukee, WI ",
+    "cost": 46960,
+    "colors": []
+  },
+  {
+    "name": "Casper College, Casper, WY ",
+    "cost": 18510,
+    "colors": []
+  },
+  {
+    "name": "Central Wyoming College, Riverton, WY ",
+    "cost": 19188,
+    "colors": []
+  },
+  {
+    "name": "Eastern Wyoming College, Torrington, WY ",
+    "cost": 17686,
+    "colors": []
+  },
+  {
+    "name": "Laramie County Community College, Cheyenne, WY ",
+    "cost": 20285,
+    "colors": []
+  },
+  {
+    "name": "Northern Wyoming Community College District, Sheridan, WY ",
+    "cost": 20971,
+    "colors": []
+  },
+  {
+    "name": "Northwest College, Powell, WY ",
+    "cost": 20075,
+    "colors": []
+  },
+  {
+    "name": "University of Wyoming, Laramie, WY ",
+    "cost": 36058,
+    "colors": []
+  },
+  {
+    "name": "Western Wyoming Community College, Rock Springs, WY ",
+    "cost": 19260,
+    "colors": []
+  }
+]
